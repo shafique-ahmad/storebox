@@ -1,0 +1,332 @@
+{
+	"content": [
+		{
+			"id": "87a5251",
+			"elType": "container",
+			"settings": {
+				"content_width": "boxed",
+				"flex_direction": "column",
+				"padding": {
+					"unit": "px",
+					"top": "106",
+					"right": "30",
+					"bottom": "106",
+					"left": "30",
+					"isLinked": false
+				},
+				"flex_gap": {
+					"column": "0",
+					"row": "0",
+					"isLinked": true,
+					"unit": "px",
+					"size": 0
+				},
+				"padding_tablet": {
+					"unit": "px",
+					"top": "90",
+					"right": "30",
+					"bottom": "90",
+					"left": "30",
+					"isLinked": false
+				},
+				"padding_mobile": {
+					"unit": "px",
+					"top": "76",
+					"right": "20",
+					"bottom": "76",
+					"left": "20",
+					"isLinked": false
+				},
+				"html_tag": "section",
+				"background_background": "classic",
+				"background_color": "#FFFFFF",
+				"_element_id": "faq",
+				"border_border": "solid",
+				"border_width": {
+					"unit": "px",
+					"top": "1",
+					"right": "0",
+					"bottom": "0",
+					"left": "0",
+					"isLinked": false
+				},
+				"__globals__": {
+					"border_color": "globals/colors?id=sbborder"
+				}
+			},
+			"elements": [
+				{
+					"id": "0a9de20",
+					"elType": "container",
+					"settings": {
+						"content_width": "full",
+						"flex_direction": "row",
+						"padding": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": true
+						},
+						"flex_gap": {
+							"column": "70",
+							"row": "70",
+							"isLinked": true,
+							"unit": "px",
+							"size": 70
+						},
+						"flex_align_items": "flex-start",
+						"flex_justify_content": "flex-start",
+						"flex_wrap": "nowrap",
+						"flex_direction_tablet": "column",
+						"flex_direction_mobile": "column",
+						"flex_gap_tablet": {
+							"column": "44",
+							"row": "44",
+							"isLinked": true,
+							"unit": "px",
+							"size": 44
+						}
+					},
+					"elements": [
+						{
+							"id": "0959745",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": true
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 41,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
+							},
+							"elements": [
+								{
+									"id": "4322ee9",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "Questions",
+										"header_size": "p",
+										"__globals__": {
+											"typography_typography": "globals/typography?id=accent",
+											"title_color": "globals/colors?id=sbmuted"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "4724add",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "The things people actually ask.",
+										"header_size": "h2",
+										"_margin": {
+											"unit": "px",
+											"top": "16",
+											"right": "0",
+											"bottom": "0",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=sbh2",
+											"title_color": "globals/colors?id=primary"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "cd8837b",
+									"elType": "widget",
+									"widgetType": "text-editor",
+									"settings": {
+										"editor": "<p>Can't see yours? Call us on 020 000 0000 — a person answers.</p>",
+										"_margin": {
+											"unit": "px",
+											"top": "18",
+											"right": "0",
+											"bottom": "0",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=sblede",
+											"text_color": "globals/colors?id=sbmuted"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						},
+						{
+							"id": "25ff4a0",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": true
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 59,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
+							},
+							"elements": [
+								{
+									"id": "5369196",
+									"elType": "widget",
+									"widgetType": "accordion",
+									"settings": {
+										"tabs": [
+											{
+												"_id": "262b1b7",
+												"tab_title": "How long do I have to commit for?",
+												"tab_content": "<p>There is no minimum term. You pay per month and give two weeks' notice when you want to leave. Move out early and we refund the unused days.</p>"
+											},
+											{
+												"_id": "e01f4df",
+												"tab_title": "Can I change to a bigger or smaller unit later?",
+												"tab_content": "<p>Yes, and there is no fee. Tell the facility manager and we move your contract across — you only pay the difference from that date.</p>"
+											},
+											{
+												"_id": "40f7968",
+												"tab_title": "Who has a key to my unit?",
+												"tab_content": "<p>Only you. Bring your own padlock or buy one at reception. Staff cannot open your unit without you present.</p>"
+											},
+											{
+												"_id": "f3b5577",
+												"tab_title": "What can't I store?",
+												"tab_content": "<p>Anything perishable, living, flammable or illegal. Food, plants, animals, fuel, gas bottles, fireworks and chemicals are all out. Everything else is fine.</p>"
+											},
+											{
+												"_id": "924462a",
+												"tab_title": "Is my stuff insured?",
+												"tab_content": "<p>Not automatically. Some home contents policies cover items in storage, so check yours first. If it does not, we can arrange cover from €4 per month.</p>"
+											}
+										],
+										"selected_icon": {
+											"value": "fas fa-plus",
+											"library": "fa-solid"
+										},
+										"selected_active_icon": {
+											"value": "fas fa-times",
+											"library": "fa-solid"
+										},
+										"title_html_tag": "h3",
+										"faq_schema": "yes",
+										"icon_align": "right",
+										"border_width": {
+											"unit": "px",
+											"size": 0,
+											"sizes": []
+										},
+										"title_padding": {
+											"unit": "px",
+											"top": "24",
+											"right": "0",
+											"bottom": "24",
+											"left": "0",
+											"isLinked": false
+										},
+										"content_padding": {
+											"unit": "px",
+											"top": "0",
+											"right": "0",
+											"bottom": "24",
+											"left": "0",
+											"isLinked": false
+										},
+										"_css_classes": "sb-e-faq sb-e-faq--ruled",
+										"__globals__": {
+											"title_color": "globals/colors?id=primary",
+											"tab_active_color": "globals/colors?id=primary",
+											"icon_color": "globals/colors?id=sbmuted",
+											"icon_active_color": "globals/colors?id=primary",
+											"title_typography_typography": "globals/typography?id=sbfaq",
+											"content_color": "globals/colors?id=sbmuted",
+											"content_typography_typography": "globals/typography?id=text"
+										},
+										"_element_width": "initial",
+										"_element_custom_width": {
+											"unit": "px",
+											"size": 760,
+											"sizes": []
+										},
+										"_element_width_mobile": "inherit",
+										"_element_width_tablet": "inherit"
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						}
+					],
+					"isInner": true
+				}
+			],
+			"isInner": false
+		}
+	],
+	"page_settings": [],
+	"version": "0.4",
+	"title": "Storebox Business Storage — FAQ",
+	"type": "section"
+}

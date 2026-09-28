@@ -32,6 +32,30 @@
 	}
 
 	/* ------------------------------------------------------------------
+	 * Elementor Pro header with the sb-e-header-overlay class: solid after
+	 * 40px, or always on pages set to a solid header.
+	 * ------------------------------------------------------------------ */
+	var overlays = doc.querySelectorAll( '.sb-e-header-overlay' );
+
+	if ( overlays.length ) {
+		var alwaysSolid = body.classList.contains( 'sb-header-solid' );
+		var overlayTicking = false;
+		var overlayUpdate = function () {
+			Array.prototype.forEach.call( overlays, function ( el ) {
+				el.classList.toggle( 'is-solid', alwaysSolid || window.scrollY > 40 || el.classList.contains( 'elementor-nav-menu--toggle-open' ) );
+			} );
+			overlayTicking = false;
+		};
+		window.addEventListener( 'scroll', function () {
+			if ( ! overlayTicking ) {
+				overlayTicking = true;
+				window.requestAnimationFrame( overlayUpdate );
+			}
+		}, { passive: true } );
+		overlayUpdate();
+	}
+
+	/* ------------------------------------------------------------------
 	 * Mobile menu.
 	 * ------------------------------------------------------------------ */
 	var burger = header ? header.querySelector( '.sb-burger' ) : null;

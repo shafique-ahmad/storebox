@@ -100,7 +100,7 @@
 							"size": 1.5,
 							"sizes": []
 						},
-						"_css_classes": "sb-e-crumbs"
+						"_css_classes": "sb-e-crumbs sb-e-crumbs--on-dark"
 					},
 					"elements": [],
 					"isInner": false

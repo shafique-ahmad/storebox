@@ -1,0 +1,951 @@
+{
+	"content": [
+		{
+			"id": "dd08ab2",
+			"elType": "container",
+			"settings": {
+				"content_width": "boxed",
+				"flex_direction": "column",
+				"padding": {
+					"unit": "px",
+					"top": "106",
+					"right": "30",
+					"bottom": "106",
+					"left": "30",
+					"isLinked": false
+				},
+				"flex_gap": {
+					"column": "0",
+					"row": "0",
+					"isLinked": true,
+					"unit": "px",
+					"size": 0
+				},
+				"padding_tablet": {
+					"unit": "px",
+					"top": "90",
+					"right": "30",
+					"bottom": "90",
+					"left": "30",
+					"isLinked": false
+				},
+				"padding_mobile": {
+					"unit": "px",
+					"top": "76",
+					"right": "20",
+					"bottom": "76",
+					"left": "20",
+					"isLinked": false
+				},
+				"html_tag": "section",
+				"_element_id": "why"
+			},
+			"elements": [
+				{
+					"id": "bfc85e7",
+					"elType": "container",
+					"settings": {
+						"content_width": "full",
+						"flex_direction": "column",
+						"padding": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": true
+						},
+						"flex_gap": {
+							"column": "0",
+							"row": "0",
+							"isLinked": true,
+							"unit": "px",
+							"size": 0
+						},
+						"margin": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "56",
+							"left": "0",
+							"isLinked": false
+						}
+					},
+					"elements": [
+						{
+							"id": "fbc1946",
+							"elType": "widget",
+							"widgetType": "heading",
+							"settings": {
+								"title": "Why StoreBox",
+								"header_size": "p",
+								"__globals__": {
+									"typography_typography": "globals/typography?id=accent",
+									"title_color": "globals/colors?id=sbmuted"
+								}
+							},
+							"elements": [],
+							"isInner": false
+						},
+						{
+							"id": "e4b1cfe",
+							"elType": "widget",
+							"widgetType": "heading",
+							"settings": {
+								"title": "Four things we refuse to cut corners on.",
+								"header_size": "h2",
+								"_margin": {
+									"unit": "px",
+									"top": "16",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_element_width": "initial",
+								"_element_custom_width": {
+									"unit": "px",
+									"size": 640,
+									"sizes": []
+								},
+								"_element_width_mobile": "inherit",
+								"__globals__": {
+									"typography_typography": "globals/typography?id=sbh2",
+									"title_color": "globals/colors?id=primary"
+								}
+							},
+							"elements": [],
+							"isInner": false
+						}
+					],
+					"isInner": true
+				},
+				{
+					"id": "4ac91ca",
+					"elType": "container",
+					"settings": {
+						"content_width": "full",
+						"flex_direction": "row",
+						"padding": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": true
+						},
+						"flex_gap": {
+							"column": "70",
+							"row": "70",
+							"isLinked": true,
+							"unit": "px",
+							"size": 70
+						},
+						"flex_align_items": "flex-start",
+						"flex_justify_content": "flex-start",
+						"flex_wrap": "nowrap",
+						"flex_direction_tablet": "column",
+						"flex_direction_mobile": "column",
+						"flex_gap_tablet": {
+							"column": "44",
+							"row": "44",
+							"isLinked": true,
+							"unit": "px",
+							"size": 44
+						}
+					},
+					"elements": [
+						{
+							"id": "dd91d18",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": true
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 55,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"css_classes": "sb-e-rows",
+								"border_border": "solid",
+								"border_width": {
+									"unit": "px",
+									"top": "2",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"__globals__": {
+									"border_color": "globals/colors?id=primary"
+								}
+							},
+							"elements": [
+								{
+									"id": "515b6a0",
+									"elType": "container",
+									"settings": {
+										"content_width": "full",
+										"flex_direction": "row",
+										"padding": {
+											"unit": "px",
+											"top": "32",
+											"right": "0",
+											"bottom": "32",
+											"left": "0",
+											"isLinked": false
+										},
+										"flex_gap": {
+											"column": "20",
+											"row": "20",
+											"isLinked": true,
+											"unit": "px",
+											"size": 20
+										},
+										"flex_align_items": "stretch",
+										"flex_justify_content": "flex-start",
+										"flex_wrap": "nowrap"
+									},
+									"elements": [
+										{
+											"id": "99e1ff4",
+											"elType": "container",
+											"settings": {
+												"content_width": "full",
+												"flex_direction": "column",
+												"padding": {
+													"unit": "px",
+													"top": "4",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": false
+												},
+												"flex_gap": {
+													"column": "0",
+													"row": "0",
+													"isLinked": true,
+													"unit": "px",
+													"size": 0
+												},
+												"width": {
+													"unit": "px",
+													"size": 58,
+													"sizes": []
+												},
+												"width_tablet": {
+													"unit": "px",
+													"size": 58,
+													"sizes": []
+												},
+												"width_mobile": {
+													"unit": "px",
+													"size": 44,
+													"sizes": []
+												},
+												"_flex_size": "none"
+											},
+											"elements": [
+												{
+													"id": "eb1d6a9",
+													"elType": "widget",
+													"widgetType": "heading",
+													"settings": {
+														"title": "01",
+														"header_size": "p",
+														"__globals__": {
+															"typography_typography": "globals/typography?id=sbnum",
+															"title_color": "globals/colors?id=secondary"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												}
+											],
+											"isInner": true
+										},
+										{
+											"id": "6c8b97a",
+											"elType": "container",
+											"settings": {
+												"content_width": "full",
+												"flex_direction": "column",
+												"padding": {
+													"unit": "px",
+													"top": "0",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": true
+												},
+												"flex_gap": {
+													"column": "0",
+													"row": "0",
+													"isLinked": true,
+													"unit": "px",
+													"size": 0
+												},
+												"_flex_size": "grow"
+											},
+											"elements": [
+												{
+													"id": "87e669c",
+													"elType": "widget",
+													"widgetType": "heading",
+													"settings": {
+														"title": "Every door individually alarmed",
+														"header_size": "h3",
+														"__globals__": {
+															"typography_typography": "globals/typography?id=secondary",
+															"title_color": "globals/colors?id=primary"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												},
+												{
+													"id": "630a987",
+													"elType": "widget",
+													"widgetType": "text-editor",
+													"settings": {
+														"editor": "<p>Not just the building. Each unit has its own contact alarm, cameras cover the corridors around the clock, and footage is kept for thirty days.</p>",
+														"_margin": {
+															"unit": "px",
+															"top": "9",
+															"right": "0",
+															"bottom": "0",
+															"left": "0",
+															"isLinked": false
+														},
+														"typography_typography": "custom",
+														"typography_font_size": {
+															"unit": "rem",
+															"size": 0.96,
+															"sizes": []
+														},
+														"typography_line_height": {
+															"unit": "em",
+															"size": 1.6,
+															"sizes": []
+														},
+														"__globals__": {
+															"text_color": "globals/colors?id=sbmuted"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												}
+											],
+											"isInner": true
+										}
+									],
+									"isInner": true
+								},
+								{
+									"id": "2aa13f9",
+									"elType": "container",
+									"settings": {
+										"content_width": "full",
+										"flex_direction": "row",
+										"padding": {
+											"unit": "px",
+											"top": "32",
+											"right": "0",
+											"bottom": "32",
+											"left": "0",
+											"isLinked": false
+										},
+										"flex_gap": {
+											"column": "20",
+											"row": "20",
+											"isLinked": true,
+											"unit": "px",
+											"size": 20
+										},
+										"flex_align_items": "stretch",
+										"flex_justify_content": "flex-start",
+										"flex_wrap": "nowrap"
+									},
+									"elements": [
+										{
+											"id": "6703234",
+											"elType": "container",
+											"settings": {
+												"content_width": "full",
+												"flex_direction": "column",
+												"padding": {
+													"unit": "px",
+													"top": "4",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": false
+												},
+												"flex_gap": {
+													"column": "0",
+													"row": "0",
+													"isLinked": true,
+													"unit": "px",
+													"size": 0
+												},
+												"width": {
+													"unit": "px",
+													"size": 58,
+													"sizes": []
+												},
+												"width_tablet": {
+													"unit": "px",
+													"size": 58,
+													"sizes": []
+												},
+												"width_mobile": {
+													"unit": "px",
+													"size": 44,
+													"sizes": []
+												},
+												"_flex_size": "none"
+											},
+											"elements": [
+												{
+													"id": "e265698",
+													"elType": "widget",
+													"widgetType": "heading",
+													"settings": {
+														"title": "02",
+														"header_size": "p",
+														"__globals__": {
+															"typography_typography": "globals/typography?id=sbnum",
+															"title_color": "globals/colors?id=secondary"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												}
+											],
+											"isInner": true
+										},
+										{
+											"id": "7f1f5a1",
+											"elType": "container",
+											"settings": {
+												"content_width": "full",
+												"flex_direction": "column",
+												"padding": {
+													"unit": "px",
+													"top": "0",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": true
+												},
+												"flex_gap": {
+													"column": "0",
+													"row": "0",
+													"isLinked": true,
+													"unit": "px",
+													"size": 0
+												},
+												"_flex_size": "grow"
+											},
+											"elements": [
+												{
+													"id": "9fafc95",
+													"elType": "widget",
+													"widgetType": "heading",
+													"settings": {
+														"title": "Held between 10 and 20°C",
+														"header_size": "h3",
+														"__globals__": {
+															"typography_typography": "globals/typography?id=secondary",
+															"title_color": "globals/colors?id=primary"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												},
+												{
+													"id": "ed198cb",
+													"elType": "widget",
+													"widgetType": "text-editor",
+													"settings": {
+														"editor": "<p>Every indoor unit is heated and ventilated, so documents, electronics and upholstery come out the way they went in — even after a Dutch winter.</p>",
+														"_margin": {
+															"unit": "px",
+															"top": "9",
+															"right": "0",
+															"bottom": "0",
+															"left": "0",
+															"isLinked": false
+														},
+														"typography_typography": "custom",
+														"typography_font_size": {
+															"unit": "rem",
+															"size": 0.96,
+															"sizes": []
+														},
+														"typography_line_height": {
+															"unit": "em",
+															"size": 1.6,
+															"sizes": []
+														},
+														"__globals__": {
+															"text_color": "globals/colors?id=sbmuted"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												}
+											],
+											"isInner": true
+										}
+									],
+									"isInner": true
+								},
+								{
+									"id": "75ce253",
+									"elType": "container",
+									"settings": {
+										"content_width": "full",
+										"flex_direction": "row",
+										"padding": {
+											"unit": "px",
+											"top": "32",
+											"right": "0",
+											"bottom": "32",
+											"left": "0",
+											"isLinked": false
+										},
+										"flex_gap": {
+											"column": "20",
+											"row": "20",
+											"isLinked": true,
+											"unit": "px",
+											"size": 20
+										},
+										"flex_align_items": "stretch",
+										"flex_justify_content": "flex-start",
+										"flex_wrap": "nowrap"
+									},
+									"elements": [
+										{
+											"id": "3a23494",
+											"elType": "container",
+											"settings": {
+												"content_width": "full",
+												"flex_direction": "column",
+												"padding": {
+													"unit": "px",
+													"top": "4",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": false
+												},
+												"flex_gap": {
+													"column": "0",
+													"row": "0",
+													"isLinked": true,
+													"unit": "px",
+													"size": 0
+												},
+												"width": {
+													"unit": "px",
+													"size": 58,
+													"sizes": []
+												},
+												"width_tablet": {
+													"unit": "px",
+													"size": 58,
+													"sizes": []
+												},
+												"width_mobile": {
+													"unit": "px",
+													"size": 44,
+													"sizes": []
+												},
+												"_flex_size": "none"
+											},
+											"elements": [
+												{
+													"id": "bd9e1b1",
+													"elType": "widget",
+													"widgetType": "heading",
+													"settings": {
+														"title": "03",
+														"header_size": "p",
+														"__globals__": {
+															"typography_typography": "globals/typography?id=sbnum",
+															"title_color": "globals/colors?id=secondary"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												}
+											],
+											"isInner": true
+										},
+										{
+											"id": "2602ee3",
+											"elType": "container",
+											"settings": {
+												"content_width": "full",
+												"flex_direction": "column",
+												"padding": {
+													"unit": "px",
+													"top": "0",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": true
+												},
+												"flex_gap": {
+													"column": "0",
+													"row": "0",
+													"isLinked": true,
+													"unit": "px",
+													"size": 0
+												},
+												"_flex_size": "grow"
+											},
+											"elements": [
+												{
+													"id": "c6a159c",
+													"elType": "widget",
+													"widgetType": "heading",
+													"settings": {
+														"title": "The price you were quoted",
+														"header_size": "h3",
+														"__globals__": {
+															"typography_typography": "globals/typography?id=secondary",
+															"title_color": "globals/colors?id=primary"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												},
+												{
+													"id": "b9e5f9f",
+													"elType": "widget",
+													"widgetType": "text-editor",
+													"settings": {
+														"editor": "<p>No admin fee, no deposit, and no increase in your first twelve months. If you move to a different size, you just pay the difference.</p>",
+														"_margin": {
+															"unit": "px",
+															"top": "9",
+															"right": "0",
+															"bottom": "0",
+															"left": "0",
+															"isLinked": false
+														},
+														"typography_typography": "custom",
+														"typography_font_size": {
+															"unit": "rem",
+															"size": 0.96,
+															"sizes": []
+														},
+														"typography_line_height": {
+															"unit": "em",
+															"size": 1.6,
+															"sizes": []
+														},
+														"__globals__": {
+															"text_color": "globals/colors?id=sbmuted"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												}
+											],
+											"isInner": true
+										}
+									],
+									"isInner": true
+								},
+								{
+									"id": "b49c634",
+									"elType": "container",
+									"settings": {
+										"content_width": "full",
+										"flex_direction": "row",
+										"padding": {
+											"unit": "px",
+											"top": "32",
+											"right": "0",
+											"bottom": "32",
+											"left": "0",
+											"isLinked": false
+										},
+										"flex_gap": {
+											"column": "20",
+											"row": "20",
+											"isLinked": true,
+											"unit": "px",
+											"size": 20
+										},
+										"flex_align_items": "stretch",
+										"flex_justify_content": "flex-start",
+										"flex_wrap": "nowrap"
+									},
+									"elements": [
+										{
+											"id": "74ea201",
+											"elType": "container",
+											"settings": {
+												"content_width": "full",
+												"flex_direction": "column",
+												"padding": {
+													"unit": "px",
+													"top": "4",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": false
+												},
+												"flex_gap": {
+													"column": "0",
+													"row": "0",
+													"isLinked": true,
+													"unit": "px",
+													"size": 0
+												},
+												"width": {
+													"unit": "px",
+													"size": 58,
+													"sizes": []
+												},
+												"width_tablet": {
+													"unit": "px",
+													"size": 58,
+													"sizes": []
+												},
+												"width_mobile": {
+													"unit": "px",
+													"size": 44,
+													"sizes": []
+												},
+												"_flex_size": "none"
+											},
+											"elements": [
+												{
+													"id": "7973728",
+													"elType": "widget",
+													"widgetType": "heading",
+													"settings": {
+														"title": "04",
+														"header_size": "p",
+														"__globals__": {
+															"typography_typography": "globals/typography?id=sbnum",
+															"title_color": "globals/colors?id=secondary"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												}
+											],
+											"isInner": true
+										},
+										{
+											"id": "2f93b79",
+											"elType": "container",
+											"settings": {
+												"content_width": "full",
+												"flex_direction": "column",
+												"padding": {
+													"unit": "px",
+													"top": "0",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": true
+												},
+												"flex_gap": {
+													"column": "0",
+													"row": "0",
+													"isLinked": true,
+													"unit": "px",
+													"size": 0
+												},
+												"_flex_size": "grow"
+											},
+											"elements": [
+												{
+													"id": "18fdd08",
+													"elType": "widget",
+													"widgetType": "heading",
+													"settings": {
+														"title": "Park at the door",
+														"header_size": "h3",
+														"__globals__": {
+															"typography_typography": "globals/typography?id=secondary",
+															"title_color": "globals/colors?id=primary"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												},
+												{
+													"id": "f90b28b",
+													"elType": "widget",
+													"widgetType": "text-editor",
+													"settings": {
+														"editor": "<p>Drive-up bays at all three facilities, with free trolleys and a covered loading area so you are never carrying boxes across an open yard in the rain.</p>",
+														"_margin": {
+															"unit": "px",
+															"top": "9",
+															"right": "0",
+															"bottom": "0",
+															"left": "0",
+															"isLinked": false
+														},
+														"typography_typography": "custom",
+														"typography_font_size": {
+															"unit": "rem",
+															"size": 0.96,
+															"sizes": []
+														},
+														"typography_line_height": {
+															"unit": "em",
+															"size": 1.6,
+															"sizes": []
+														},
+														"__globals__": {
+															"text_color": "globals/colors?id=sbmuted"
+														}
+													},
+													"elements": [],
+													"isInner": false
+												}
+											],
+											"isInner": true
+										}
+									],
+									"isInner": true
+								}
+							],
+							"isInner": true
+						},
+						{
+							"id": "d2bfad5",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": true
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
+							},
+							"elements": [
+								{
+									"id": "5124e04",
+									"elType": "widget",
+									"widgetType": "image",
+									"settings": {
+										"image": {
+											"url": "",
+											"id": "",
+											"size": "",
+											"alt": "Wide, clean corridor of self storage units",
+											"source": "library"
+										},
+										"image_size": "large",
+										"width": {
+											"unit": "%",
+											"size": 100,
+											"sizes": []
+										},
+										"_css_classes": "sb-e-cover",
+										"height": {
+											"unit": "px",
+											"size": 620,
+											"sizes": []
+										},
+										"height_tablet": {
+											"unit": "px",
+											"size": 520,
+											"sizes": []
+										},
+										"height_mobile": {
+											"unit": "px",
+											"size": 320,
+											"sizes": []
+										},
+										"object-fit": "cover",
+										"image_border_radius": {
+											"unit": "px",
+											"top": "6",
+											"right": "6",
+											"bottom": "6",
+											"left": "6",
+											"isLinked": true
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						}
+					],
+					"isInner": true
+				}
+			],
+			"isInner": false
+		}
+	],
+	"page_settings": [],
+	"version": "0.4",
+	"title": "Storebox Business Storage — Features (numbered list)",
+	"type": "section"
+}

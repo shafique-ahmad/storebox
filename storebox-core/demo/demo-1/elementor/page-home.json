@@ -2480,8 +2480,7 @@
 															"sizes": []
 														},
 														"overflow": "hidden",
-														"flex_justify_content": "flex-start",
-														"_element_id": ""
+														"flex_justify_content": "flex-start"
 													},
 													"elements": [],
 													"isInner": true
@@ -3141,8 +3140,7 @@
 											"sizes": []
 										},
 										"overflow": "hidden",
-										"flex_justify_content": "flex-start",
-										"_element_id": ""
+										"flex_justify_content": "flex-start"
 									},
 									"elements": [],
 									"isInner": true

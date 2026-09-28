@@ -1,0 +1,171 @@
+{
+	"content": [
+		{
+			"id": "d2565af",
+			"elType": "container",
+			"settings": {
+				"content_width": "boxed",
+				"flex_direction": "column",
+				"padding": {
+					"unit": "px",
+					"top": "64",
+					"right": "30",
+					"bottom": "60",
+					"left": "30",
+					"isLinked": false
+				},
+				"flex_gap": {
+					"column": "0",
+					"row": "0",
+					"isLinked": true,
+					"unit": "px",
+					"size": 0
+				},
+				"padding_tablet": {
+					"unit": "px",
+					"top": "54",
+					"right": "30",
+					"bottom": "51",
+					"left": "30",
+					"isLinked": false
+				},
+				"padding_mobile": {
+					"unit": "px",
+					"top": "44",
+					"right": "20",
+					"bottom": "44",
+					"left": "20",
+					"isLinked": false
+				},
+				"html_tag": "section",
+				"background_background": "classic",
+				"__globals__": {
+					"border_color": "globals/colors?id=sbborder"
+				},
+				"border_border": "solid",
+				"border_width": {
+					"unit": "px",
+					"top": "0",
+					"right": "0",
+					"bottom": "1",
+					"left": "0",
+					"isLinked": false
+				}
+			},
+			"elements": [
+				{
+					"id": "b3cc1ed",
+					"elType": "widget",
+					"widgetType": "text-editor",
+					"settings": {
+						"editor": "<a href=\"/\">Home</a> <span aria-hidden=\"true\">/</span> <span aria-current=\"page\">Page</span>",
+						"_margin": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "26",
+							"left": "0",
+							"isLinked": false
+						},
+						"typography_typography": "custom",
+						"typography_font_size": {
+							"unit": "rem",
+							"size": 0.82,
+							"sizes": []
+						},
+						"typography_line_height": {
+							"unit": "em",
+							"size": 1.5,
+							"sizes": []
+						},
+						"_css_classes": "sb-e-crumbs",
+						"__globals__": {
+							"text_color": "globals/colors?id=sbmuted"
+						}
+					},
+					"elements": [],
+					"isInner": false
+				},
+				{
+					"id": "9211ee6",
+					"elType": "widget",
+					"widgetType": "heading",
+					"settings": {
+						"title": "Eyebrow",
+						"header_size": "p",
+						"__globals__": {
+							"typography_typography": "globals/typography?id=accent",
+							"title_color": "globals/colors?id=sbmuted"
+						}
+					},
+					"elements": [],
+					"isInner": false
+				},
+				{
+					"id": "e59abae",
+					"elType": "widget",
+					"widgetType": "heading",
+					"settings": {
+						"title": "A page title that says what the page is for.",
+						"header_size": "h1",
+						"_margin": {
+							"unit": "px",
+							"top": "16",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": false
+						},
+						"_element_width": "initial",
+						"_element_custom_width": {
+							"unit": "px",
+							"size": 720,
+							"sizes": []
+						},
+						"_element_width_mobile": "inherit",
+						"__globals__": {
+							"typography_typography": "globals/typography?id=sbpage",
+							"title_color": "globals/colors?id=primary"
+						}
+					},
+					"elements": [],
+					"isInner": false
+				},
+				{
+					"id": "8ed83ac",
+					"elType": "widget",
+					"widgetType": "text-editor",
+					"settings": {
+						"editor": "<p>One or two sentences that tell visitors what they will find here.</p>",
+						"_margin": {
+							"unit": "px",
+							"top": "22",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": false
+						},
+						"_element_width": "initial",
+						"_element_custom_width": {
+							"unit": "px",
+							"size": 560,
+							"sizes": []
+						},
+						"_element_width_mobile": "inherit",
+						"__globals__": {
+							"typography_typography": "globals/typography?id=sblede",
+							"text_color": "globals/colors?id=sbmuted"
+						}
+					},
+					"elements": [],
+					"isInner": false
+				}
+			],
+			"isInner": false
+		}
+	],
+	"page_settings": [],
+	"version": "0.4",
+	"title": "Storebox Business Storage — Page header",
+	"type": "section"
+}

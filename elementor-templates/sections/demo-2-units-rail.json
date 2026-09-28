@@ -1,0 +1,83 @@
+{
+	"content": [
+		{
+			"id": "66c7e86",
+			"elType": "container",
+			"settings": {
+				"content_width": "boxed",
+				"flex_direction": "column",
+				"padding": {
+					"unit": "px",
+					"top": "106",
+					"right": "30",
+					"bottom": "106",
+					"left": "30",
+					"isLinked": false
+				},
+				"flex_gap": {
+					"column": "0",
+					"row": "0",
+					"isLinked": true,
+					"unit": "px",
+					"size": 0
+				},
+				"padding_tablet": {
+					"unit": "px",
+					"top": "90",
+					"right": "30",
+					"bottom": "90",
+					"left": "30",
+					"isLinked": false
+				},
+				"padding_mobile": {
+					"unit": "px",
+					"top": "76",
+					"right": "20",
+					"bottom": "76",
+					"left": "20",
+					"isLinked": false
+				},
+				"html_tag": "section",
+				"_element_id": "units"
+			},
+			"elements": [
+				{
+					"id": "0c106d2",
+					"elType": "widget",
+					"widgetType": "storebox-unit-grid",
+					"settings": {
+						"design": "",
+						"layout": "rail",
+						"source": "all",
+						"header": "yes",
+						"header_eyebrow": "Units &amp; prices",
+						"header_title": "Six sizes. One honest price list.",
+						"header_button_text": "See all availability",
+						"header_button_url": {
+							"url": "#",
+							"is_external": "",
+							"nofollow": ""
+						},
+						"description": "excerpt",
+						"subline": "none",
+						"cta_text": "Reserve",
+						"waitlist_text": "Join list",
+						"full_label": "Waitlist",
+						"hint": "Drag, scroll or use the arrows",
+						"autoplay": 4000,
+						"show_arrows": "yes",
+						"show_progress": "yes",
+						"count": 6
+					},
+					"elements": [],
+					"isInner": false
+				}
+			],
+			"isInner": false
+		}
+	],
+	"page_settings": [],
+	"version": "0.4",
+	"title": "Storebox Business Storage — Units rail",
+	"type": "section"
+}

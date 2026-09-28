@@ -269,6 +269,7 @@ namespace Elementor\Modules\DynamicTags {
 		const TEXT_CATEGORY   = 'text';
 		const NUMBER_CATEGORY = 'number';
 		const URL_CATEGORY    = 'url';
+		const IMAGE_CATEGORY  = 'image';
 	}
 }
 
@@ -377,13 +378,13 @@ namespace {
 	}
 
 	require_once STOREBOX_CORE_DIR . 'includes/elementor/class-tags.php';
-	foreach ( array( 'Unit_Field', 'Location_Field', 'Location_Link', 'Phone', 'Read_Time' ) as $class ) {
+	foreach ( array( 'Unit_Field', 'Location_Field', 'Location_Link', 'Location_Image', 'Phone', 'Read_Time' ) as $class ) {
 		$fqcn = '\\Storebox_Core\\Elementor\\Tags\\' . $class;
 		$tag  = new $fqcn();
 		printf( "%-26s %-4s\n", $tag->get_name(), $tag->errors ? 'FAIL' : 'ok' );
 		if ( $storebox_render ) {
 			if ( method_exists( $tag, 'get_value' ) ) {
-				echo '  value: ' . $tag->get_value() . "\n";
+				echo '  value: ' . wp_json_encode( $tag->get_value() ) . "\n";
 			} else {
 				ob_start();
 				$tag->render();

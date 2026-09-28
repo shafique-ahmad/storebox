@@ -469,6 +469,30 @@ function accordion( items, o = {} ) {
 	);
 }
 
+/**
+ * Dynamic tag reference, as stored in __dynamic__.
+ *
+ * @param {string} name     Tag name.
+ * @param {Object} settings Tag settings (before/after/fallback included).
+ */
+function tag( name, settings = {} ) {
+	return '[elementor-tag id="' + id() + '" name="' + name + '" settings="' + encodeURIComponent( JSON.stringify( settings ) ) + '"]';
+}
+
+/** Makes a control of an element dynamic. */
+function dyn( el, key, tagValue ) {
+	el.settings.__dynamic__ = Object.assign( el.settings.__dynamic__ || {}, { [ key ]: tagValue } );
+	return el;
+}
+
+/** Hides an element on the given devices. */
+function hide( el, devices ) {
+	devices.forEach( ( device ) => {
+		el.settings[ 'hide_' + device ] = 'hidden-' + device;
+	} );
+	return el;
+}
+
 function spacer( height ) {
 	return widget( 'spacer', { space: px( height ) } );
 }
@@ -507,6 +531,9 @@ module.exports = {
 	icon,
 	counter,
 	accordion,
+	tag,
+	dyn,
+	hide,
 	spacer,
 	divider,
 };

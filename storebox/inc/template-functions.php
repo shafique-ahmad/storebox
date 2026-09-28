@@ -89,6 +89,8 @@ function storebox_body_classes( $classes ) {
 
 	if ( storebox_has_elementor_location( 'header' ) ) {
 		$classes[] = 'sb-header-elementor';
+		// Lets an Elementor header with the sb-e-header-overlay class follow the page setting.
+		$classes[] = storebox_header_is_transparent() ? 'sb-header-transparent' : 'sb-header-solid';
 	} else {
 		$classes[] = 'sb-header-' . storebox_header_layout();
 		$classes[] = storebox_header_is_transparent() ? 'sb-header-transparent' : 'sb-header-solid';

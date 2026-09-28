@@ -859,7 +859,80 @@
 			}
 		}
 	],
-	"templates": [],
+	"templates": [
+		{
+			"key": "header",
+			"title": "Storebox — Header",
+			"type": "header",
+			"conditions": [
+				"include/general"
+			],
+			"elementor": "elementor/template-header.json"
+		},
+		{
+			"key": "footer",
+			"title": "Storebox — Footer",
+			"type": "footer",
+			"conditions": [
+				"include/general"
+			],
+			"elementor": "elementor/template-footer.json"
+		},
+		{
+			"key": "single-post",
+			"title": "Storebox — Single post",
+			"type": "single-post",
+			"conditions": [
+				"include/singular/post"
+			],
+			"elementor": "elementor/template-single-post.json"
+		},
+		{
+			"key": "archive",
+			"title": "Storebox — Blog and archives",
+			"type": "archive",
+			"conditions": [
+				"include/archive"
+			],
+			"elementor": "elementor/template-archive.json"
+		},
+		{
+			"key": "search",
+			"title": "Storebox — Search results",
+			"type": "search-results",
+			"conditions": [
+				"include/archive/search"
+			],
+			"elementor": "elementor/template-search.json"
+		},
+		{
+			"key": "404",
+			"title": "Storebox — 404",
+			"type": "error-404",
+			"conditions": [
+				"include/singular/not_found404"
+			],
+			"elementor": "elementor/template-404.json"
+		},
+		{
+			"key": "single-unit",
+			"title": "Storebox — Single unit",
+			"type": "single-post",
+			"conditions": [
+				"include/singular/sb_unit"
+			],
+			"elementor": "elementor/template-single-unit.json"
+		},
+		{
+			"key": "single-location",
+			"title": "Storebox — Single location",
+			"type": "single-post",
+			"conditions": [
+				"include/singular/sb_location"
+			],
+			"elementor": "elementor/template-single-location.json"
+		}
+	],
 	"menus": [
 		{
 			"key": "primary",

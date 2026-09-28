@@ -1,0 +1,434 @@
+{
+	"content": [
+		{
+			"id": "58b0100",
+			"elType": "container",
+			"settings": {
+				"content_width": "boxed",
+				"flex_direction": "column",
+				"padding": {
+					"unit": "px",
+					"top": "104",
+					"right": "28",
+					"bottom": "104",
+					"left": "28",
+					"isLinked": false
+				},
+				"flex_gap": {
+					"column": "0",
+					"row": "0",
+					"isLinked": true,
+					"unit": "px",
+					"size": 0
+				},
+				"padding_tablet": {
+					"unit": "px",
+					"top": "88",
+					"right": "28",
+					"bottom": "88",
+					"left": "28",
+					"isLinked": false
+				},
+				"padding_mobile": {
+					"unit": "px",
+					"top": "75",
+					"right": "20",
+					"bottom": "75",
+					"left": "20",
+					"isLinked": false
+				},
+				"html_tag": "section",
+				"background_background": "classic",
+				"__globals__": {
+					"background_color": "globals/colors?id=sbsurface"
+				},
+				"_element_id": "calc"
+			},
+			"elements": [
+				{
+					"id": "d213251",
+					"elType": "container",
+					"settings": {
+						"content_width": "full",
+						"flex_direction": "row",
+						"padding": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": true
+						},
+						"flex_gap": {
+							"column": "64",
+							"row": "64",
+							"isLinked": true,
+							"unit": "px",
+							"size": 64
+						},
+						"flex_align_items": "center",
+						"flex_justify_content": "flex-start",
+						"flex_wrap": "nowrap",
+						"flex_direction_tablet": "column",
+						"flex_direction_mobile": "column",
+						"flex_gap_tablet": {
+							"column": "44",
+							"row": "44",
+							"isLinked": true,
+							"unit": "px",
+							"size": 44
+						}
+					},
+					"elements": [
+						{
+							"id": "e3d7f5a",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": true
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 48,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
+							},
+							"elements": [
+								{
+									"id": "9425598",
+									"elType": "widget",
+									"widgetType": "image",
+									"settings": {
+										"image": {
+											"url": "",
+											"id": "",
+											"size": "",
+											"alt": "",
+											"source": "library"
+										},
+										"image_size": "large",
+										"width": {
+											"unit": "%",
+											"size": 100,
+											"sizes": []
+										},
+										"_css_classes": "sb-e-cover",
+										"height": {
+											"unit": "px",
+											"size": 700,
+											"sizes": []
+										},
+										"height_tablet": {
+											"unit": "px",
+											"size": 520,
+											"sizes": []
+										},
+										"height_mobile": {
+											"unit": "px",
+											"size": 300,
+											"sizes": []
+										},
+										"object-fit": "cover",
+										"image_border_radius": {
+											"unit": "px",
+											"top": "22",
+											"right": "22",
+											"bottom": "22",
+											"left": "22",
+											"isLinked": true
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "f30b338",
+									"elType": "container",
+									"settings": {
+										"content_width": "full",
+										"flex_direction": "column",
+										"padding": {
+											"unit": "px",
+											"top": "20",
+											"right": "24",
+											"bottom": "20",
+											"left": "24",
+											"isLinked": false
+										},
+										"flex_gap": {
+											"column": "0",
+											"row": "0",
+											"isLinked": true,
+											"unit": "px",
+											"size": 0
+										},
+										"background_background": "classic",
+										"background_color": "#FFFFFF",
+										"border_radius": {
+											"unit": "px",
+											"top": "14",
+											"right": "14",
+											"bottom": "14",
+											"left": "14",
+											"isLinked": true
+										},
+										"width": {
+											"unit": "px",
+											"size": 300,
+											"sizes": []
+										},
+										"width_mobile": {
+											"unit": "%",
+											"size": 88,
+											"sizes": []
+										},
+										"margin": {
+											"unit": "px",
+											"top": "-126",
+											"right": "-22",
+											"bottom": "0",
+											"left": "0",
+											"isLinked": false
+										},
+										"margin_tablet": {
+											"unit": "px",
+											"top": "-126",
+											"right": "20",
+											"bottom": "0",
+											"left": "0",
+											"isLinked": false
+										},
+										"margin_mobile": {
+											"unit": "px",
+											"top": "-40",
+											"right": "0",
+											"bottom": "0",
+											"left": "20",
+											"isLinked": false
+										},
+										"_flex_align_self": "flex-end",
+										"_flex_align_self_mobile": "flex-start",
+										"z_index": 2,
+										"box_shadow_box_shadow_type": "yes",
+										"box_shadow_box_shadow": {
+											"horizontal": 0,
+											"vertical": 22,
+											"blur": 50,
+											"spread": 0,
+											"color": "rgba(13,29,38,0.2)"
+										}
+									},
+									"elements": [
+										{
+											"id": "123540f",
+											"elType": "widget",
+											"widgetType": "heading",
+											"settings": {
+												"title": "30 sec",
+												"header_size": "p",
+												"__globals__": {
+													"typography_typography": "globals/typography?id=sbbig",
+													"title_color": "globals/colors?id=primary"
+												}
+											},
+											"elements": [],
+											"isInner": false
+										},
+										{
+											"id": "d3db9ea",
+											"elType": "widget",
+											"widgetType": "text-editor",
+											"settings": {
+												"editor": "<p>Average time to a size and a price</p>",
+												"_margin": {
+													"unit": "px",
+													"top": "5",
+													"right": "0",
+													"bottom": "0",
+													"left": "0",
+													"isLinked": false
+												},
+												"typography_typography": "custom",
+												"typography_font_size": {
+													"unit": "rem",
+													"size": 0.82,
+													"sizes": []
+												},
+												"typography_line_height": {
+													"unit": "em",
+													"size": 1.5,
+													"sizes": []
+												},
+												"__globals__": {
+													"text_color": "globals/colors?id=sbmuted"
+												}
+											},
+											"elements": [],
+											"isInner": false
+										}
+									],
+									"isInner": true
+								}
+							],
+							"isInner": true
+						},
+						{
+							"id": "c3463df",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "0",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": true
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 52,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
+							},
+							"elements": [
+								{
+									"id": "de68c5c",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "Size calculator",
+										"header_size": "p",
+										"_css_classes": "sb-e-eyebrow",
+										"__globals__": {
+											"typography_typography": "globals/typography?id=accent",
+											"title_color": "globals/colors?id=accent"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "cd32c5a",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "Stop guessing how much space you need.",
+										"header_size": "h2",
+										"_margin": {
+											"unit": "px",
+											"top": "18",
+											"right": "0",
+											"bottom": "20",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=sbh2",
+											"title_color": "globals/colors?id=primary"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "03c6209",
+									"elType": "widget",
+									"widgetType": "text-editor",
+									"settings": {
+										"editor": "<p>Most people overpay by renting a size too big. Add what you're storing and we'll tell you exactly what fits.</p>",
+										"_margin": {
+											"unit": "px",
+											"top": "0",
+											"right": "0",
+											"bottom": "30",
+											"left": "0",
+											"isLinked": false
+										},
+										"_element_width": "initial",
+										"_element_custom_width": {
+											"unit": "px",
+											"size": 560,
+											"sizes": []
+										},
+										"_element_width_mobile": "inherit",
+										"__globals__": {
+											"typography_typography": "globals/typography?id=sblede",
+											"text_color": "globals/colors?id=sbmuted"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "ca4fa27",
+									"elType": "widget",
+									"widgetType": "storebox-size-calculator",
+									"settings": {
+										"design": "",
+										"button_url": {
+											"url": "#",
+											"is_external": "",
+											"nofollow": ""
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						}
+					],
+					"isInner": true
+				}
+			],
+			"isInner": false
+		}
+	],
+	"page_settings": [],
+	"version": "0.4",
+	"title": "Storebox Self Storage — Size calculator",
+	"type": "section"
+}

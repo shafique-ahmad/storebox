@@ -24,7 +24,7 @@ module.exports = ( D, B ) => {
 				classes: 'sb-e-overlay-top',
 			},
 			[
-				C.small( '<a href="' + url.home + '">Home</a>' + ( o.parent ? ' <span aria-hidden="true">/</span> <a href="' + o.parent[ 1 ] + '">' + o.parent[ 0 ] + '</a>' : '' ) + ' <span aria-hidden="true">/</span> <span aria-current="page">' + o.crumb + '</span>', { color: null, colorHex: 'rgba(255,255,255,0.72)', size: 0.84, margin: [ 0, 0, 22, 0 ], extra: { _css_classes: 'sb-e-crumbs' } } ),
+				C.small( '<a href="' + url.home + '">Home</a>' + ( o.parent ? ' <span aria-hidden="true">/</span> <a href="' + o.parent[ 1 ] + '">' + o.parent[ 0 ] + '</a>' : '' ) + ' <span aria-hidden="true">/</span> <span aria-current="page">' + o.crumb + '</span>', { color: null, colorHex: 'rgba(255,255,255,0.72)', size: 0.84, margin: [ 0, 0, 22, 0 ], extra: { _css_classes: 'sb-e-crumbs sb-e-crumbs--on-dark' } } ),
 				C.eyebrow( D, o.eyebrow, { onDark: true } ),
 				E.heading( o.title, { tag: 'h1', typo: 'sbpage', color: 'sbwhite', margin: [ 16, 0, 0, 0 ], width: 760 } ),
 				o.lede ? E.text( o.lede, { typo: 'sblede', colorHex: 'rgba(255,255,255,0.76)', margin: [ 20, 0, 0, 0 ], width: 600 } ) : null,
@@ -232,18 +232,15 @@ module.exports = ( D, B ) => {
 					radius: D.radiusLg,
 					pad: o.photo ? [ 0, 0, 0, 0 ] : [ 26, 26, 26, 26 ],
 					bg: o.photo ? { image: o.photo } : ( o.bg || { global: 'sbsurface' } ),
-					extra: Object.assign(
-						{
-							width: E.pct( o.w ),
-							width_tablet: E.pct( o.wt || o.w ),
-							width_mobile: E.pct( 100 ),
-							min_height: E.px( o.h || 204 ),
-							min_height_mobile: E.px( o.photo ? 220 : 186 ),
-							overflow: 'hidden',
-							flex_justify_content: o.tall ? 'space-between' : 'flex-start',
-						},
-						o.photo ? { _element_id: '' } : {}
-					),
+					extra: {
+						width: E.pct( o.w ),
+						width_tablet: E.pct( o.wt || o.w ),
+						width_mobile: E.pct( 100 ),
+						min_height: E.px( o.h || 204 ),
+						min_height_mobile: E.px( o.photo ? 220 : 186 ),
+						overflow: 'hidden',
+						flex_justify_content: o.tall ? 'space-between' : 'flex-start',
+					},
 				},
 				children
 			);
@@ -258,13 +255,12 @@ module.exports = ( D, B ) => {
 				] ),
 			];
 		};
-		const fixTitle = ( list ) => list; // Titles keep the global font; size set in the heading.
 
 		return E.section( { pad: [ D.secHome, D.secHome ], id: 'why' }, [
 			C.head( D, { eyebrow: 'Why StoreBox', title: 'The boring things, done properly.', lede: 'Dry units, real security and prices that don\'t creep up after three months.' } ),
 			E.col( { gap: 20 }, [
 				E.row( { gap: 20, stack: 'mobile' }, [
-					cell( { w: 25, wt: 34, h: 428, tall: true, bg: { global: 'primary' } }, fixTitle( feature( 'fas fa-shield-alt', 'Alarmed, monitored, recorded', 'Every unit door is individually alarmed. Cameras cover the corridors and entrances around the clock, and footage is kept for 30 days.', 'dark' ) ) ),
+					cell( { w: 25, wt: 34, h: 428, tall: true, bg: { global: 'primary' } }, feature( 'fas fa-shield-alt', 'Alarmed, monitored, recorded', 'Every unit door is individually alarmed. Cameras cover the corridors and entrances around the clock, and footage is kept for 30 days.', 'dark' ) ),
 					E.col( { w: 75, gap: 20, extra: { width_tablet: E.pct( 66 ) } }, [
 						E.row( { gap: 20, stack: 'mobile' }, [
 							cell( { w: 66.66, photo: 'unit-open-door' }, [] ),

@@ -31,6 +31,7 @@ class Module {
 		'unit-booking'    => 'Unit_Booking',
 		'location-grid'   => 'Location_Grid',
 		'location-facts'  => 'Location_Facts',
+		'location-tags'   => 'Location_Tags',
 		'opening-hours'   => 'Opening_Hours',
 		'location-map'    => 'Location_Map',
 		'size-calculator' => 'Size_Calculator',
@@ -96,7 +97,7 @@ class Module {
 			)
 		);
 
-		foreach ( array( 'Unit_Field', 'Location_Field', 'Location_Link', 'Phone', 'Read_Time' ) as $class ) {
+		foreach ( array( 'Unit_Field', 'Location_Field', 'Location_Link', 'Location_Image', 'Phone', 'Read_Time' ) as $class ) {
 			$class = __NAMESPACE__ . '\\Tags\\' . $class;
 			$dynamic_tags->register( new $class() );
 		}

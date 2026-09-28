@@ -1383,17 +1383,140 @@ h6 {
 	border-bottom-color: rgba(255, 255, 255, .12);
 }
 
-/* sb-e-faq (Accordion): matches the Storebox question list. */
-.sb-e-faq .e-n-accordion-item {
-	border-bottom: 1px solid var(--sb-border);
+/* sb-e-faq (Accordion): questions separated by rules, no boxes. */
+.sb-e-faq .elementor-accordion-item {
+	box-shadow: 0 1px 0 var(--sb-border);
 }
 
-.sb-e-faq .e-n-accordion-item-title {
+.sb-e-faq .elementor-accordion-item + .elementor-accordion-item {
+	margin-top: 0;
+}
+
+.sb-e-faq .elementor-tab-title {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 24px;
 	cursor: pointer;
 }
 
-.sb-e-faq .e-n-accordion-item-title-icon svg {
-	transition: transform .25s var(--sb-ease);
+.sb-e-faq .elementor-tab-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.sb-e-faq .elementor-accordion-icon {
+	flex: none;
+	margin-top: 2px;
+}
+
+.sb-e-faq .elementor-tab-content p {
+	max-width: 68ch;
+}
+
+.sb-e-faq--ruled .elementor-accordion-item:first-child {
+	box-shadow: 0 -1px 0 var(--sb-border), 0 1px 0 var(--sb-border);
+}
+
+/* sb-e-counter-left (Counter): number and caption aligned left. */
+.elementor-widget-counter.sb-e-counter-left .elementor-counter {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.elementor-widget-counter.sb-e-counter-left .elementor-counter-number-wrapper {
+	justify-content: flex-start;
+	order: 1;
+}
+
+.elementor-widget-counter.sb-e-counter-left .elementor-counter-number-prefix,
+.elementor-widget-counter.sb-e-counter-left .elementor-counter-number-suffix {
+	flex-grow: 0;
+	text-align: left;
+}
+
+.elementor-widget-counter.sb-e-counter-left .elementor-counter-title {
+	order: 2;
+	margin-top: 10px;
+	text-align: left;
+}
+
+/* sb-e-crumbs (Text): breadcrumb trail. Add sb-e-crumbs--on-dark on dark heroes. */
+.sb-e-crumbs a {
+	color: inherit;
+	text-decoration: none;
+	transition: color .2s;
+}
+
+.sb-e-crumbs a:hover,
+.sb-e-crumbs a:focus-visible {
+	color: var(--sb-primary);
+	text-decoration: underline;
+}
+
+.sb-e-crumbs span[aria-hidden] {
+	margin: 0 6px;
+	opacity: .5;
+}
+
+.sb-e-crumbs--on-dark a:hover,
+.sb-e-crumbs--on-dark a:focus-visible {
+	color: var(--sb-secondary);
+	text-decoration: none;
+}
+
+.sb-e-crumbs--on-dark [aria-current] {
+	color: #fff;
+}
+
+/* sb-e-prose (Text): links inside running text. */
+.sb-e-prose a {
+	color: var(--sb-primary);
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: var(--sb-secondary);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+/* sb-e-way (Container set to HTML tag "a"): contact card link. */
+a.e-con.sb-e-way {
+	color: inherit;
+	text-decoration: none;
+	transition: filter .2s;
+}
+
+a.e-con.sb-e-way:hover,
+a.e-con.sb-e-way:focus-visible {
+	filter: brightness(.965);
+}
+
+/* sb-e-header-overlay (Container in an Elementor Pro header): sits over the
+   first section and turns solid after scrolling (see storebox.js). */
+.e-con.sb-e-header-overlay {
+	position: fixed;
+	top: var(--wp-admin--admin-bar--height, 0px);
+	right: 0;
+	left: 0;
+	z-index: 100;
+	transition: background-color .35s var(--sb-ease), box-shadow .35s var(--sb-ease), min-height .35s var(--sb-ease);
+}
+
+.e-con.sb-e-header-overlay.is-solid {
+	--min-height: 72px;
+	background-color: rgba(22, 48, 63, .97);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .08);
+	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
+}
+
+/* sb-e-logo (Container): the three-bar mark next to the site name. */
+.sb-e-logo .sb-e-logo__bar {
+	--min-height: 5px;
+	border-radius: 2px;
 }
 
 /* sb-e-pill (Heading): small rounded tag. */

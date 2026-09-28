@@ -1,0 +1,554 @@
+{
+	"content": [
+		{
+			"id": "8b7a046",
+			"elType": "container",
+			"settings": {
+				"content_width": "boxed",
+				"flex_direction": "column",
+				"padding": {
+					"unit": "px",
+					"top": "78",
+					"right": "28",
+					"bottom": "104",
+					"left": "28",
+					"isLinked": false
+				},
+				"flex_gap": {
+					"column": "0",
+					"row": "0",
+					"isLinked": true,
+					"unit": "px",
+					"size": 0
+				},
+				"padding_tablet": {
+					"unit": "px",
+					"top": "66",
+					"right": "28",
+					"bottom": "88",
+					"left": "28",
+					"isLinked": false
+				},
+				"padding_mobile": {
+					"unit": "px",
+					"top": "56",
+					"right": "20",
+					"bottom": "75",
+					"left": "20",
+					"isLinked": false
+				},
+				"html_tag": "section",
+				"_element_id": "how"
+			},
+			"elements": [
+				{
+					"id": "8836faa",
+					"elType": "container",
+					"settings": {
+						"content_width": "full",
+						"flex_direction": "column",
+						"padding": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": true
+						},
+						"flex_gap": {
+							"column": "0",
+							"row": "0",
+							"isLinked": true,
+							"unit": "px",
+							"size": 0
+						},
+						"margin": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "52",
+							"left": "0",
+							"isLinked": false
+						}
+					},
+					"elements": [
+						{
+							"id": "a744dde",
+							"elType": "widget",
+							"widgetType": "heading",
+							"settings": {
+								"title": "How it works",
+								"header_size": "p",
+								"_css_classes": "sb-e-eyebrow",
+								"__globals__": {
+									"typography_typography": "globals/typography?id=accent",
+									"title_color": "globals/colors?id=accent"
+								}
+							},
+							"elements": [],
+							"isInner": false
+						},
+						{
+							"id": "1fb42dc",
+							"elType": "widget",
+							"widgetType": "heading",
+							"settings": {
+								"title": "Moved in by this afternoon.",
+								"header_size": "h2",
+								"_margin": {
+									"unit": "px",
+									"top": "18",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"__globals__": {
+									"typography_typography": "globals/typography?id=sbh2",
+									"title_color": "globals/colors?id=primary"
+								}
+							},
+							"elements": [],
+							"isInner": false
+						},
+						{
+							"id": "71bf657",
+							"elType": "widget",
+							"widgetType": "text-editor",
+							"settings": {
+								"editor": "<p>No viewings, no paperwork, no waiting on a callback. Three steps and the unit is yours.</p>",
+								"_margin": {
+									"unit": "px",
+									"top": "20",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"_element_width": "initial",
+								"_element_custom_width": {
+									"unit": "px",
+									"size": 560,
+									"sizes": []
+								},
+								"_element_width_mobile": "inherit",
+								"__globals__": {
+									"typography_typography": "globals/typography?id=sblede",
+									"text_color": "globals/colors?id=sbmuted"
+								}
+							},
+							"elements": [],
+							"isInner": false
+						}
+					],
+					"isInner": true
+				},
+				{
+					"id": "98d064a",
+					"elType": "container",
+					"settings": {
+						"content_width": "full",
+						"flex_direction": "row",
+						"padding": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": true
+						},
+						"flex_gap": {
+							"column": "26",
+							"row": "26",
+							"isLinked": true,
+							"unit": "px",
+							"size": 26
+						},
+						"flex_align_items": "stretch",
+						"flex_justify_content": "flex-start",
+						"flex_wrap": "nowrap",
+						"flex_direction_tablet": "column",
+						"flex_direction_mobile": "column"
+					},
+					"elements": [
+						{
+							"id": "b5e38c7",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "30",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 33.33,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"border_border": "solid",
+								"border_width": {
+									"unit": "px",
+									"top": "2",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"__globals__": {
+									"border_color": "globals/colors?id=sbborder"
+								}
+							},
+							"elements": [
+								{
+									"id": "8812dc2",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "01",
+										"header_size": "p",
+										"_margin": {
+											"unit": "px",
+											"top": "0",
+											"right": "0",
+											"bottom": "16",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=sbnum",
+											"title_color": "globals/colors?id=secondary"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "dd71e6f",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "Work out your size",
+										"header_size": "h3",
+										"_margin": {
+											"unit": "px",
+											"top": "0",
+											"right": "0",
+											"bottom": "10",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=secondary",
+											"title_color": "globals/colors?id=primary"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "0eb08f7",
+									"elType": "widget",
+									"widgetType": "text-editor",
+									"settings": {
+										"editor": "<p>Tell the calculator what you're storing. It gives you a size and a price in about thirty seconds — no phone call needed.</p>",
+										"typography_typography": "custom",
+										"typography_font_size": {
+											"unit": "rem",
+											"size": 0.97,
+											"sizes": []
+										},
+										"typography_line_height": {
+											"unit": "em",
+											"size": 1.6,
+											"sizes": []
+										},
+										"__globals__": {
+											"text_color": "globals/colors?id=sbmuted"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						},
+						{
+							"id": "1ae72e4",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "30",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 33.33,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"border_border": "solid",
+								"border_width": {
+									"unit": "px",
+									"top": "2",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"__globals__": {
+									"border_color": "globals/colors?id=sbborder"
+								}
+							},
+							"elements": [
+								{
+									"id": "bc97b07",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "02",
+										"header_size": "p",
+										"_margin": {
+											"unit": "px",
+											"top": "0",
+											"right": "0",
+											"bottom": "16",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=sbnum",
+											"title_color": "globals/colors?id=secondary"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "3cdd465",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "Reserve it online",
+										"header_size": "h3",
+										"_margin": {
+											"unit": "px",
+											"top": "0",
+											"right": "0",
+											"bottom": "10",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=secondary",
+											"title_color": "globals/colors?id=primary"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "ddb4d3d",
+									"elType": "widget",
+									"widgetType": "text-editor",
+									"settings": {
+										"editor": "<p>Pick your facility and move-in date. We hold the unit for seven days, free, while you sort the van.</p>",
+										"typography_typography": "custom",
+										"typography_font_size": {
+											"unit": "rem",
+											"size": 0.97,
+											"sizes": []
+										},
+										"typography_line_height": {
+											"unit": "em",
+											"size": 1.6,
+											"sizes": []
+										},
+										"__globals__": {
+											"text_color": "globals/colors?id=sbmuted"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						},
+						{
+							"id": "6424713",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "30",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"flex_gap": {
+									"column": "0",
+									"row": "0",
+									"isLinked": true,
+									"unit": "px",
+									"size": 0
+								},
+								"width": {
+									"unit": "%",
+									"size": 33.33,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								},
+								"border_border": "solid",
+								"border_width": {
+									"unit": "px",
+									"top": "2",
+									"right": "0",
+									"bottom": "0",
+									"left": "0",
+									"isLinked": false
+								},
+								"__globals__": {
+									"border_color": "globals/colors?id=sbborder"
+								}
+							},
+							"elements": [
+								{
+									"id": "ece997c",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "03",
+										"header_size": "p",
+										"_margin": {
+											"unit": "px",
+											"top": "0",
+											"right": "0",
+											"bottom": "16",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=sbnum",
+											"title_color": "globals/colors?id=secondary"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "d2b1450",
+									"elType": "widget",
+									"widgetType": "heading",
+									"settings": {
+										"title": "Collect your PIN",
+										"header_size": "h3",
+										"_margin": {
+											"unit": "px",
+											"top": "0",
+											"right": "0",
+											"bottom": "10",
+											"left": "0",
+											"isLinked": false
+										},
+										"__globals__": {
+											"typography_typography": "globals/typography?id=secondary",
+											"title_color": "globals/colors?id=primary"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								},
+								{
+									"id": "1a4b00c",
+									"elType": "widget",
+									"widgetType": "text-editor",
+									"settings": {
+										"editor": "<p>Sign at reception or on your phone, fit your own padlock, and you're in. Trolleys and the loading bay are free.</p>",
+										"typography_typography": "custom",
+										"typography_font_size": {
+											"unit": "rem",
+											"size": 0.97,
+											"sizes": []
+										},
+										"typography_line_height": {
+											"unit": "em",
+											"size": 1.6,
+											"sizes": []
+										},
+										"__globals__": {
+											"text_color": "globals/colors?id=sbmuted"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						}
+					],
+					"isInner": true
+				}
+			],
+			"isInner": false
+		}
+	],
+	"page_settings": [],
+	"version": "0.4",
+	"title": "Storebox Self Storage — How it works",
+	"type": "section"
+}

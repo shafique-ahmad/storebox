@@ -1,0 +1,384 @@
+{
+	"content": [
+		{
+			"id": "08d79ce",
+			"elType": "container",
+			"settings": {
+				"content_width": "boxed",
+				"flex_direction": "column",
+				"padding": {
+					"unit": "px",
+					"top": "0",
+					"right": "28",
+					"bottom": "0",
+					"left": "28",
+					"isLinked": false
+				},
+				"flex_gap": {
+					"column": "0",
+					"row": "0",
+					"isLinked": true,
+					"unit": "px",
+					"size": 0
+				},
+				"padding_tablet": {
+					"unit": "px",
+					"top": "0",
+					"right": "28",
+					"bottom": "0",
+					"left": "28",
+					"isLinked": false
+				},
+				"padding_mobile": {
+					"unit": "px",
+					"top": "0",
+					"right": "20",
+					"bottom": "0",
+					"left": "20",
+					"isLinked": false
+				},
+				"html_tag": "div",
+				"margin": {
+					"unit": "px",
+					"top": "-56",
+					"right": "0",
+					"bottom": "0",
+					"left": "0",
+					"isLinked": false
+				},
+				"z_index": 3
+			},
+			"elements": [
+				{
+					"id": "972a188",
+					"elType": "container",
+					"settings": {
+						"content_width": "full",
+						"flex_direction": "row",
+						"padding": {
+							"unit": "px",
+							"top": "0",
+							"right": "0",
+							"bottom": "0",
+							"left": "0",
+							"isLinked": true
+						},
+						"flex_wrap": "wrap",
+						"flex_gap": {
+							"column": "1",
+							"row": "1",
+							"isLinked": true,
+							"unit": "px",
+							"size": 1
+						},
+						"background_background": "classic",
+						"__globals__": {
+							"background_color": "globals/colors?id=sbborder"
+						},
+						"border_radius": {
+							"unit": "px",
+							"top": "22",
+							"right": "22",
+							"bottom": "22",
+							"left": "22",
+							"isLinked": true
+						},
+						"overflow": "hidden",
+						"box_shadow_box_shadow_type": "yes",
+						"box_shadow_box_shadow": {
+							"horizontal": 0,
+							"vertical": 26,
+							"blur": 60,
+							"spread": 0,
+							"color": "rgba(13,29,38,0.18)"
+						}
+					},
+					"elements": [
+						{
+							"id": "f1db00d",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "32",
+									"right": "28",
+									"bottom": "32",
+									"left": "28",
+									"isLinked": false
+								},
+								"flex_gap": {
+									"column": "10",
+									"row": "10",
+									"isLinked": true,
+									"unit": "px",
+									"size": 10
+								},
+								"background_background": "classic",
+								"background_color": "#FFFFFF",
+								"width": {
+									"unit": "%",
+									"size": 20,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"_flex_size": "grow",
+								"css_classes": "sb-e-dash"
+							},
+							"elements": [
+								{
+									"id": "4b34aa0",
+									"elType": "widget",
+									"widgetType": "counter",
+									"settings": {
+										"starting_number": 0,
+										"ending_number": 3,
+										"suffix": "",
+										"prefix": "",
+										"duration": 1800,
+										"thousand_separator": "yes",
+										"thousand_separator_char": ",",
+										"title": "Facilities across Noord-Holland",
+										"_css_classes": "sb-e-counter-left",
+										"__globals__": {
+											"number_color": "globals/colors?id=primary",
+											"typography_number_typography": "globals/typography?id=sbnumber",
+											"title_color": "globals/colors?id=sbmuted",
+											"typography_title_typography": "globals/typography?id=sbsmall"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						},
+						{
+							"id": "d1b6efe",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "32",
+									"right": "28",
+									"bottom": "32",
+									"left": "28",
+									"isLinked": false
+								},
+								"flex_gap": {
+									"column": "10",
+									"row": "10",
+									"isLinked": true,
+									"unit": "px",
+									"size": 10
+								},
+								"background_background": "classic",
+								"background_color": "#FFFFFF",
+								"width": {
+									"unit": "%",
+									"size": 20,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"_flex_size": "grow",
+								"css_classes": "sb-e-dash"
+							},
+							"elements": [
+								{
+									"id": "5eca34c",
+									"elType": "widget",
+									"widgetType": "counter",
+									"settings": {
+										"starting_number": 0,
+										"ending_number": 740,
+										"suffix": "",
+										"prefix": "",
+										"duration": 1800,
+										"thousand_separator": "yes",
+										"thousand_separator_char": ",",
+										"title": "Units, from 2 m² to 30 m²",
+										"_css_classes": "sb-e-counter-left",
+										"__globals__": {
+											"number_color": "globals/colors?id=primary",
+											"typography_number_typography": "globals/typography?id=sbnumber",
+											"title_color": "globals/colors?id=sbmuted",
+											"typography_title_typography": "globals/typography?id=sbsmall"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						},
+						{
+							"id": "090ad24",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "32",
+									"right": "28",
+									"bottom": "32",
+									"left": "28",
+									"isLinked": false
+								},
+								"flex_gap": {
+									"column": "10",
+									"row": "10",
+									"isLinked": true,
+									"unit": "px",
+									"size": 10
+								},
+								"background_background": "classic",
+								"background_color": "#FFFFFF",
+								"width": {
+									"unit": "%",
+									"size": 20,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"_flex_size": "grow",
+								"css_classes": "sb-e-dash"
+							},
+							"elements": [
+								{
+									"id": "48f1430",
+									"elType": "widget",
+									"widgetType": "counter",
+									"settings": {
+										"starting_number": 0,
+										"ending_number": 24,
+										"suffix": "/7",
+										"prefix": "",
+										"duration": 1800,
+										"thousand_separator": "yes",
+										"thousand_separator_char": ",",
+										"title": "Access, every day of the year",
+										"_css_classes": "sb-e-counter-left",
+										"__globals__": {
+											"number_color": "globals/colors?id=primary",
+											"typography_number_typography": "globals/typography?id=sbnumber",
+											"title_color": "globals/colors?id=sbmuted",
+											"typography_title_typography": "globals/typography?id=sbsmall"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						},
+						{
+							"id": "f9d9427",
+							"elType": "container",
+							"settings": {
+								"content_width": "full",
+								"flex_direction": "column",
+								"padding": {
+									"unit": "px",
+									"top": "32",
+									"right": "28",
+									"bottom": "32",
+									"left": "28",
+									"isLinked": false
+								},
+								"flex_gap": {
+									"column": "10",
+									"row": "10",
+									"isLinked": true,
+									"unit": "px",
+									"size": 10
+								},
+								"background_background": "classic",
+								"background_color": "#FFFFFF",
+								"width": {
+									"unit": "%",
+									"size": 20,
+									"sizes": []
+								},
+								"width_tablet": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"width_mobile": {
+									"unit": "%",
+									"size": 45,
+									"sizes": []
+								},
+								"_flex_size": "grow",
+								"css_classes": "sb-e-dash"
+							},
+							"elements": [
+								{
+									"id": "7f93730",
+									"elType": "widget",
+									"widgetType": "counter",
+									"settings": {
+										"starting_number": 0,
+										"ending_number": 4.8,
+										"suffix": "",
+										"prefix": "",
+										"duration": 1800,
+										"thousand_separator": "",
+										"thousand_separator_char": ",",
+										"title": "Average rating from 1,200 reviews",
+										"_css_classes": "sb-e-counter-left",
+										"__globals__": {
+											"number_color": "globals/colors?id=primary",
+											"typography_number_typography": "globals/typography?id=sbnumber",
+											"title_color": "globals/colors?id=sbmuted",
+											"typography_title_typography": "globals/typography?id=sbsmall"
+										}
+									},
+									"elements": [],
+									"isInner": false
+								}
+							],
+							"isInner": true
+						}
+					],
+					"isInner": true
+				}
+			],
+			"isInner": false
+		}
+	],
+	"page_settings": [],
+	"version": "0.4",
+	"title": "Storebox Self Storage — Stats",
+	"type": "section"
+}
