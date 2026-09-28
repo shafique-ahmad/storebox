@@ -76,7 +76,7 @@ class Storebox_Admin {
 	 * @return string
 	 */
 	private static function demo_import_url() {
-		return storebox_core_active() ? admin_url( 'admin.php?page=storebox-demo-import' ) : '';
+		return storebox_core_active() ? admin_url( 'themes.php?page=storebox-demo-import' ) : '';
 	}
 
 	/**

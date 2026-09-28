@@ -1,0 +1,275 @@
+/*!
+ * Storebox Core — demo importer screen.
+ */
+
+.sb-import__lead {
+	max-width: 760px;
+	font-size: 14px;
+}
+
+.sb-import__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 320px;
+	gap: 24px;
+	align-items: start;
+	margin-top: 20px;
+}
+
+.sb-import__legend {
+	margin-bottom: 12px;
+	padding: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.sb-import__demos {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 16px;
+	margin: 0 0 24px;
+}
+
+.sb-import__demos .sb-import__legend {
+	grid-column: 1 / -1;
+}
+
+.sb-demo {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+.sb-demo input {
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	z-index: 2;
+	margin: 0;
+}
+
+.sb-demo__card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+	border: 2px solid #dcdcde;
+	border-radius: 8px;
+	background: #fff;
+	transition: border-color .15s, box-shadow .15s;
+}
+
+.sb-demo:hover .sb-demo__card {
+	border-color: #8c8f94;
+}
+
+.sb-demo input:checked + .sb-demo__card {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.sb-demo input:focus-visible + .sb-demo__card {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+.sb-demo__preview {
+	display: block;
+	aspect-ratio: 3 / 2;
+	background: #f0f0f1;
+}
+
+.sb-demo__preview img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+}
+
+.sb-demo__body {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	padding: 14px 16px 16px;
+}
+
+.sb-demo__name {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.sb-demo__badge {
+	padding: 2px 8px;
+	border-radius: 99px;
+	background: #edfaef;
+	font-size: 11px;
+	font-weight: 600;
+	color: #00650f;
+}
+
+.sb-demo__desc {
+	color: #50575e;
+}
+
+.sb-demo__meta {
+	font-size: 12px;
+	color: #646970;
+}
+
+.sb-import__options {
+	display: grid;
+	gap: 10px;
+	margin: 0 0 20px;
+	padding: 18px 20px;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.sb-import__options em {
+	color: #646970;
+}
+
+.sb-import__replace {
+	padding-top: 10px;
+	border-top: 1px solid #f0f0f1;
+}
+
+.sb-import__actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 14px;
+}
+
+.sb-import__blocked {
+	color: #b32d2e;
+}
+
+.sb-import__progress {
+	margin-top: 8px;
+	padding: 18px 20px;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.sb-import__status {
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.sb-import__status.is-error {
+	color: #b32d2e;
+}
+
+.sb-import__bar {
+	overflow: hidden;
+	height: 8px;
+	border-radius: 99px;
+	background: #f0f0f1;
+}
+
+.sb-import__bar span {
+	display: block;
+	width: 0;
+	height: 100%;
+	border-radius: inherit;
+	background: #2271b1;
+	transition: width .3s ease;
+}
+
+.sb-import__progress.is-done .sb-import__bar span {
+	background: #00a32a;
+}
+
+.sb-import__log-wrap {
+	margin-top: 14px;
+}
+
+.sb-import__log {
+	max-height: 220px;
+	overflow: auto;
+	margin: 10px 0 0 20px;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 12px;
+	color: #50575e;
+}
+
+.sb-import__done p,
+.sb-import__retry {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 16px 0 0;
+}
+
+.sb-import__box {
+	margin-bottom: 16px;
+	padding: 16px 18px;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.sb-import__box h2 {
+	margin: 0 0 12px;
+	font-size: 14px;
+}
+
+.sb-import__checks,
+.sb-import__notes {
+	margin: 0;
+}
+
+.sb-import__checks li {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 12px;
+	color: #50575e;
+}
+
+.sb-import__checks strong {
+	color: #1d2327;
+}
+
+.sb-import__check-icon {
+	flex: none;
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+	border-radius: 50%;
+	background: #00a32a;
+}
+
+.sb-import__checks .is-warn .sb-import__check-icon {
+	background: #dba617;
+}
+
+.sb-import__checks .is-fail .sb-import__check-icon {
+	background: #d63638;
+}
+
+.sb-import__notes {
+	padding-left: 18px;
+	list-style: disc;
+}
+
+.sb-import__notes li {
+	margin-bottom: 8px;
+}
+
+.sb-import__remove-status:empty {
+	display: none;
+}
+
+@media (max-width: 1100px) {
+	.sb-import__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}

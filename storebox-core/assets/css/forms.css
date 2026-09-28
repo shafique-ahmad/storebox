@@ -1,0 +1,216 @@
+/*!
+ * Storebox Core — enquiry form.
+ */
+
+.sb-enquiry {
+	position: relative;
+	color: var(--sb-text);
+}
+
+.sb-enquiry--card {
+	padding: 34px;
+	border: 1px solid var(--sb-border);
+	border-radius: var(--sb-radius-lg);
+	background: #fff;
+	box-shadow: 0 20px 50px rgba(13, 29, 38, .07);
+}
+
+.sb-form__title {
+	margin: 0 0 6px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: -.02em;
+	line-height: 1.25;
+	color: var(--sb-heading);
+}
+
+.sb-form__intro {
+	margin: 0 0 24px;
+	font-size: .95rem;
+	color: var(--sb-muted);
+}
+
+.sb-form__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.sb-field {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	min-width: 0;
+}
+
+.sb-field--wide {
+	grid-column: 1 / -1;
+}
+
+.sb-field label {
+	font-size: .86rem;
+	font-weight: 600;
+}
+
+.sb-field__req {
+	color: var(--sb-warning);
+}
+
+.sb-field input,
+.sb-field select,
+.sb-field textarea {
+	width: 100%;
+	padding: 13px 15px;
+	border: 1px solid var(--sb-border);
+	border-radius: 10px;
+	background: #fff;
+	font: inherit;
+	font-size: .96rem;
+	color: var(--sb-text);
+	transition: border-color .2s, box-shadow .2s;
+}
+
+.sb-field input:focus,
+.sb-field select:focus,
+.sb-field textarea:focus {
+	border-color: var(--sb-primary);
+	outline: 0;
+	box-shadow: 0 0 0 3px rgba(22, 48, 63, .12);
+}
+
+.sb-field textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+.sb-form__submit.sb-btn {
+	margin-top: 22px;
+	border-radius: 12px;
+}
+
+.sb-form__submit[disabled] {
+	opacity: .7;
+	cursor: progress;
+}
+
+.sb-form__note {
+	margin: 14px 0 0;
+	font-size: .84rem;
+	text-align: center;
+	color: var(--sb-muted);
+}
+
+.sb-form__ok,
+.sb-form__error {
+	margin: 18px 0 0;
+	padding: 15px 18px;
+	border-radius: 12px;
+	font-weight: 600;
+}
+
+.sb-form__ok {
+	background: rgba(26, 127, 83, .1);
+	color: #12603f;
+}
+
+.sb-form__error {
+	background: rgba(173, 96, 30, .1);
+	color: #7a3f0c;
+}
+
+.sb-form__ok:focus {
+	outline: 3px solid var(--sb-secondary);
+	outline-offset: 2px;
+}
+
+.sb-enquiry.is-sent .sb-form__grid,
+.sb-enquiry.is-sent .sb-form__submit {
+	opacity: .45;
+	pointer-events: none;
+}
+
+/* Honeypot: hidden from people, visible to naive bots. */
+.sb-form__hp {
+	position: absolute !important;
+	left: -9999px !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/* Editorial form: underlined fields, square card. */
+.sb-s-editorial.sb-enquiry--card {
+	padding: 32px;
+	border: 1.5px solid var(--sb-primary);
+	border-radius: 6px;
+	box-shadow: none;
+}
+
+.sb-s-editorial .sb-form__intro {
+	font-size: 1rem;
+}
+
+.sb-s-editorial .sb-field label {
+	font-size: .72rem;
+	font-weight: 800;
+	letter-spacing: .14em;
+	text-transform: uppercase;
+	color: var(--sb-muted);
+}
+
+.sb-s-editorial .sb-field input,
+.sb-s-editorial .sb-field select,
+.sb-s-editorial .sb-field textarea {
+	padding: 12px 0;
+	border: 0;
+	border-bottom: 1.5px solid var(--sb-border);
+	border-radius: 0;
+	background: transparent;
+	font-size: 1rem;
+	color: var(--sb-primary);
+}
+
+.sb-s-editorial .sb-field input:focus,
+.sb-s-editorial .sb-field select:focus,
+.sb-s-editorial .sb-field textarea:focus {
+	border-bottom-color: var(--sb-primary);
+	box-shadow: 0 1.5px 0 0 var(--sb-primary);
+}
+
+.sb-s-editorial .sb-field textarea {
+	min-height: 110px;
+}
+
+.sb-s-editorial .sb-form__submit.sb-btn {
+	margin-top: 26px;
+	border-radius: 4px;
+}
+
+.sb-s-editorial .sb-form__note {
+	margin-top: 12px;
+	font-size: .82rem;
+}
+
+.sb-s-editorial .sb-form__ok,
+.sb-s-editorial .sb-form__error {
+	margin-top: 16px;
+	padding: 14px 16px;
+	border-left: 3px solid var(--sb-success);
+	border-radius: 0;
+	font-weight: 700;
+}
+
+.sb-s-editorial .sb-form__error {
+	border-left-color: var(--sb-warning);
+}
+
+@media (max-width: 680px) {
+	.sb-enquiry--card,
+	.sb-s-editorial.sb-enquiry--card {
+		padding: 24px;
+	}
+
+	.sb-form__grid {
+		grid-template-columns: 1fr;
+	}
+}

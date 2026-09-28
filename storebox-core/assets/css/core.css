@@ -1,0 +1,280 @@
+/*!
+ * Storebox Core — shared component styles (tokens, buttons, status tags).
+ * Loaded with every Storebox component or widget.
+ */
+
+/* Tokens: the same chain as the theme, so components also work in other themes. */
+.sb-c {
+	--sb-primary: var(--sb-base-primary, #16303f);
+	--sb-secondary: var(--sb-base-secondary, #f2b705);
+	--sb-accent: var(--sb-base-accent, #2c5871);
+	--sb-text: var(--sb-base-text, #1b2429);
+	--sb-heading: var(--sb-base-heading, #16303f);
+	--sb-bg: var(--sb-base-background, #fff);
+	--sb-surface: var(--sb-base-surface, #eef1f2);
+	--sb-border: var(--sb-base-border, #dfe4e6);
+	--sb-dark: var(--sb-base-dark, #0d1d26);
+	--sb-muted: var(--sb-base-muted, #5f6e77);
+	--sb-success: var(--sb-base-success, #1a7f53);
+	--sb-warning: var(--sb-base-warning, #ad601e);
+	--sb-ease: cubic-bezier(.22, 1, .36, 1);
+	--sb-radius-sm: 10px;
+	--sb-radius: 14px;
+	--sb-radius-lg: 22px;
+	--sb-btn-radius: 99px;
+	--sb-shadow: 0 20px 50px rgba(13, 29, 38, .12);
+	box-sizing: border-box;
+}
+
+body.sb-kit .sb-c {
+	--sb-primary: var(--e-global-color-primary, var(--sb-base-primary, #16303f));
+	--sb-secondary: var(--e-global-color-secondary, var(--sb-base-secondary, #f2b705));
+	--sb-accent: var(--e-global-color-accent, var(--sb-base-accent, #2c5871));
+	--sb-text: var(--e-global-color-text, var(--sb-base-text, #1b2429));
+	--sb-heading: var(--e-global-color-sbheading, var(--sb-base-heading, #16303f));
+	--sb-bg: var(--e-global-color-sbbg, var(--sb-base-background, #fff));
+	--sb-surface: var(--e-global-color-sbsurface, var(--sb-base-surface, #eef1f2));
+	--sb-border: var(--e-global-color-sbborder, var(--sb-base-border, #dfe4e6));
+	--sb-dark: var(--e-global-color-sbdark, var(--sb-base-dark, #0d1d26));
+	--sb-muted: var(--e-global-color-sbmuted, var(--sb-base-muted, #5f6e77));
+	--sb-success: var(--e-global-color-sbsuccess, var(--sb-base-success, #1a7f53));
+	--sb-warning: var(--e-global-color-sbwarning, var(--sb-base-warning, #ad601e));
+}
+
+.sb-c.sb-s-editorial {
+	--sb-radius-sm: 4px;
+	--sb-radius: 6px;
+	--sb-radius-lg: 6px;
+	--sb-btn-radius: 4px;
+}
+
+.sb-c *,
+.sb-c *::before,
+.sb-c *::after {
+	box-sizing: border-box;
+}
+
+.sb-c img {
+	display: block;
+	max-width: 100%;
+}
+
+.sb-c :focus-visible {
+	outline: 3px solid var(--sb-secondary);
+	outline-offset: 3px;
+}
+
+.sb-c .screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.sb-c [hidden] {
+	display: none !important;
+}
+
+/* Labels */
+.sb-c .sb-eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-size: .74rem;
+	font-weight: 700;
+	letter-spacing: .14em;
+	line-height: 1.3;
+	text-transform: uppercase;
+	color: var(--sb-secondary);
+}
+
+.sb-c .sb-eyebrow::before {
+	content: "";
+	flex: none;
+	width: 26px;
+	height: 2px;
+	border-radius: 2px;
+	background: currentColor;
+}
+
+.sb-c .sb-eyebrow--dark {
+	color: var(--sb-accent);
+}
+
+.sb-c .sb-kicker {
+	display: block;
+	font-size: .72rem;
+	font-weight: 800;
+	letter-spacing: .2em;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: var(--sb-muted);
+}
+
+/* Buttons */
+.sb-c .sb-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 17px 30px;
+	border: 0;
+	border-radius: var(--sb-btn-radius);
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.1;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: transform .2s var(--sb-ease), background-color .2s, color .2s, border-color .2s;
+}
+
+.sb-c.sb-s-editorial .sb-btn,
+.sb-s-editorial .sb-c .sb-btn {
+	padding: 16px 28px;
+	font-size: .99rem;
+}
+
+/* Follows the theme's "lift buttons on hover" option. */
+.sb-btn-lift .sb-c .sb-btn:hover {
+	transform: translateY(-2px);
+}
+
+.sb-c .sb-btn--primary {
+	background: var(--sb-secondary);
+	color: var(--sb-dark);
+}
+
+.sb-c .sb-btn--primary:hover,
+.sb-c .sb-btn--primary:focus-visible {
+	background: #ffc422;
+	background: color-mix(in srgb, var(--sb-secondary) 86%, #fff);
+	color: var(--sb-dark);
+}
+
+.sb-c .sb-btn--dark {
+	background: var(--sb-primary);
+	color: #fff;
+}
+
+.sb-c .sb-btn--dark:hover,
+.sb-c .sb-btn--dark:focus-visible {
+	background: var(--sb-accent);
+	color: #fff;
+}
+
+.sb-c.sb-s-editorial .sb-btn--dark:hover,
+.sb-c.sb-s-editorial .sb-btn--dark:focus-visible {
+	background: var(--sb-dark);
+}
+
+.sb-c .sb-btn--outline {
+	border: 1.5px solid var(--sb-primary);
+	background: transparent;
+	color: var(--sb-primary);
+}
+
+.sb-c .sb-btn--outline:hover,
+.sb-c .sb-btn--outline:focus-visible {
+	background: var(--sb-primary);
+	color: #fff;
+}
+
+.sb-c .sb-btn--block {
+	width: 100%;
+}
+
+/* Availability tag */
+.sb-c .sb-tag {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	padding: 7px 13px;
+	border-radius: 99px;
+	background: rgba(255, 255, 255, .95);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	font-size: .76rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.sb-c .sb-tag i {
+	display: block;
+	flex: none;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: currentColor;
+}
+
+.sb-c .sb-tag--ok {
+	color: var(--sb-success);
+}
+
+.sb-c .sb-tag--low {
+	color: var(--sb-warning);
+}
+
+.sb-c .sb-tag--full {
+	color: var(--sb-muted);
+}
+
+.sb-c .sb-tag--inline {
+	position: static;
+	align-self: flex-start;
+}
+
+.sb-c.sb-s-editorial .sb-tag {
+	top: 14px;
+	left: 14px;
+	gap: 6px;
+	padding: 6px 12px;
+	border-radius: 3px;
+	background: #fff;
+	-webkit-backdrop-filter: none;
+	backdrop-filter: none;
+	font-size: .74rem;
+	font-weight: 800;
+	letter-spacing: .02em;
+}
+
+.sb-c.sb-s-editorial .sb-tag i {
+	width: 6px;
+	height: 6px;
+}
+
+/* Price */
+.sb-c .sb-price b {
+	font-size: 1.5rem;
+	font-weight: 900;
+	letter-spacing: -.03em;
+	color: var(--sb-primary);
+}
+
+.sb-c .sb-price span {
+	font-size: .85rem;
+	color: var(--sb-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.sb-c *,
+	.sb-c *::before,
+	.sb-c *::after {
+		transition-duration: .01ms !important;
+		animation-duration: .01ms !important;
+	}
+}

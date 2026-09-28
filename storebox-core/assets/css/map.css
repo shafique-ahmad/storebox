@@ -1,0 +1,187 @@
+/*!
+ * Storebox Core — location map (illustrative and live/Leaflet).
+ */
+
+.sb-map__canvas {
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: var(--sb-map-ratio, 16 / 7);
+	border-radius: var(--sb-radius-lg);
+	background-color: #dfe6e9;
+	background-image:
+		linear-gradient(rgba(22, 48, 63, .06) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(22, 48, 63, .06) 1px, transparent 1px);
+	background-size: 44px 44px;
+}
+
+.sb-s-editorial .sb-map__canvas {
+	background-color: #e6e3dc;
+}
+
+.sb-map__art {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+}
+
+/* Water and a road, drawn with CSS. */
+.sb-map__art::before {
+	content: "";
+	position: absolute;
+	top: 52%;
+	right: -10%;
+	left: -10%;
+	height: 56px;
+	background: #c5d7e2;
+	transform: rotate(-8deg);
+}
+
+.sb-map__art::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 8%;
+	width: 18px;
+	background: #fff;
+	opacity: .7;
+	transform: skewX(-12deg);
+}
+
+.sb-s-editorial .sb-map__art::before {
+	top: 54%;
+	height: 52px;
+	background: #cfdbe2;
+	transform: rotate(-7deg);
+}
+
+.sb-s-editorial .sb-map__art::after {
+	display: none;
+}
+
+.sb-map__pin {
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	transform: translate(-50%, -100%);
+}
+
+.sb-map__pin span {
+	padding: 7px 12px;
+	border-radius: 99px;
+	background: var(--sb-primary);
+	box-shadow: 0 8px 20px rgba(13, 29, 38, .25);
+	font-size: .8rem;
+	font-weight: 700;
+	line-height: 1.3;
+	white-space: nowrap;
+	color: #fff;
+	transition: background-color .2s, color .2s;
+}
+
+.sb-map__pin i {
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-top: -3px;
+	background: var(--sb-primary);
+	transform: rotate(45deg);
+	transition: background-color .2s;
+}
+
+.sb-map__pin:hover span,
+.sb-map__pin:focus-visible span {
+	background: var(--sb-secondary);
+	color: var(--sb-dark);
+}
+
+.sb-map__pin:hover i,
+.sb-map__pin:focus-visible i {
+	background: var(--sb-secondary);
+}
+
+.sb-s-editorial .sb-map__pin span {
+	border-radius: 4px;
+	box-shadow: none;
+	font-weight: 800;
+}
+
+.sb-s-editorial .sb-map__pin i {
+	width: 12px;
+	height: 12px;
+}
+
+/* Consent overlay ("Load interactive map"). */
+.sb-map__consent {
+	position: absolute;
+	bottom: 18px;
+	left: 50%;
+	z-index: 3;
+	max-width: calc(100% - 36px);
+	padding: 14px 18px;
+	border-radius: var(--sb-radius);
+	background: rgba(255, 255, 255, .94);
+	box-shadow: 0 12px 30px rgba(13, 29, 38, .16);
+	text-align: center;
+	transform: translateX(-50%);
+}
+
+.sb-map__consent .sb-btn {
+	padding: 12px 22px;
+	font-size: .9rem;
+}
+
+.sb-map__consent p {
+	margin: 8px 0 0;
+	font-size: .76rem;
+	color: var(--sb-muted);
+}
+
+/* Live map (Leaflet). */
+.sb-map__leaflet {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	font: inherit;
+	background: #dfe6e9;
+}
+
+.sb-map.is-live .sb-map__canvas > .sb-map__pin,
+.sb-map.is-live .sb-map__art {
+	display: none;
+}
+
+.sb-map--muted .leaflet-tile-pane {
+	filter: grayscale(1) contrast(.92) brightness(1.05);
+}
+
+.sb-map .leaflet-div-icon.sb-map__marker {
+	width: 0 !important;
+	height: 0 !important;
+	border: 0;
+	background: none;
+}
+
+.sb-map__marker .sb-map__pin {
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: auto;
+}
+
+.sb-map .leaflet-control-attribution {
+	font-size: 10px;
+}
+
+.sb-map .leaflet-bar a {
+	color: var(--sb-primary);
+}
+
+@media (max-width: 1000px) {
+	.sb-map__canvas {
+		aspect-ratio: var(--sb-map-ratio-mobile, 4 / 3);
+	}
+}
