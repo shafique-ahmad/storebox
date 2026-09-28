@@ -499,7 +499,9 @@
 												},
 												"__globals__": {
 													"text_color": "globals/colors?id=text"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -520,7 +522,9 @@
 												},
 												"__globals__": {
 													"title_color": "globals/colors?id=sbsuccess"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -573,7 +577,9 @@
 												},
 												"__globals__": {
 													"text_color": "globals/colors?id=text"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -594,7 +600,9 @@
 												},
 												"__globals__": {
 													"title_color": "globals/colors?id=sbsuccess"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -647,7 +655,9 @@
 												},
 												"__globals__": {
 													"text_color": "globals/colors?id=text"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -668,7 +678,9 @@
 												},
 												"__globals__": {
 													"title_color": "globals/colors?id=sbsuccess"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -721,7 +733,9 @@
 												},
 												"__globals__": {
 													"text_color": "globals/colors?id=text"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -742,7 +756,9 @@
 												},
 												"__globals__": {
 													"title_color": "globals/colors?id=sbsuccess"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -795,7 +811,9 @@
 												},
 												"__globals__": {
 													"text_color": "globals/colors?id=text"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -816,7 +834,9 @@
 												},
 												"__globals__": {
 													"title_color": "globals/colors?id=sbsuccess"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -869,7 +889,9 @@
 												},
 												"__globals__": {
 													"text_color": "globals/colors?id=text"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -890,7 +912,9 @@
 												},
 												"__globals__": {
 													"title_color": "globals/colors?id=sbsuccess"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -1175,7 +1199,9 @@
 													"button_text_color": "globals/colors?id=sbwhite",
 													"hover_color": "globals/colors?id=sbwhite"
 												},
-												"button_background_hover_color": "#0D1D26"
+												"button_background_hover_color": "#0D1D26",
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false
@@ -1228,7 +1254,9 @@
 													"bottom": "1.5",
 													"left": "1.5",
 													"isLinked": true
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false

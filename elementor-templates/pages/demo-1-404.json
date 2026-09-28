@@ -269,7 +269,9 @@
 											"button_text_color": "globals/colors?id=sbdark",
 											"hover_color": "globals/colors?id=sbdark"
 										},
-										"button_background_hover_color": "#FFC422"
+										"button_background_hover_color": "#FFC422",
+										"_element_width": "auto",
+										"_flex_size": "none"
 									},
 									"elements": [],
 									"isInner": false
@@ -322,7 +324,9 @@
 											"isLinked": true
 										},
 										"border_color": "rgba(255,255,255,0.4)",
-										"button_hover_border_color": "rgba(255,255,255,0.6)"
+										"button_hover_border_color": "rgba(255,255,255,0.6)",
+										"_element_width": "auto",
+										"_flex_size": "none"
 									},
 									"elements": [],
 									"isInner": false

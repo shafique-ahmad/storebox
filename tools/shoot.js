@@ -16,6 +16,8 @@ const path = require( 'path' );
 	fs.mkdirSync( out, { recursive: true } );
 	const browser = await chromium.launch();
 	const context = await browser.newContext( { viewport: { width: parseInt( width, 10 ), height: 900 }, deviceScaleFactor: 1 } );
+
+	await require( './pw-routes' )( context );
 	const results = [];
 	for ( const pair of pairs ) {
 		const idx = pair.indexOf( '=' );
@@ -25,7 +27,8 @@ const path = require( 'path' );
 		const errors = [];
 		page.on( 'console', ( msg ) => { if ( msg.type() === 'error' ) errors.push( 'console: ' + msg.text() ); } );
 		page.on( 'pageerror', ( err ) => errors.push( 'pageerror: ' + err.message ) );
-		page.on( 'requestfailed', ( req ) => { const u = req.url(); if ( ! /pexels|gstatic|googleapis|tile\.openstreetmap/.test( u ) ) errors.push( 'requestfailed: ' + u ); } );
+		page.on( 'requestfailed', ( req ) => { const u = req.url(); if ( ! /pexels|gstatic|googleapis|tile\.openstreetmap|unpkg/.test( u ) ) errors.push( 'requestfailed: ' + u ); } );
+		page.on( 'console', () => {} );
 		await page.goto( url, { waitUntil: 'networkidle', timeout: 60000 } ).catch( ( e ) => errors.push( 'goto: ' + e.message ) );
 		if ( process.env.SCROLL !== '0' ) {
 			await page.evaluate( async () => {

@@ -267,7 +267,7 @@ function templatesFor( demo, D, B, S ) {
 		conditions: [ 'include/general' ],
 		content: () => {
 			const column = ( title, menuKey ) =>
-				E.col( { w: 20, extra: { width_tablet: E.pct( 45 ), _flex_size: 'grow' } }, [
+				E.col( { w: 20, extra: { width_tablet: E.pct( 28 ), _flex_size_tablet: 'grow' } }, [
 					E.heading( title, { tag: 'h2', color: 'sbwhite', margin: [ 0, 0, soft ? 16 : 17, 0 ], extra: { typography_typography: 'custom', typography_font_size: E.rem( soft ? 0.78 : 0.74 ), typography_font_weight: soft ? '700' : '800', typography_letter_spacing: E.em( soft ? 0.12 : 0.18 ), typography_text_transform: 'uppercase' } } ),
 					E.widget( 'nav-menu', {
 						menu: '{{menu:' + menuKey + '}}',
@@ -289,7 +289,7 @@ function templatesFor( demo, D, B, S ) {
 				E.section(
 					{ pad: [ soft ? 76 : 80, soft ? 30 : 32 ], padMobile: [ 60, 28 ], gutter: D.gutter, tag: 'footer', bg: { global: 'sbdark' } },
 					[
-						E.row( { gap: soft ? 44 : 46, wrap: true, stack: 'mobile', extra: { margin: E.dims( 0, 0, soft ? 52 : 54, 0 ), flex_wrap_tablet: 'wrap', flex_direction_tablet: 'row' } }, [
+						E.row( { gap: soft ? 44 : 46, stack: 'mobile', extra: { margin: E.dims( 0, 0, soft ? 52 : 54, 0 ), flex_wrap_tablet: 'wrap', flex_direction_tablet: 'row' } }, [
 							E.col( { w: 34, extra: { width_tablet: E.pct( 100 ) } }, [
 								logo( true ),
 								C.small( 'Self storage in Amsterdam and Haarlem. Month to month, no deposit, your own key.', { color: null, colorHex: 'rgba(255,255,255,0.6)', size: 0.94, lh: 1.6, margin: [ 18, 0, 0, 0 ], extra: E.measure( 320 ) } ),

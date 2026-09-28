@@ -69,6 +69,16 @@
 							"bottom": "52",
 							"left": "0",
 							"isLinked": false
+						},
+						"width": {
+							"unit": "px",
+							"size": 600,
+							"sizes": []
+						},
+						"width_mobile": {
+							"unit": "%",
+							"size": 100,
+							"sizes": []
 						}
 					},
 					"elements": [

@@ -230,36 +230,11 @@ function kit( d ) {
 		body_typography_font_family: 'Archivo',
 		body_typography_font_size: E.rem( f.text.size ),
 		body_typography_line_height: E.em( f.text.lh ),
-		link_normal_color: c.primary,
-		link_hover_color: c.accent,
-		h1_color: c.heading,
-		h2_color: c.heading,
-		h3_color: c.heading,
-		h4_color: c.heading,
-		h5_color: c.heading,
-		h6_color: c.heading,
-		button_typography_typography: 'custom',
-		button_typography_font_family: 'Archivo',
-		button_typography_font_size: E.rem( f.sbbutton.size ),
-		button_typography_font_weight: '700',
-		button_text_color: c.dark,
-		button_background_background: 'classic',
-		button_background_color: c.secondary,
-		button_hover_text_color: c.dark,
-		button_hover_background_background: 'classic',
-		button_hover_background_color: '#FFC422',
-		button_border_radius: E.dims( d.btnRadius ),
-		button_padding: E.dims( d.btnPad[ 0 ], d.btnPad[ 1 ] ),
-		form_field_typography_typography: 'custom',
-		form_field_typography_font_family: 'Archivo',
-		form_field_text_color: c.text,
-		form_field_background_color: '#FFFFFF',
-		form_field_border_border: 'solid',
-		form_field_border_width: E.dims( 1 ),
-		form_field_border_color: c.border,
-		form_field_border_radius: E.dims( 'soft' === d.key ? 10 : 4 ),
-		form_field_padding: E.dims( 13, 15 ),
-		form_field_focus_border_color: c.primary,
+		// No site-wide Theme Style for links, heading colours, buttons or form
+		// fields: Elementor applies those to every link, heading, button and
+		// field on the site (menus, filters, forms), overriding their own
+		// styles. The theme styles them from the same tokens instead, and gives
+		// Elementor's Button widget and form fields matching defaults.
 	};
 }
 

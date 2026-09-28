@@ -227,6 +227,14 @@ h6 {
 	font-weight: var(--sb-h-weight);
 	letter-spacing: var(--sb-h-track);
 	line-height: var(--sb-h-lh);
+}
+
+/* Balanced line breaks where the designs use them. */
+.sb-preset-soft h2,
+.sb-preset-editorial h1,
+.sb-preset-editorial h2,
+.sb-preset-editorial h3,
+.sb-e-balance .elementor-heading-title {
 	text-wrap: balance;
 }
 
@@ -417,8 +425,54 @@ h6 {
 	transform: translateY(-2px);
 }
 
+/* Elementor Button widget: Storebox defaults for buttons added without their
+   own colours (a widget's own settings always win). Replaces Elementor's
+   Site Settings button style, which would also restyle every other button. */
 .elementor-widget-button .elementor-button {
+	padding: 17px 30px;
+	border-radius: var(--sb-btn-radius);
+	background-color: var(--sb-secondary);
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.1;
+	color: var(--sb-dark);
+	fill: currentColor;
 	transition: transform .2s var(--sb-ease), background-color .2s, color .2s, border-color .2s;
+}
+
+.elementor-widget-button .elementor-button:hover,
+.elementor-widget-button .elementor-button:focus-visible {
+	background-color: color-mix(in srgb, var(--sb-secondary) 86%, #fff);
+	color: var(--sb-dark);
+}
+
+.sb-preset-editorial .elementor-widget-button .elementor-button {
+	padding: 16px 28px;
+	font-size: .99rem;
+}
+
+/* Elementor Pro form fields and buttons follow the Storebox field style. */
+body .elementor-field-group .elementor-field-textual {
+	padding: 13px 15px;
+	border: 1px solid var(--sb-border);
+	border-radius: var(--sb-radius-sm);
+	background-color: #fff;
+	font-family: inherit;
+	color: var(--sb-text);
+}
+
+body .elementor-field-group .elementor-field-textual:focus {
+	border-color: var(--sb-primary);
+	outline: 2px solid color-mix(in srgb, var(--sb-primary) 22%, transparent);
+	outline-offset: 0;
+}
+
+body .elementor-form .elementor-button {
+	border-radius: var(--sb-btn-radius);
+	background-color: var(--sb-secondary);
+	font-weight: 700;
+	color: var(--sb-dark);
 }
 
 /* ==========================================================================
@@ -1279,16 +1333,24 @@ h6 {
 	color: inherit;
 }
 
-/* sb-e-dash (Container): short yellow bar above the content (stat tiles). */
+/* sb-e-dash (Container): short yellow bar above the content (stat tiles).
+   Elementor also uses a container's ::before (background overlay), so its
+   positioning is reset here. */
 .e-con.sb-e-dash::before {
 	content: "";
 	display: block;
+	position: relative;
+	top: auto;
+	left: auto;
 	flex: none;
 	width: 26px;
 	height: 3px;
 	margin-bottom: 6px;
+	border: 0;
 	border-radius: 2px;
 	background: var(--sb-secondary);
+	opacity: 1;
+	mix-blend-mode: normal;
 }
 
 /* sb-e-lift (Container): lifts with a soft shadow on hover. */
@@ -1353,7 +1415,11 @@ h6 {
 	bottom: 8px;
 	left: 7px;
 	width: 2px;
+	height: auto;
+	border: 0;
+	border-radius: 0;
 	background: rgba(255, 255, 255, .18);
+	opacity: 1;
 }
 
 .e-con.sb-e-timeline-item {
@@ -1367,7 +1433,9 @@ h6 {
 	left: 0;
 	width: 16px;
 	height: 16px;
+	border: 0;
 	border-radius: 50%;
+	opacity: 1;
 	background: var(--sb-secondary);
 	box-shadow: 0 0 0 5px var(--sb-primary);
 }
@@ -1527,9 +1595,12 @@ a.e-con.sb-e-way:focus-visible {
 	border-radius: 99px;
 }
 
-/* sb-e-overlay-top (Container): lets the first section run under an overlay header. */
-.sb-header-transparent .e-con.sb-e-overlay-top {
-	padding-top: max(var(--padding-top, 0px), 92px);
+/* sb-e-overlay-top (Container): lets the first section run under an overlay
+   header, keeping at least the header's height as top padding. Elementor puts
+   a boxed container's vertical padding on its inner wrapper. */
+.sb-header-transparent .e-con-full.sb-e-overlay-top,
+.sb-header-transparent .e-con-boxed.sb-e-overlay-top > .e-con-inner {
+	padding-block-start: max(var(--padding-top, 0px), 92px);
 }
 
 /* ==========================================================================

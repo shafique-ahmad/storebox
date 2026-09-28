@@ -178,7 +178,9 @@
 								},
 								"__dynamic__": {
 									"title": "[elementor-tag id=\"28a3b67\" name=\"post-date\" settings=\"%7B%22type%22%3A%22post_date_gmt%22%2C%22format%22%3A%22default%22%7D\"]"
-								}
+								},
+								"_element_width": "auto",
+								"_flex_size": "shrink"
 							},
 							"elements": [],
 							"isInner": false
@@ -199,7 +201,9 @@
 								},
 								"__dynamic__": {
 									"title": "[elementor-tag id=\"cec0e20\" name=\"storebox-read-time\" settings=\"%7B%22before%22%3A%22%C2%B7%20%22%7D\"]"
-								}
+								},
+								"_element_width": "auto",
+								"_flex_size": "shrink"
 							},
 							"elements": [],
 							"isInner": false
@@ -506,7 +510,11 @@
 									"unit": "px",
 									"size": 0
 								},
-								"_flex_size": "grow"
+								"width": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
 							},
 							"elements": [
 								{
@@ -556,6 +564,7 @@
 							"elType": "widget",
 							"widgetType": "button",
 							"settings": {
+								"_flex_size": "none",
 								"text": "All posts",
 								"link": {
 									"url": "#",
@@ -588,7 +597,8 @@
 									"button_text_color": "globals/colors?id=sbwhite",
 									"hover_color": "globals/colors?id=sbwhite"
 								},
-								"button_background_hover_color": "#2C5871"
+								"button_background_hover_color": "#2C5871",
+								"_element_width": "auto"
 							},
 							"elements": [],
 							"isInner": false
@@ -726,7 +736,7 @@
 						"_element_width": "initial",
 						"_element_custom_width": {
 							"unit": "px",
-							"size": 700,
+							"size": 580,
 							"sizes": []
 						},
 						"_element_width_mobile": "inherit",
@@ -757,7 +767,7 @@
 						"_element_width": "initial",
 						"_element_custom_width": {
 							"unit": "px",
-							"size": 600,
+							"size": 560,
 							"sizes": []
 						},
 						"_element_width_mobile": "inherit",
@@ -846,7 +856,9 @@
 									"button_text_color": "globals/colors?id=sbdark",
 									"hover_color": "globals/colors?id=sbdark"
 								},
-								"button_background_hover_color": "#FFC422"
+								"button_background_hover_color": "#FFC422",
+								"_element_width": "auto",
+								"_flex_size": "none"
 							},
 							"elements": [],
 							"isInner": false
@@ -899,7 +911,9 @@
 									"isLinked": true
 								},
 								"border_color": "rgba(255,255,255,0.4)",
-								"button_hover_border_color": "rgba(255,255,255,0.6)"
+								"button_hover_border_color": "rgba(255,255,255,0.6)",
+								"_element_width": "auto",
+								"_flex_size": "none"
 							},
 							"elements": [],
 							"isInner": false

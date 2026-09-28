@@ -111,11 +111,11 @@
 							"left": "0",
 							"isLinked": false
 						},
-						"_css_classes": "sb-e-accent",
+						"_css_classes": "sb-e-accent sb-e-balance",
 						"_element_width": "initial",
 						"_element_custom_width": {
 							"unit": "px",
-							"size": 760,
+							"size": 685,
 							"sizes": []
 						},
 						"_element_width_mobile": "inherit",
@@ -239,7 +239,9 @@
 									"unit": "px",
 									"size": 10,
 									"sizes": []
-								}
+								},
+								"_element_width": "auto",
+								"_flex_size": "none"
 							},
 							"elements": [],
 							"isInner": false
@@ -292,7 +294,9 @@
 									"isLinked": true
 								},
 								"border_color": "rgba(255,255,255,0.4)",
-								"button_hover_border_color": "rgba(255,255,255,0.6)"
+								"button_hover_border_color": "rgba(255,255,255,0.6)",
+								"_element_width": "auto",
+								"_flex_size": "none"
 							},
 							"elements": [],
 							"isInner": false

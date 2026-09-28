@@ -102,7 +102,11 @@
 									"unit": "px",
 									"size": 0
 								},
-								"_flex_size": "grow"
+								"width": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
 							},
 							"elements": [
 								{
@@ -152,6 +156,7 @@
 							"elType": "widget",
 							"widgetType": "button",
 							"settings": {
+								"_flex_size": "none",
 								"text": "View all 740 units",
 								"link": {
 									"url": "#",
@@ -184,7 +189,8 @@
 									"button_text_color": "globals/colors?id=sbwhite",
 									"hover_color": "globals/colors?id=sbwhite"
 								},
-								"button_background_hover_color": "#2C5871"
+								"button_background_hover_color": "#2C5871",
+								"_element_width": "auto"
 							},
 							"elements": [],
 							"isInner": false

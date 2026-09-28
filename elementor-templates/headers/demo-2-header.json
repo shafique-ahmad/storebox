@@ -91,7 +91,9 @@
 						},
 						"__globals__": {
 							"icon_color": "globals/colors?id=secondary"
-						}
+						},
+						"_element_width": "auto",
+						"_flex_size": "shrink"
 					},
 					"elements": [],
 					"isInner": false
@@ -155,7 +157,9 @@
 						"text_color_hover": "#F2B705",
 						"__globals__": {
 							"icon_color": "globals/colors?id=secondary"
-						}
+						},
+						"_element_width": "auto",
+						"_flex_size": "shrink"
 					},
 					"elements": [],
 					"isInner": false
@@ -506,7 +510,9 @@
 								},
 								"__dynamic__": {
 									"title": "[elementor-tag id=\"f2fd335\" name=\"site-title\" settings=\"%7B%7D\"]"
-								}
+								},
+								"_element_width": "auto",
+								"_flex_size": "shrink"
 							},
 							"elements": [],
 							"isInner": false
@@ -573,7 +579,8 @@
 							"pointer_color_menu_item_hover": "globals/colors?id=secondary",
 							"pointer_color_menu_item_active": "globals/colors?id=secondary",
 							"dropdown_typography_typography": "globals/typography?id=sbnav"
-						}
+						},
+						"_element_width": "auto"
 					},
 					"elements": [],
 					"isInner": false
@@ -618,7 +625,8 @@
 						"button_background_hover_color": "#0D1D26",
 						"_flex_size": "none",
 						"hide_tablet": "hidden-tablet",
-						"hide_mobile": "hidden-mobile"
+						"hide_mobile": "hidden-mobile",
+						"_element_width": "auto"
 					},
 					"elements": [],
 					"isInner": false

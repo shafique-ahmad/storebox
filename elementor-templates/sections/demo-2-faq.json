@@ -293,7 +293,7 @@
 											"left": "0",
 											"isLinked": false
 										},
-										"_css_classes": "sb-e-faq sb-e-faq--ruled",
+										"_css_classes": "sb-e-faq sb-e-faq--open-first sb-e-faq--ruled",
 										"__globals__": {
 											"title_color": "globals/colors?id=primary",
 											"tab_active_color": "globals/colors?id=primary",

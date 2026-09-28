@@ -252,7 +252,9 @@
 											"unit": "px",
 											"size": 10,
 											"sizes": []
-										}
+										},
+										"_element_width": "auto",
+										"_flex_size": "none"
 									},
 									"elements": [],
 									"isInner": false
@@ -305,7 +307,9 @@
 											"bottom": "1.5",
 											"left": "1.5",
 											"isLinked": true
-										}
+										},
+										"_element_width": "auto",
+										"_flex_size": "none"
 									},
 									"elements": [],
 									"isInner": false
@@ -1568,7 +1572,11 @@
 													"unit": "px",
 													"size": 0
 												},
-												"_flex_size": "grow"
+												"width": {
+													"unit": "%",
+													"size": 100,
+													"sizes": []
+												}
 											},
 											"elements": [
 												{
@@ -1728,7 +1736,11 @@
 													"unit": "px",
 													"size": 0
 												},
-												"_flex_size": "grow"
+												"width": {
+													"unit": "%",
+													"size": 100,
+													"sizes": []
+												}
 											},
 											"elements": [
 												{
@@ -1888,7 +1900,11 @@
 													"unit": "px",
 													"size": 0
 												},
-												"_flex_size": "grow"
+												"width": {
+													"unit": "%",
+													"size": 100,
+													"sizes": []
+												}
 											},
 											"elements": [
 												{
@@ -2048,7 +2064,11 @@
 													"unit": "px",
 													"size": 0
 												},
-												"_flex_size": "grow"
+												"width": {
+													"unit": "%",
+													"size": 100,
+													"sizes": []
+												}
 											},
 											"elements": [
 												{
@@ -2303,7 +2323,11 @@
 									"unit": "px",
 									"size": 0
 								},
-								"_flex_size": "grow"
+								"width": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
 							},
 							"elements": [
 								{
@@ -2352,6 +2376,7 @@
 							"elType": "widget",
 							"widgetType": "button",
 							"settings": {
+								"_flex_size": "none",
 								"text": "Get directions",
 								"link": {
 									"url": "#",
@@ -2395,7 +2420,8 @@
 									"bottom": "1.5",
 									"left": "1.5",
 									"isLinked": true
-								}
+								},
+								"_element_width": "auto"
 							},
 							"elements": [],
 							"isInner": false
@@ -3152,7 +3178,7 @@
 											"left": "0",
 											"isLinked": false
 										},
-										"_css_classes": "sb-e-faq sb-e-faq--ruled",
+										"_css_classes": "sb-e-faq sb-e-faq--open-first sb-e-faq--ruled",
 										"__globals__": {
 											"title_color": "globals/colors?id=primary",
 											"tab_active_color": "globals/colors?id=primary",
@@ -3451,7 +3477,9 @@
 													"button_text_color": "globals/colors?id=sbwhite",
 													"hover_color": "globals/colors?id=sbwhite"
 												},
-												"button_background_hover_color": "#0D1D26"
+												"button_background_hover_color": "#0D1D26",
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false
@@ -3504,7 +3532,9 @@
 													"bottom": "1.5",
 													"left": "1.5",
 													"isLinked": true
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false

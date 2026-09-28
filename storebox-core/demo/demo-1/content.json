@@ -783,7 +783,7 @@
 			"type": "page",
 			"title": "Home",
 			"slug": "home",
-			"content": "<p>Clean, dry, monitored units from 2 to 30 m². Month to month, your own key, and no deposit to get started.</p>\n<p><a href=\"#calc\">Find my size</a></p>\n<p><a href=\"{{url:page-units}}\">See units &amp; prices</a></p>\n<h2>Moved in by this afternoon.</h2>\n<p>No viewings, no paperwork, no waiting on a callback. Three steps and the unit is yours.</p>\n<p>01</p>\n<h3>Work out your size</h3>\n<p>Tell the calculator what you're storing. It gives you a size and a price in about thirty seconds — no phone call needed.</p>\n<p>02</p>\n<h3>Reserve it online</h3>\n<p>Pick your facility and move-in date. We hold the unit for seven days, free, while you sort the van.</p>\n<p>03</p>\n<h3>Collect your PIN</h3>\n<p>Sign at reception or on your phone, fit your own padlock, and you're in. Trolleys and the loading bay are free.</p>\n<h2>Available this week.</h2>\n<p><a href=\"{{url:page-units}}\">View all 740 units</a></p>\n<p>30 sec</p>\n<p>Average time to a size and a price</p>\n<h2>Stop guessing how much space you need.</h2>\n<p>Most people overpay by renting a size too big. Add what you're storing and we'll tell you exactly what fits.</p>\n<h2>The boring things, done properly.</h2>\n<p>Dry units, real security and prices that don't creep up after three months.</p>\n<h3>Alarmed, monitored, recorded</h3>\n<p>Every unit door is individually alarmed. Cameras cover the corridors and entrances around the clock, and footage is kept for 30 days.</p>\n<h3>24/7, genuinely</h3>\n<p>Not \"extended hours\". Your PIN works at 3am on a Sunday.</p>\n<h3>Held at 10–20°C</h3>\n<p>Documents, electronics and furniture stay dry through a Dutch winter.</p>\n<h3>Park at the door</h3>\n<p>Drive-up bays at every facility, with free trolleys and a covered loading area so you're not carrying boxes through the rain.</p>\n<h3>The price you were quoted</h3>\n<p>No admin fee, no deposit, and no increase in your first twelve months.</p>\n<h3>Swap sizes for free</h3>\n<p>Too big or too small? Move to another unit any time and just pay the difference.</p>\n<h2>Three facilities, one price list.</h2>\n<p><a href=\"{{url:page-locations}}\">Get directions</a></p>\n<p>\"I booked at nine in the evening and had my stuff in by lunchtime the next day.\"</p>\n<p>MK</p>\n<p>Marieke K.</p>\n<p>Moved from Amsterdam Oost, stored 6 months</p>\n<h2>The things people actually ask.</h2>\n<h2>Reserve a unit in under two minutes.</h2>\n<p>No deposit, no contract to sign today, and we hold it free for seven days.</p>\n<p><a href=\"{{url:page-sizes}}\">Find my size</a></p>\n<p><a href=\"tel:+31200000000\">020 000 0000</a></p>",
+			"content": "<p>Clean, dry, monitored units from 2 to 30 m². Month to month, your own key, and no deposit to get started.</p>\n<p><a href=\"#calc\">Find my size</a></p>\n<p><a href=\"{{url:page-units}}\">See units &amp; prices</a></p>\n<h2>Moved in by this afternoon.</h2>\n<p>No viewings, no paperwork, no waiting on a callback. Three steps and the unit is yours.</p>\n<p>01</p>\n<h3>Work out your size</h3>\n<p>Tell the calculator what you're storing. It gives you a size and a price in about thirty seconds — no phone call needed.</p>\n<p>02</p>\n<h3>Reserve it online</h3>\n<p>Pick your facility and move-in date. We hold the unit for seven days, free, while you sort the van.</p>\n<p>03</p>\n<h3>Collect your PIN</h3>\n<p>Sign at reception or on your phone, fit your own padlock, and you're in. Trolleys and the loading bay are free.</p>\n<h2>Available this week.</h2>\n<p><a href=\"{{url:page-units}}\">View all 740 units</a></p>\n<p>30 sec</p>\n<p>Average time to a size and a price</p>\n<h2>Stop guessing how much space you need.</h2>\n<p>Most people overpay by renting a size too big. Add what you're storing and we'll tell you exactly what fits.</p>\n<h2>The boring things, done properly.</h2>\n<p>Dry units, real security and prices that don't creep up after three months.</p>\n<h3>Alarmed, monitored, recorded</h3>\n<p>Every unit door is individually alarmed. Cameras cover the corridors and entrances around the clock, and footage is kept for 30 days.</p>\n<h3>24/7, genuinely</h3>\n<p>Not \"extended hours\". Your PIN works at 3am on a Sunday.</p>\n<h3>Held at 10–20°C</h3>\n<p>Documents, electronics and furniture stay dry through a Dutch winter.</p>\n<h3>Park at the door</h3>\n<p>Drive-up bays at every facility, with free trolleys and a covered loading area so you're not carrying boxes through the rain.</p>\n<h3>The price you were quoted</h3>\n<p>No admin fee, no deposit, and no increase in your first twelve months.</p>\n<h3>Swap sizes for free</h3>\n<p>Too big or too small? Move to another unit any time and just pay the difference.</p>\n<h2>Three facilities, one price list.</h2>\n<p><a href=\"{{url:page-locations}}\">Get directions</a></p>\n<p>\"I booked at nine in the evening and had my stuff in by lunchtime the next day.\"</p>\n<p>MK</p>\n<p>Marieke K.</p>\n<p>Moved from Amsterdam Oost, stored 6 months</p>\n<h2>The things people actually ask.</h2>\n<h2>Reserve a unit in under two minutes.</h2>\n<p>No deposit, no contract to sign today, and we'll hold it free for seven days.</p>\n<p><a href=\"{{url:page-sizes}}\">Find my size</a></p>\n<p><a href=\"tel:+31200000000\">020 000 0000</a></p>",
 			"menu_order": 0,
 			"comments": false,
 			"template": "elementor_header_footer",
@@ -1514,76 +1514,7 @@
 			"unit": "em",
 			"size": 1.6,
 			"sizes": []
-		},
-		"link_normal_color": "#16303F",
-		"link_hover_color": "#2C5871",
-		"h1_color": "#16303F",
-		"h2_color": "#16303F",
-		"h3_color": "#16303F",
-		"h4_color": "#16303F",
-		"h5_color": "#16303F",
-		"h6_color": "#16303F",
-		"button_typography_typography": "custom",
-		"button_typography_font_family": "Archivo",
-		"button_typography_font_size": {
-			"unit": "rem",
-			"size": 1,
-			"sizes": []
-		},
-		"button_typography_font_weight": "700",
-		"button_text_color": "#0D1D26",
-		"button_background_background": "classic",
-		"button_background_color": "#F2B705",
-		"button_hover_text_color": "#0D1D26",
-		"button_hover_background_background": "classic",
-		"button_hover_background_color": "#FFC422",
-		"button_border_radius": {
-			"unit": "px",
-			"top": "99",
-			"right": "99",
-			"bottom": "99",
-			"left": "99",
-			"isLinked": true
-		},
-		"button_padding": {
-			"unit": "px",
-			"top": "17",
-			"right": "30",
-			"bottom": "17",
-			"left": "30",
-			"isLinked": false
-		},
-		"form_field_typography_typography": "custom",
-		"form_field_typography_font_family": "Archivo",
-		"form_field_text_color": "#1B2429",
-		"form_field_background_color": "#FFFFFF",
-		"form_field_border_border": "solid",
-		"form_field_border_width": {
-			"unit": "px",
-			"top": "1",
-			"right": "1",
-			"bottom": "1",
-			"left": "1",
-			"isLinked": true
-		},
-		"form_field_border_color": "#DFE4E6",
-		"form_field_border_radius": {
-			"unit": "px",
-			"top": "10",
-			"right": "10",
-			"bottom": "10",
-			"left": "10",
-			"isLinked": true
-		},
-		"form_field_padding": {
-			"unit": "px",
-			"top": "13",
-			"right": "15",
-			"bottom": "13",
-			"left": "15",
-			"isLinked": false
-		},
-		"form_field_focus_border_color": "#16303F"
+		}
 	},
 	"sidebars": {
 		"footer-1": [],

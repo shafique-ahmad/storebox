@@ -268,7 +268,9 @@
 													"button_text_color": "globals/colors?id=sbwhite",
 													"hover_color": "globals/colors?id=sbwhite"
 												},
-												"button_background_hover_color": "#0D1D26"
+												"button_background_hover_color": "#0D1D26",
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false
@@ -321,7 +323,9 @@
 													"bottom": "1.5",
 													"left": "1.5",
 													"isLinked": true
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false

@@ -718,8 +718,7 @@
 															"unit": "%",
 															"size": 100,
 															"sizes": []
-														},
-														"_flex_size": "grow"
+														}
 													},
 													"elements": [
 														{
@@ -917,8 +916,7 @@
 															"unit": "%",
 															"size": 100,
 															"sizes": []
-														},
-														"_flex_size": "grow"
+														}
 													},
 													"elements": [
 														{
@@ -1116,8 +1114,7 @@
 															"unit": "%",
 															"size": 100,
 															"sizes": []
-														},
-														"_flex_size": "grow"
+														}
 													},
 													"elements": [
 														{
@@ -1618,6 +1615,13 @@
 									"left": "0",
 									"isLinked": false
 								},
+								"_element_width": "initial",
+								"_element_custom_width": {
+									"unit": "px",
+									"size": 646,
+									"sizes": []
+								},
+								"_element_width_mobile": "inherit",
 								"__globals__": {
 									"typography_typography": "globals/typography?id=sbh2",
 									"title_color": "globals/colors?id=primary"
@@ -1939,7 +1943,9 @@
 													"button_text_color": "globals/colors?id=sbwhite",
 													"hover_color": "globals/colors?id=sbwhite"
 												},
-												"button_background_hover_color": "#0D1D26"
+												"button_background_hover_color": "#0D1D26",
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false
@@ -1992,7 +1998,9 @@
 													"bottom": "1.5",
 													"left": "1.5",
 													"isLinked": true
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false

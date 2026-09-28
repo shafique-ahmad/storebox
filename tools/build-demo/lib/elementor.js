@@ -75,12 +75,25 @@ function widget( type, settings = {} ) {
 	return { id: id(), elType: 'widget', widgetType: type, settings, elements: [], isInner: false };
 }
 
-/** Marks nested containers as inner, as Elementor does. */
-function finalize( elements, nested = false ) {
+/**
+ * Marks nested containers as inner, as Elementor does, and sizes widgets that
+ * sit directly in a row: in a row container Elementor lets widgets share the
+ * row (and start at zero width when "Align items" is set), so they get an
+ * inline (auto) width, and buttons and icons never shrink.
+ */
+function finalize( elements, nested = false, parent = null ) {
 	elements.forEach( ( el ) => {
 		if ( 'container' === el.elType ) {
 			el.isInner = nested;
-			finalize( el.elements, true );
+			finalize( el.elements, true, el );
+		} else if ( parent && 'row' === parent.settings.flex_direction ) {
+			const s = el.settings;
+			if ( undefined === s._element_width ) {
+				s._element_width = 'auto';
+			}
+			if ( undefined === s._flex_size ) {
+				s._flex_size = [ 'button', 'icon', 'image' ].includes( el.widgetType ) ? 'none' : 'shrink';
+			}
 		}
 	} );
 	return elements;

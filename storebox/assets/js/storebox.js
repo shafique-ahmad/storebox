@@ -166,6 +166,23 @@
 	} );
 
 	/* ------------------------------------------------------------------
+	 * FAQ accordions with sb-e-faq--open-first: the first question starts
+	 * open, as in the designs (Elementor starts with all items closed).
+	 * ------------------------------------------------------------------ */
+	if ( ! body.classList.contains( 'elementor-editor-active' ) ) {
+		Array.prototype.forEach.call( doc.querySelectorAll( '.sb-e-faq--open-first .elementor-accordion-item:first-child' ), function ( item ) {
+			var title = item.querySelector( '.elementor-tab-title' );
+			var content = item.querySelector( '.elementor-tab-content' );
+			if ( title && content && ! title.classList.contains( 'elementor-active' ) ) {
+				title.classList.add( 'elementor-active' );
+				title.setAttribute( 'aria-expanded', 'true' );
+				content.classList.add( 'elementor-active' );
+				content.style.display = 'block';
+			}
+		} );
+	}
+
+	/* ------------------------------------------------------------------
 	 * Reveal on scroll (theme templates).
 	 * ------------------------------------------------------------------ */
 	var revealables = doc.querySelectorAll( '.sb-rv' );

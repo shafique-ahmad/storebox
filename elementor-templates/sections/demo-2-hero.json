@@ -252,7 +252,9 @@
 											"unit": "px",
 											"size": 10,
 											"sizes": []
-										}
+										},
+										"_element_width": "auto",
+										"_flex_size": "none"
 									},
 									"elements": [],
 									"isInner": false
@@ -305,7 +307,9 @@
 											"bottom": "1.5",
 											"left": "1.5",
 											"isLinked": true
-										}
+										},
+										"_element_width": "auto",
+										"_flex_size": "none"
 									},
 									"elements": [],
 									"isInner": false

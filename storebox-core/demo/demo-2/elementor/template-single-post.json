@@ -189,7 +189,9 @@
 								},
 								"__dynamic__": {
 									"title": "[elementor-tag id=\"0af0aca\" name=\"post-date\" settings=\"%7B%22type%22%3A%22post_date_gmt%22%2C%22format%22%3A%22default%22%7D\"]"
-								}
+								},
+								"_element_width": "auto",
+								"_flex_size": "shrink"
 							},
 							"elements": [],
 							"isInner": false
@@ -212,7 +214,9 @@
 								},
 								"__dynamic__": {
 									"title": "[elementor-tag id=\"659e0c6\" name=\"storebox-read-time\" settings=\"%7B%22before%22%3A%22%C2%B7%20%22%7D\"]"
-								}
+								},
+								"_element_width": "auto",
+								"_flex_size": "shrink"
 							},
 							"elements": [],
 							"isInner": false
@@ -476,7 +480,11 @@
 									"unit": "px",
 									"size": 0
 								},
-								"_flex_size": "grow"
+								"width": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
 							},
 							"elements": [
 								{
@@ -525,6 +533,7 @@
 							"elType": "widget",
 							"widgetType": "button",
 							"settings": {
+								"_flex_size": "none",
 								"text": "All posts",
 								"link": {
 									"url": "{{url:page-blog}}",
@@ -568,7 +577,8 @@
 									"bottom": "1.5",
 									"left": "1.5",
 									"isLinked": true
-								}
+								},
+								"_element_width": "auto"
 							},
 							"elements": [],
 							"isInner": false
@@ -864,7 +874,9 @@
 													"button_text_color": "globals/colors?id=sbwhite",
 													"hover_color": "globals/colors?id=sbwhite"
 												},
-												"button_background_hover_color": "#0D1D26"
+												"button_background_hover_color": "#0D1D26",
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false
@@ -917,7 +929,9 @@
 													"bottom": "1.5",
 													"left": "1.5",
 													"isLinked": true
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "none"
 											},
 											"elements": [],
 											"isInner": false

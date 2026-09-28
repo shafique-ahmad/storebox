@@ -42,8 +42,8 @@ module.exports = ( D, B ) => {
 			},
 			[
 				C.eyebrow( D, o.eyebrow || 'Ready when you are', { onDark: true, align: 'center' } ),
-				E.heading( o.title || 'Reserve a unit in under two minutes.', { tag: 'h2', typo: 'sbh2', color: 'sbwhite', align: 'center', margin: [ 22, 0, 0, 0 ], width: 700 } ),
-				E.text( o.lede || 'No deposit, no contract to sign today, and we hold it free for seven days.', { typo: 'sblede', colorHex: 'rgba(255,255,255,0.76)', align: 'center', margin: [ 22, 0, 0, 0 ], width: 600 } ),
+				E.heading( o.title || 'Reserve a unit in under two minutes.', { tag: 'h2', typo: 'sbh2', color: 'sbwhite', align: 'center', margin: [ 22, 0, 0, 0 ], width: 580 } ),
+				E.text( o.lede || 'No deposit, no contract to sign today, and we hold it free for seven days.', { typo: 'sblede', colorHex: 'rgba(255,255,255,0.76)', align: 'center', margin: [ 22, 0, 0, 0 ], width: 560 } ),
 				E.row( { gap: 14, justify: 'center', stack: 'mobile', extra: { margin: E.dims( 38, 0, 0, 0 ), flex_align_items_mobile: 'center', width: E.pct( 100 ) } }, [
 					E.button( 'Find my size', url.sizes, B.yellow ),
 					E.button( PHONE, PHONE_URL, B.ghost ),
@@ -125,7 +125,7 @@ module.exports = ( D, B ) => {
 			},
 			[
 				C.eyebrow( D, 'Amsterdam &amp; Haarlem', { onDark: true } ),
-				E.heading( 'Space for the things you\'re <em>not</em> ready to part with.', { tag: 'h1', typo: 'sbh1', color: 'sbwhite', classes: 'sb-e-accent', margin: [ 20, 0, 0, 0 ], width: 760 } ),
+				E.heading( 'Space for the things you\'re <em>not</em> ready to part with.', { tag: 'h1', typo: 'sbh1', color: 'sbwhite', classes: 'sb-e-accent sb-e-balance', margin: [ 20, 0, 0, 0 ], width: 685 } ),
 				E.text( 'Clean, dry, monitored units from 2 to 30 m². Month to month, your own key, and no deposit to get started.', { typo: 'sbledel', colorHex: 'rgba(255,255,255,0.8)', margin: [ 26, 0, 0, 0 ], width: 620 } ),
 				E.row( { gap: 14, stack: 'mobile', extra: { margin: E.dims( 38, 0, 0, 0 ), flex_align_items_mobile: 'flex-start' } }, [
 					E.button( 'Find my size', '#calc', B.yellow, { icon: 'fas fa-arrow-right' } ),
@@ -329,7 +329,7 @@ module.exports = ( D, B ) => {
 			S.homeLocations(),
 			S.quote(),
 			S.faq(),
-			S.cta(),
+			S.cta( { lede: 'No deposit, no contract to sign today, and we\'ll hold it free for seven days.' } ),
 		],
 	};
 
@@ -421,7 +421,7 @@ module.exports = ( D, B ) => {
 		settings: { hide_title: 'yes', storebox_transparent_header: 'on' },
 		content: () => {
 			const person = ( initials, name, role, bio, bg, fg ) =>
-				E.col( { w: 25, bg: '#FFFFFF', radius: D.radiusLg, pad: [ 26, 26, 26, 26 ], extra: { width_tablet: E.pct( 45 ), _flex_size: 'grow', border_border: 'solid', border_width: E.dims( 1 ), __globals__: { border_color: E.color( 'sbborder' ) } } }, [
+				E.col( { w: 25, bg: '#FFFFFF', radius: D.radiusLg, pad: [ 26, 26, 26, 26 ], extra: { width_tablet: E.pct( 45 ), _flex_size_tablet: 'grow', border_border: 'solid', border_width: E.dims( 1 ), __globals__: { border_color: E.color( 'sbborder' ) } } }, [
 					E.col( { bg: bg, radius: 999, align: 'center', justify: 'center', extra: { width: E.px( 56 ), width_tablet: E.px( 56 ), width_mobile: E.px( 56 ), min_height: E.px( 56 ), margin: E.dims( 0, 0, 16, 0 ) } }, [
 						E.heading( initials, { tag: 'span', colorHex: fg, align: 'center', extra: { typography_typography: 'custom', typography_font_weight: '800', typography_font_size: E.rem( 1.05 ) } } ),
 					] ),
@@ -489,7 +489,7 @@ module.exports = ( D, B ) => {
 				] ),
 				E.section( { pad: [ D.sec, D.sec ] }, [
 					C.head( D, { eyebrow: 'The team', title: 'The people who pick up the phone.' } ),
-					E.row( { gap: 24, wrap: true, stack: 'mobile' }, [
+					E.row( { gap: 24, stack: 'mobile', extra: { flex_direction_tablet: 'row', flex_wrap_tablet: 'wrap' } }, [
 						person( 'ED', 'Eva de Vries', 'Founder', 'Still does a shift at Noord reception every Friday.', { global: 'primary' }, '#FFFFFF' ),
 						person( 'JB', 'Jasper Bakker', 'Operations', 'Knows every door code change and every leaking gutter.', { global: 'secondary' }, '#0D1D26' ),
 						person( 'SM', 'Samira Mansour', 'Customer care', 'The voice on the phone, most likely, if you call.', { global: 'accent' }, '#FFFFFF' ),

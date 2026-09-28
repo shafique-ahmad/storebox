@@ -77,7 +77,7 @@ module.exports = ( D, B ) => {
 							: E.heading( item[ 0 ], { tag: 'p', typo: 'sbnum', color: 'secondary' } ),
 					] ),
 					E.col( { extra: { width: E.pct( 38 ), width_mobile: E.pct( 100 ) } }, [ E.heading( item[ 1 ], { tag: 'h3', typo: 'secondary', color: o.onDark ? 'sbwhite' : 'primary' } ) ] ),
-					E.col( { extra: { width: E.pct( 52 ), width_mobile: E.pct( 100 ), _flex_size: 'grow' } }, [ C.small( item[ 2 ], { size: 0.96, lh: 1.6, color: o.onDark ? null : 'sbmuted', colorHex: o.onDark ? 'rgba(255,255,255,0.64)' : undefined } ) ] ),
+					E.col( { extra: { width: E.pct( 52 ), width_mobile: E.pct( 100 ) } }, [ C.small( item[ 2 ], { size: 0.96, lh: 1.6, color: o.onDark ? null : 'sbmuted', colorHex: o.onDark ? 'rgba(255,255,255,0.64)' : undefined } ) ] ),
 				] )
 			)
 		);
@@ -227,7 +227,7 @@ module.exports = ( D, B ) => {
 					].map( ( item ) =>
 						E.row( { gap: 20, stack: false, extra: { padding: E.dims( 32, 0, 32, 0 ) } }, [
 							E.col( { extra: { width: E.px( 58 ), width_tablet: E.px( 58 ), width_mobile: E.px( 44 ), _flex_size: 'none', padding: E.dims( 4, 0, 0, 0 ) } }, [ E.heading( item[ 0 ], { tag: 'p', typo: 'sbnum', color: 'secondary' } ) ] ),
-							E.col( { extra: { _flex_size: 'grow' } }, [
+							E.col( { extra: { width: E.pct( 100 ) } }, [
 								E.heading( item[ 1 ], { tag: 'h3', typo: 'secondary', color: 'primary' } ),
 								C.small( item[ 2 ], { size: 0.96, lh: 1.6, margin: [ 9, 0, 0, 0 ] } ),
 							] ),
@@ -425,7 +425,7 @@ module.exports = ( D, B ) => {
 								E.heading( p[ 1 ], { tag: 'h3', typo: 'secondary', color: 'primary', extra: { typography_typography: 'custom', typography_font_size: E.rem( 1.02 ) } } ),
 								C.small( p[ 2 ], { size: 0.86 } ),
 							] ),
-							E.col( { extra: { _flex_size: 'grow' } }, [ C.small( p[ 3 ], { size: 0.93 } ) ] ),
+							E.col( { extra: { width: E.pct( 100 ) } }, [ C.small( p[ 3 ], { size: 0.93 } ) ] ),
 						] )
 					)
 				),
@@ -451,7 +451,7 @@ module.exports = ( D, B ) => {
 						].map( ( r ) =>
 							E.row( { gap: 20, rowGap: 6, stack: 'mobile', extra: { padding: E.dims( 22, 0, 22, 0 ) } }, [
 								E.col( { extra: { width: E.px( 120 ), width_tablet: E.px( 120 ), width_mobile: E.pct( 100 ), _flex_size: 'none', padding: E.dims( 4, 0, 0, 0 ) } }, [ E.heading( r[ 0 ], { tag: 'p', typo: 'accent', color: 'sbmuted' } ) ] ),
-								E.col( { extra: { _flex_size: 'grow' } }, [
+								E.col( { extra: { width: E.pct( 100 ) } }, [
 									E.heading( r[ 1 ], { tag: 'p', color: 'primary', extra: Object.assign( { typography_typography: 'custom', typography_font_weight: '700', typography_font_size: E.rem( 1.15 ) }, r[ 3 ] ? { link: { url: r[ 3 ], is_external: '', nofollow: '' } } : {} ) } ),
 									C.small( r[ 2 ], { size: 0.9, margin: [ 3, 0, 0, 0 ] } ),
 								] ),

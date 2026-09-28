@@ -70,7 +70,8 @@ function head( D, o ) {
 				align: o.align,
 				margin: [ o.eyebrow ? ( o.gapTitle === undefined ? ( soft ? 18 : 16 ) : o.gapTitle ) : 0, 0, 0, 0 ],
 				classes: o.titleClasses,
-				width: o.titleWidth,
+				// Business design: titles stop at 19ch (16ch on dark sections).
+				width: o.titleWidth === undefined && ! soft ? ( onDark ? 544 : 646 ) : o.titleWidth,
 			} )
 		);
 	}
@@ -87,12 +88,14 @@ function head( D, o ) {
 			} )
 		);
 	}
+	// Self Storage design: the heading block is at most 60ch (600px) wide.
+	const width = o.width === undefined && soft ? 600 : o.width;
 	return E.col(
 		{
 			extra: Object.assign(
 				{ margin: E.dims( 0, 0, o.margin === undefined ? ( soft ? 52 : 56 ) : o.margin, 0 ) },
-				o.width ? { width: E.px( o.width ), width_mobile: E.pct( 100 ) } : {},
-				'center' === o.align ? { flex_align_items: 'center' } : {}
+				width ? { width: E.px( width ), width_mobile: E.pct( 100 ) } : {},
+				'center' === o.align ? { flex_align_items: 'center', _flex_align_self: 'center' } : {}
 			),
 		},
 		widgets
@@ -112,11 +115,12 @@ function headSplit( D, o, buttonWidget ) {
 			extra: { margin: E.dims( 0, 0, o.margin === undefined ? ( soft ? 52 : 56 ) : o.margin, 0 ), flex_align_items_mobile: 'flex-start' },
 		},
 		[
-			E.col( { extra: { _flex_size: 'grow' } }, [
+			// Full width by default, shrinking to leave room for the button.
+			E.col( { extra: { width: E.pct( 100 ) } }, [
 				eyebrow( D, o.eyebrow, { onDark: o.onDark } ),
 				E.heading( o.title, { tag: 'h2', typo: 'sbh2', color: o.onDark ? 'sbwhite' : 'primary', margin: [ soft ? 18 : 16, 0, 0, 0 ] } ),
 			] ),
-			buttonWidget,
+			Object.assign( buttonWidget, { settings: Object.assign( { _flex_size: 'none' }, buttonWidget.settings ) } ),
 		]
 	);
 }
@@ -182,7 +186,7 @@ function faq( D, items ) {
 		activeIcon: soft ? 'fas fa-chevron-up' : 'fas fa-times',
 		titlePad: soft ? 26 : 24,
 		contentPad: soft ? 26 : 24,
-		classes: soft ? '' : 'sb-e-faq--ruled',
+		classes: 'sb-e-faq--open-first' + ( soft ? '' : ' sb-e-faq--ruled' ),
 		extra: { _element_width: 'initial', _element_custom_width: E.px( soft ? 860 : 760 ), _element_width_mobile: 'inherit', _element_width_tablet: 'inherit' },
 	} );
 }

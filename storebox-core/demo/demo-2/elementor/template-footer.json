@@ -67,7 +67,7 @@
 						},
 						"flex_align_items": "stretch",
 						"flex_justify_content": "flex-start",
-						"flex_wrap": "wrap",
+						"flex_wrap": "nowrap",
 						"flex_direction_mobile": "column",
 						"margin": {
 							"unit": "px",
@@ -385,7 +385,9 @@
 												},
 												"__dynamic__": {
 													"title": "[elementor-tag id=\"854d6f3\" name=\"site-title\" settings=\"%7B%7D\"]"
-												}
+												},
+												"_element_width": "auto",
+												"_flex_size": "shrink"
 											},
 											"elements": [],
 											"isInner": false
@@ -546,7 +548,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 45,
+									"size": 28,
 									"sizes": []
 								},
 								"width_mobile": {
@@ -554,7 +556,7 @@
 									"size": 100,
 									"sizes": []
 								},
-								"_flex_size": "grow"
+								"_flex_size_tablet": "grow"
 							},
 							"elements": [
 								{
@@ -657,7 +659,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 45,
+									"size": 28,
 									"sizes": []
 								},
 								"width_mobile": {
@@ -665,7 +667,7 @@
 									"size": 100,
 									"sizes": []
 								},
-								"_flex_size": "grow"
+								"_flex_size_tablet": "grow"
 							},
 							"elements": [
 								{
@@ -768,7 +770,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 45,
+									"size": 28,
 									"sizes": []
 								},
 								"width_mobile": {
@@ -776,7 +778,7 @@
 									"size": 100,
 									"sizes": []
 								},
-								"_flex_size": "grow"
+								"_flex_size_tablet": "grow"
 							},
 							"elements": [
 								{
@@ -911,7 +913,9 @@
 								},
 								"__dynamic__": {
 									"editor": "[elementor-tag id=\"ca60500\" name=\"current-date-time\" settings=\"%7B%22date_format%22%3A%22custom%22%2C%22time_format%22%3A%22%22%2C%22custom_format%22%3A%22Y%22%2C%22before%22%3A%22%C2%A9%20%22%2C%22after%22%3A%22%20StoreBox%22%7D\"]"
-								}
+								},
+								"_element_width": "auto",
+								"_flex_size": "shrink"
 							},
 							"elements": [],
 							"isInner": false
@@ -933,7 +937,9 @@
 									"unit": "em",
 									"size": 1.5,
 									"sizes": []
-								}
+								},
+								"_element_width": "auto",
+								"_flex_size": "shrink"
 							},
 							"elements": [],
 							"isInner": false

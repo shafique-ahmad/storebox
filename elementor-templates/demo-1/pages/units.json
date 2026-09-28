@@ -700,7 +700,7 @@
 						"_element_width": "initial",
 						"_element_custom_width": {
 							"unit": "px",
-							"size": 700,
+							"size": 580,
 							"sizes": []
 						},
 						"_element_width_mobile": "inherit",
@@ -731,7 +731,7 @@
 						"_element_width": "initial",
 						"_element_custom_width": {
 							"unit": "px",
-							"size": 600,
+							"size": 560,
 							"sizes": []
 						},
 						"_element_width_mobile": "inherit",
@@ -820,7 +820,9 @@
 									"button_text_color": "globals/colors?id=sbdark",
 									"hover_color": "globals/colors?id=sbdark"
 								},
-								"button_background_hover_color": "#FFC422"
+								"button_background_hover_color": "#FFC422",
+								"_element_width": "auto",
+								"_flex_size": "none"
 							},
 							"elements": [],
 							"isInner": false
@@ -873,7 +875,9 @@
 									"isLinked": true
 								},
 								"border_color": "rgba(255,255,255,0.4)",
-								"button_hover_border_color": "rgba(255,255,255,0.6)"
+								"button_hover_border_color": "rgba(255,255,255,0.6)",
+								"_element_width": "auto",
+								"_flex_size": "none"
 							},
 							"elements": [],
 							"isInner": false

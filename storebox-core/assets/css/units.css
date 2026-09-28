@@ -133,12 +133,19 @@
 
 .sb-unit-card__foot {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	gap: 12px 14px;
+	gap: 14px;
 	margin-top: auto;
 	padding-top: 22px;
+}
+
+.sb-unit-card__foot > * {
+	min-width: 0;
+}
+
+.sb-unit-card__foot > .sb-unit-card__cta {
+	flex: none;
 }
 
 .sb-unit-card__cta {

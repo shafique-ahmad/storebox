@@ -561,7 +561,11 @@
 									"unit": "px",
 									"size": 0
 								},
-								"_flex_size": "grow"
+								"width": {
+									"unit": "%",
+									"size": 100,
+									"sizes": []
+								}
 							},
 							"elements": [
 								{
@@ -610,6 +614,7 @@
 							"elType": "widget",
 							"widgetType": "button",
 							"settings": {
+								"_flex_size": "none",
 								"text": "All units",
 								"link": {
 									"url": "{{url:page-units}}",
@@ -653,7 +658,8 @@
 									"bottom": "1.5",
 									"left": "1.5",
 									"isLinked": true
-								}
+								},
+								"_element_width": "auto"
 							},
 							"elements": [],
 							"isInner": false
