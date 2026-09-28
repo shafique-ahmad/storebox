@@ -1319,7 +1319,11 @@ body.sb-preset-editorial {
 }
 
 .sb-unit-layout__info {
-	margin-top: 8px;
+	margin-top: 40px;
+}
+
+.sb-unit-layout__info > :first-child {
+	margin-top: 0;
 }
 
 .sb-sec--facts {

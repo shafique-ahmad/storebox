@@ -101,10 +101,44 @@
 			zoomSnap: 0.5
 		} );
 
-		L.tileLayer( config.tiles, {
+		var layer = L.tileLayer( config.tiles, {
 			maxZoom: 19,
 			attribution: config.attribution || ''
 		} ).addTo( map );
+
+		// If no tile loads (blocked network, privacy tools), go back to the
+		// illustrative map rather than leaving an empty grey box.
+		var loaded = 0;
+		var failed = 0;
+		var alive = true;
+		var observer = null;
+		var revert = function () {
+			if ( loaded || ! alive ) {
+				return;
+			}
+			alive = false;
+			if ( observer ) {
+				observer.disconnect();
+			}
+			// Leave Leaflet's event handler before tearing the map down.
+			window.setTimeout( function () {
+				map.remove();
+				if ( holder.parentNode ) {
+					holder.parentNode.removeChild( holder );
+				}
+				root.classList.remove( 'is-live' );
+			}, 0 );
+		};
+		layer.on( 'tileload', function () {
+			loaded++;
+		} );
+		layer.on( 'tileerror', function () {
+			failed++;
+			if ( failed >= 4 ) {
+				revert();
+			}
+		} );
+		window.setTimeout( revert, 12000 );
 
 		var bounds = [];
 		config.points.forEach( function ( point ) {
@@ -142,9 +176,12 @@
 
 		// Elementor may resize the column after the map is drawn.
 		if ( typeof window.ResizeObserver === 'function' ) {
-			new window.ResizeObserver( function () {
-				map.invalidateSize();
-			} ).observe( holder );
+			observer = new window.ResizeObserver( function () {
+				if ( alive ) {
+					map.invalidateSize();
+				}
+			} );
+			observer.observe( holder );
 		}
 	}
 

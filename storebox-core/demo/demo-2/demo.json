@@ -1,0 +1,11 @@
+{
+	"slug": "demo-2",
+	"name": "Business Storage",
+	"description": "Editorial design with a split hero, a sliding unit rail, numbered lists and a sticky header.",
+	"preset": "editorial",
+	"preview": "preview.jpg",
+	"order": 2,
+	"requires": {
+		"elementor": "3.20.0"
+	}
+}

@@ -1,0 +1,608 @@
+{
+ "units": [
+  {
+   "slug": "archive-4",
+   "title": "Document archive — 4 m²",
+   "name": "Document archive",
+   "type_label": "Business storage",
+   "area": 4.0,
+   "width": 2.0,
+   "depth": 2.0,
+   "ceiling": 2.4,
+   "floor": "First floor",
+   "price": 65,
+   "available": 7,
+   "location": "Amsterdam Noord",
+   "access": "24/7",
+   "fits": "Around 200 archive boxes",
+   "lede": "Around 200 archive boxes at Amsterdam Noord. Available to move into today.",
+   "features": [
+    "Climate controlled",
+    "Individually alarmed",
+    "CCTV monitored",
+    "Your own padlock",
+    "Trolleys available",
+    "24/7 PIN access"
+   ],
+   "features_business": [
+    "Climate controlled",
+    "Individually alarmed door",
+    "CCTV monitored",
+    "24/7 PIN access"
+   ],
+   "gallery": [
+    "unit-shelving",
+    "storage-corridor-wide",
+    "unit-open-door",
+    "storage-corridor-trolley"
+   ],
+   "content": "<h2>What fits</h2><p>Around 200 archive boxes. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p><p>In square feet that is <b>43 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>",
+   "card_business": "Around 200 archive boxes. Business storage at Amsterdam Noord.",
+   "size_key": "small",
+   "loc_key": "noord",
+   "type_key": "business"
+  },
+  {
+   "slug": "large-20",
+   "title": "Large — 20 m²",
+   "name": "Large",
+   "type_label": "Self storage",
+   "area": 20.0,
+   "width": 4.0,
+   "depth": 5.0,
+   "ceiling": 2.7,
+   "floor": "Ground floor",
+   "price": 149,
+   "available": 0,
+   "location": "Amsterdam Zuidoost",
+   "access": "24/7",
+   "fits": "A four-bedroom house",
+   "lede": "A four-bedroom house at Amsterdam Zuidoost. Fully booked right now.",
+   "features": [
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed",
+    "CCTV monitored",
+    "Your own padlock",
+    "Trolleys available",
+    "24/7 PIN access"
+   ],
+   "features_business": [
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed door",
+    "CCTV monitored",
+    "24/7 PIN access"
+   ],
+   "gallery": [
+    "storage-corridor-trolley",
+    "storage-corridor-wide",
+    "unit-open-door",
+    "unit-small-yellow"
+   ],
+   "content": "<h2>What fits</h2><p>A four-bedroom house. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p><p>In square feet that is <b>215 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>",
+   "card_business": "A four-bedroom house. Self storage at Amsterdam Zuidoost.",
+   "size_key": "large",
+   "loc_key": "zuidoost",
+   "type_key": "self",
+   "rail_business": "A four-bedroom house. Drive right up to the door.",
+   "rail_photo": "storage-corridor-trolley"
+  },
+  {
+   "slug": "large-30",
+   "title": "Large — 30 m²",
+   "name": "Large",
+   "type_label": "Business storage",
+   "area": 30.0,
+   "width": 5.0,
+   "depth": 6.0,
+   "ceiling": 2.7,
+   "floor": "Ground floor",
+   "price": 209,
+   "available": 3,
+   "location": "Haarlem Oudeweg",
+   "access": "06:00–23:00",
+   "fits": "A small business stockroom",
+   "lede": "A small business stockroom at Haarlem Oudeweg. Available to move into today.",
+   "features": [
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed",
+    "CCTV monitored",
+    "Your own padlock",
+    "Trolleys available"
+   ],
+   "features_business": [
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed door",
+    "CCTV monitored"
+   ],
+   "gallery": [
+    "drive-up-units",
+    "storage-corridor-wide",
+    "unit-open-door",
+    "storage-corridor-trolley"
+   ],
+   "content": "<h2>What fits</h2><p>A small business stockroom. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p><p>In square feet that is <b>323 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>",
+   "card_business": "A small business stockroom. Business storage at Haarlem Oudeweg.",
+   "size_key": "large",
+   "loc_key": "haarlem",
+   "type_key": "business",
+   "rail_business": "A small stockroom. Pallet delivery accepted on your behalf.",
+   "rail_photo": "vehicle-bay"
+  },
+  {
+   "slug": "locker-2",
+   "title": "Locker — 2 m²",
+   "name": "Locker",
+   "type_label": "Self storage",
+   "area": 2.0,
+   "width": 1.4,
+   "depth": 1.4,
+   "ceiling": 2.4,
+   "floor": "First floor",
+   "price": 35,
+   "available": 9,
+   "location": "Amsterdam Noord",
+   "access": "24/7",
+   "fits": "A wardrobe and a bike",
+   "lede": "A wardrobe and a bike at Amsterdam Noord. Available to move into today.",
+   "features": [
+    "Climate controlled",
+    "Individually alarmed",
+    "CCTV monitored",
+    "Your own padlock",
+    "Trolleys available",
+    "24/7 PIN access"
+   ],
+   "features_business": [
+    "Climate controlled",
+    "Individually alarmed door",
+    "CCTV monitored",
+    "24/7 PIN access"
+   ],
+   "gallery": [
+    "door-padlock",
+    "storage-corridor-wide",
+    "unit-open-door",
+    "storage-corridor-trolley"
+   ],
+   "content": "<h2>What fits</h2><p>A wardrobe and a bike. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p><p>In square feet that is <b>22 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>",
+   "card_business": "A wardrobe and a bike. Self storage at Amsterdam Noord.",
+   "size_key": "small",
+   "loc_key": "noord",
+   "type_key": "self",
+   "rail_business": "A wardrobe's worth. Seasonal boxes, a bike, a few suitcases.",
+   "rail_photo": "door-padlock"
+  },
+  {
+   "slug": "medium-10",
+   "title": "Medium — 10 m²",
+   "name": "Medium",
+   "type_label": "Self storage",
+   "area": 10.0,
+   "width": 2.5,
+   "depth": 4.0,
+   "ceiling": 2.4,
+   "floor": "Ground floor",
+   "price": 89,
+   "available": 2,
+   "location": "Amsterdam Noord",
+   "access": "24/7",
+   "fits": "A two-bedroom home",
+   "lede": "A two-bedroom home at Amsterdam Noord. Available to move into today.",
+   "features": [
+    "Climate controlled",
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed",
+    "CCTV monitored",
+    "Your own padlock",
+    "Trolleys available",
+    "24/7 PIN access"
+   ],
+   "features_business": [
+    "Climate controlled",
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed door",
+    "CCTV monitored",
+    "24/7 PIN access"
+   ],
+   "gallery": [
+    "unit-open-door",
+    "storage-corridor-wide",
+    "storage-corridor-trolley",
+    "unit-small-yellow"
+   ],
+   "content": "<h2>What fits</h2><p>A two-bedroom home. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p><p>In square feet that is <b>108 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>",
+   "card_business": "A two-bedroom home. Self storage at Amsterdam Noord.",
+   "size_key": "medium",
+   "loc_key": "noord",
+   "type_key": "self",
+   "rail_business": "A two-bedroom home, or a single garage. Climate controlled.",
+   "rail_photo": "unit-open-door"
+  },
+  {
+   "slug": "medium-15",
+   "title": "Medium — 15 m²",
+   "name": "Medium",
+   "type_label": "Business storage",
+   "area": 15.0,
+   "width": 3.0,
+   "depth": 5.0,
+   "ceiling": 2.4,
+   "floor": "Ground floor",
+   "price": 119,
+   "available": 4,
+   "location": "Amsterdam Zuidoost",
+   "access": "24/7",
+   "fits": "A three-bedroom home",
+   "lede": "A three-bedroom home at Amsterdam Zuidoost. Available to move into today.",
+   "features": [
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed",
+    "CCTV monitored",
+    "Your own padlock",
+    "Trolleys available",
+    "24/7 PIN access"
+   ],
+   "features_business": [
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed door",
+    "CCTV monitored",
+    "24/7 PIN access"
+   ],
+   "gallery": [
+    "unit-small-yellow",
+    "storage-corridor-wide",
+    "unit-open-door",
+    "storage-corridor-trolley"
+   ],
+   "content": "<h2>What fits</h2><p>A three-bedroom home. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p><p>In square feet that is <b>161 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>",
+   "card_business": "A three-bedroom home. Business storage at Amsterdam Zuidoost.",
+   "size_key": "medium",
+   "loc_key": "zuidoost",
+   "type_key": "business",
+   "rail_business": "A three-bedroom home, or business stock with shelving.",
+   "rail_photo": "unit-shelving"
+  },
+  {
+   "slug": "small-5",
+   "title": "Small — 5 m²",
+   "name": "Small",
+   "type_label": "Self storage",
+   "area": 5.0,
+   "width": 2.0,
+   "depth": 2.5,
+   "ceiling": 2.4,
+   "floor": "Ground floor",
+   "price": 59,
+   "available": 6,
+   "location": "Amsterdam Noord",
+   "access": "24/7",
+   "fits": "A one-bedroom flat",
+   "lede": "A one-bedroom flat at Amsterdam Noord. Available to move into today.",
+   "features": [
+    "Climate controlled",
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed",
+    "CCTV monitored",
+    "Your own padlock",
+    "Trolleys available",
+    "24/7 PIN access"
+   ],
+   "features_business": [
+    "Climate controlled",
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed door",
+    "CCTV monitored",
+    "24/7 PIN access"
+   ],
+   "gallery": [
+    "storage-lockers",
+    "storage-corridor-wide",
+    "unit-open-door",
+    "storage-corridor-trolley"
+   ],
+   "content": "<h2>What fits</h2><p>A one-bedroom flat. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p><p>In square feet that is <b>54 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>",
+   "card_business": "A one-bedroom flat. Self storage at Amsterdam Noord.",
+   "size_key": "small",
+   "loc_key": "noord",
+   "type_key": "self",
+   "rail_business": "A one-bedroom flat. Bed, sofa, table and twenty boxes.",
+   "rail_photo": "unit-small-yellow"
+  },
+  {
+   "slug": "vehicle-18",
+   "title": "Vehicle bay — 18 m²",
+   "name": "Vehicle bay",
+   "type_label": "Vehicle storage",
+   "area": 18.0,
+   "width": 3.0,
+   "depth": 6.0,
+   "ceiling": 2.7,
+   "floor": "Ground floor",
+   "price": 139,
+   "available": 5,
+   "location": "Haarlem Oudeweg",
+   "access": "06:00–23:00",
+   "fits": "A car, camper or small boat",
+   "lede": "A car, camper or small boat at Haarlem Oudeweg. Available to move into today.",
+   "features": [
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed",
+    "CCTV monitored",
+    "Your own padlock",
+    "Trolleys available"
+   ],
+   "features_business": [
+    "Drive-up access",
+    "Power socket",
+    "Individually alarmed door",
+    "CCTV monitored"
+   ],
+   "gallery": [
+    "vehicle-bay",
+    "storage-corridor-wide",
+    "unit-open-door",
+    "storage-corridor-trolley"
+   ],
+   "content": "<h2>What fits</h2><p>A car, camper or small boat. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p><p>In square feet that is <b>194 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>",
+   "card_business": "A car, camper or small boat. Vehicle storage at Haarlem Oudeweg.",
+   "size_key": "large",
+   "loc_key": "haarlem",
+   "type_key": "vehicle"
+  }
+ ],
+ "locations": [
+  {
+   "slug": "haarlem",
+   "title": "Haarlem Oudeweg",
+   "area_name": "Haarlem",
+   "lede": "Set up for business storage, with pallet delivery accepted on your behalf and a signing-in desk during office hours.",
+   "street": "Oudeweg 91",
+   "postcode": "2031 CC",
+   "city": "Haarlem",
+   "access": "06:00–23:00",
+   "units_total": 158,
+   "units_free": 3,
+   "phone": "023 000 0003",
+   "heading": "Built for businesses.",
+   "paragraphs": [
+    "Set up for business storage, with pallet delivery accepted on your behalf and a signing-in desk during office hours.",
+    "The site is fenced and gated, with number-plate recognition at the barrier and a PIN at the door. Every unit has its own alarm contact, and the corridors are covered by cameras recording around the clock."
+   ],
+   "tags": [
+    "Business storage",
+    "Pallet delivery",
+    "Racking"
+   ],
+   "hours": [
+    [
+     "Monday",
+     "09:00–17:00"
+    ],
+    [
+     "Tuesday",
+     "09:00–17:00"
+    ],
+    [
+     "Wednesday",
+     "09:00–17:00"
+    ],
+    [
+     "Thursday",
+     "09:00–17:00"
+    ],
+    [
+     "Friday",
+     "09:00–17:00"
+    ],
+    [
+     "Saturday",
+     "Closed"
+    ],
+    [
+     "Sunday",
+     "Closed"
+    ]
+   ],
+   "hero_photo": "vehicle-bay",
+   "photo": "unit-open-door"
+  },
+  {
+   "slug": "noord",
+   "title": "Amsterdam Noord",
+   "area_name": "Noord",
+   "lede": "Our largest facility, on the north bank. Indoor units across two heated floors, with a covered loading bay and drive-up access on the ground floor.",
+   "street": "Distelweg 112",
+   "postcode": "1031 HH",
+   "city": "Amsterdam",
+   "access": "24/7",
+   "units_total": 318,
+   "units_free": 14,
+   "phone": "020 000 0001",
+   "heading": "Built for moving day.",
+   "paragraphs": [
+    "Our largest facility, on the north bank. Indoor units across two heated floors, with a covered loading bay and drive-up access on the ground floor.",
+    "The site is fenced and gated, with number-plate recognition at the barrier and a PIN at the door. Every unit has its own alarm contact, and the corridors are covered by cameras recording around the clock."
+   ],
+   "tags": [
+    "24/7 access",
+    "Climate controlled",
+    "Two floors"
+   ],
+   "hours": [
+    [
+     "Monday",
+     "09:00–17:30"
+    ],
+    [
+     "Tuesday",
+     "09:00–17:30"
+    ],
+    [
+     "Wednesday",
+     "09:00–17:30"
+    ],
+    [
+     "Thursday",
+     "09:00–17:30"
+    ],
+    [
+     "Friday",
+     "09:00–17:30"
+    ],
+    [
+     "Saturday",
+     "Closed"
+    ],
+    [
+     "Sunday",
+     "Closed"
+    ]
+   ],
+   "hero_photo": "unit-small-yellow",
+   "photo": "storage-corridor-wide"
+  },
+  {
+   "slug": "zuidoost",
+   "title": "Amsterdam Zuidoost",
+   "area_name": "Zuidoost",
+   "lede": "Drive right up to your unit. Every door on this site is at ground level, so there are no lifts or corridors between the van and your storage.",
+   "street": "Paalbergweg 24",
+   "postcode": "1105 AG",
+   "city": "Amsterdam",
+   "access": "24/7",
+   "units_total": 264,
+   "units_free": 6,
+   "phone": "020 000 0002",
+   "heading": "Built for moving day.",
+   "paragraphs": [
+    "Drive right up to your unit. Every door on this site is at ground level, so there are no lifts or corridors between the van and your storage.",
+    "The site is fenced and gated, with number-plate recognition at the barrier and a PIN at the door. Every unit has its own alarm contact, and the corridors are covered by cameras recording around the clock."
+   ],
+   "tags": [
+    "24/7 access",
+    "Drive-up",
+    "Ground level"
+   ],
+   "hours": [
+    [
+     "Monday",
+     "08:00–18:00"
+    ],
+    [
+     "Tuesday",
+     "08:00–18:00"
+    ],
+    [
+     "Wednesday",
+     "08:00–18:00"
+    ],
+    [
+     "Thursday",
+     "08:00–18:00"
+    ],
+    [
+     "Friday",
+     "08:00–18:00"
+    ],
+    [
+     "Saturday",
+     "08:00–18:00"
+    ],
+    [
+     "Sunday",
+     "Closed"
+    ]
+   ],
+   "hero_photo": "drive-up-units",
+   "photo": "unit-open-door"
+  }
+ ],
+ "posts": [
+  {
+   "slug": "how-to-pack-a-storage-unit",
+   "category": "guides",
+   "title": "How to pack a storage unit so you can still reach everything",
+   "excerpt": "The mistake is packing it like a removal van. Here is the layout that leaves an aisle and keeps the things you need at the front.",
+   "date": "14 Sep 2026",
+   "read_time": 6,
+   "photo": "packing-table"
+  },
+  {
+   "slug": "what-size-unit",
+   "category": "guides",
+   "title": "What size storage unit do I actually need?",
+   "excerpt": "A room-by-room guide, with the one rule that stops most people renting a size too big.",
+   "date": "2 Sep 2026",
+   "read_time": 5,
+   "photo": "unit-open-door"
+  },
+  {
+   "slug": "storing-furniture-winter",
+   "category": "storage-tips",
+   "title": "Storing furniture through a Dutch winter",
+   "excerpt": "Damp is the enemy, not cold. What to wrap, what to leave uncovered, and why plastic sheeting makes things worse.",
+   "date": "21 Aug 2026",
+   "read_time": 4,
+   "photo": "unit-shelving"
+  },
+  {
+   "slug": "business-stock-storage",
+   "category": "business",
+   "title": "Using self storage as a stockroom",
+   "excerpt": "Pallet deliveries, racking and 24/7 access: how three local shops cut their rent by moving stock out of the high street.",
+   "date": "9 Aug 2026",
+   "read_time": 7,
+   "photo": "storage-corridor-trolley"
+  },
+  {
+   "slug": "moving-between-homes",
+   "category": "moving",
+   "title": "The gap between two tenancies, solved",
+   "excerpt": "When the old lease ends before the new one starts. A short-term plan that costs less than a second month of rent.",
+   "date": "28 Jul 2026",
+   "read_time": 5,
+   "photo": "moving-boxes-room"
+  },
+  {
+   "slug": "student-summer-storage",
+   "category": "moving",
+   "title": "Summer storage for students",
+   "excerpt": "Split a 2 m² locker with a housemate and keep your room over the break for less than a weekend away.",
+   "date": "12 Jul 2026",
+   "read_time": 3,
+   "photo": "door-padlock"
+  },
+  {
+   "slug": "what-not-to-store",
+   "category": "storage-tips",
+   "title": "Twelve things you cannot put in storage",
+   "excerpt": "Some are obvious. A few catch people out every month, including one thing almost everyone owns.",
+   "date": "30 Jun 2026",
+   "read_time": 4,
+   "photo": "storage-lockers"
+  }
+ ],
+ "categories": {
+  "business": "Business",
+  "guides": "Guides",
+  "moving": "Moving",
+  "storage-tips": "Storage tips"
+ },
+ "post_body": "<p>Most people pack a storage unit the way they would pack a removal van: biggest things in first, everything wedged together, doors closed on a solid wall of stuff. It works for the van, because the van gets unloaded all at once. A storage unit does not.</p><h2>Leave an aisle. Always.</h2><p>The single biggest improvement is an aisle down the middle — or along one side in a narrow unit. It costs you about a fifth of the floor area, and it means you can reach the back without unloading the front.</p><p>That fifth is already built into the size calculator's recommendations, which is why it sometimes suggests a size bigger than you expected.</p><blockquote>If you cannot reach it without unloading half the unit, you do not really have it stored — you have it buried.</blockquote><h2>Heavy at the bottom, often-needed at the front</h2><ul><li>Books, tools and anything dense go in small boxes, on the floor.</li><li>Things you will want back soon — seasonal clothes, paperwork, the good pans — go nearest the door.</li><li>Label two sides of every box, not just the top. Once boxes are stacked, the top is the one side you cannot see.</li></ul><div class=\"callout\"><h3>Stand sofas on their end</h3><p>An upright sofa takes about a third of the floor space. Wrap it in a breathable cover rather than plastic sheeting, which traps moisture against the fabric.</p></div><h2>Use the height</h2><p>Every StoreBox unit is at least 2.4 m tall. Boxes of the same size stack safely to about 2.2 m, so buying one size of box — rather than collecting whatever the supermarket had — is worth more than it sounds.</p><p>Keep a gap of a few centimetres from the walls for air to circulate, and put a pallet or a couple of planks under anything that should not touch concrete.</p><h2>Keep a list on your phone</h2><p>Photograph each box before you seal it, and number them. When you are looking for the kettle in three months' time, you will know it is in box 14, left-hand stack, second from the bottom.</p>",
+ "author": {
+  "initials": "SM",
+  "name": "Samira Mansour",
+  "bio": "Customer care, StoreBox · has watched a lot of people unpack a lot of units"
+ }
+}

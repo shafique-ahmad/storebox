@@ -1,0 +1,1519 @@
+{
+	"version": 1,
+	"demo": "demo-2",
+	"images": {
+		"storage-corridor-trolley": {
+			"file": "storage-corridor-trolley.jpg",
+			"title": "Storage corridor with a loaded hand truck",
+			"alt": "Bright storage corridor lined with blue roller doors, a hand truck loaded with boxes in front"
+		},
+		"storage-corridor-wide": {
+			"file": "storage-corridor-wide.jpg",
+			"title": "Wide storage corridor",
+			"alt": "Wide, clean corridor of self storage units with navy roller doors"
+		},
+		"unit-shelving": {
+			"file": "unit-shelving.jpg",
+			"title": "Storage unit with shelving",
+			"alt": "Inside a storage unit: steel shelving with labelled boxes and storage bins"
+		},
+		"unit-open-door": {
+			"file": "unit-open-door.jpg",
+			"title": "Open storage unit",
+			"alt": "Open roller door showing a tidy storage unit with shelves and boxes"
+		},
+		"unit-small-yellow": {
+			"file": "unit-small-yellow.jpg",
+			"title": "Small storage unit",
+			"alt": "Small storage unit behind an open yellow roller door, neatly packed with boxes"
+		},
+		"shutters-row": {
+			"file": "shutters-row.jpg",
+			"title": "Row of colourful roller doors",
+			"alt": "Row of colourful roller shutter doors along a storage building on a clear day"
+		},
+		"drive-up-units": {
+			"file": "drive-up-units.jpg",
+			"title": "Drive-up storage units",
+			"alt": "Yellow drive-up storage units with a delivery van parked in front"
+		},
+		"door-padlock": {
+			"file": "door-padlock.jpg",
+			"title": "Red storage door with a padlock",
+			"alt": "Red roller door of a storage unit secured with a brass padlock"
+		},
+		"storage-lockers": {
+			"file": "storage-lockers.jpg",
+			"title": "Wall of storage lockers",
+			"alt": "Wall of small storage lockers in navy and yellow"
+		},
+		"vehicle-bay": {
+			"file": "vehicle-bay.jpg",
+			"title": "Vehicle storage bay",
+			"alt": "Wide vehicle storage bay with a covered car inside"
+		},
+		"packing-table": {
+			"file": "packing-table.jpg",
+			"title": "Packing boxes on a table",
+			"alt": "Open cardboard box on a table with packing tape, a marker and flat-packed boxes"
+		},
+		"moving-boxes-room": {
+			"file": "moving-boxes-room.jpg",
+			"title": "Moving boxes in a bright room",
+			"alt": "Moving boxes stacked in a bright, empty room beside a large window"
+		}
+	},
+	"terms": {
+		"sb_unit_type": [
+			{
+				"key": "self",
+				"name": "Self storage",
+				"slug": "self-storage",
+				"meta": {
+					"sb_order": 1
+				}
+			},
+			{
+				"key": "business",
+				"name": "Business storage",
+				"slug": "business-storage",
+				"meta": {
+					"sb_order": 2
+				}
+			},
+			{
+				"key": "vehicle",
+				"name": "Vehicle storage",
+				"slug": "vehicle-storage",
+				"meta": {
+					"sb_order": 3
+				}
+			}
+		],
+		"sb_unit_size": [
+			{
+				"key": "small",
+				"name": "Small",
+				"slug": "small",
+				"description": "up to 5 m²",
+				"meta": {
+					"sb_order": 1
+				}
+			},
+			{
+				"key": "medium",
+				"name": "Medium",
+				"slug": "medium",
+				"description": "10 to 15 m²",
+				"meta": {
+					"sb_order": 2
+				}
+			},
+			{
+				"key": "large",
+				"name": "Large",
+				"slug": "large",
+				"description": "18 m² and up",
+				"meta": {
+					"sb_order": 3
+				}
+			}
+		],
+		"sb_unit_feature": [
+			{
+				"key": "climate",
+				"name": "Climate controlled",
+				"slug": "climate",
+				"meta": {
+					"sb_order": 1,
+					"sb_card": "1"
+				}
+			},
+			{
+				"key": "drive-up",
+				"name": "Drive-up access",
+				"slug": "drive-up",
+				"meta": {
+					"sb_order": 2,
+					"sb_card": "1"
+				}
+			},
+			{
+				"key": "power",
+				"name": "Power socket",
+				"slug": "power",
+				"meta": {
+					"sb_order": 3,
+					"sb_card": "1"
+				}
+			},
+			{
+				"key": "alarm",
+				"name": "Individually alarmed",
+				"slug": "alarm",
+				"meta": {
+					"sb_order": 4,
+					"sb_card": ""
+				}
+			},
+			{
+				"key": "cctv",
+				"name": "CCTV monitored",
+				"slug": "cctv",
+				"meta": {
+					"sb_order": 5,
+					"sb_card": ""
+				}
+			},
+			{
+				"key": "padlock",
+				"name": "Your own padlock",
+				"slug": "padlock",
+				"meta": {
+					"sb_order": 6,
+					"sb_card": ""
+				}
+			},
+			{
+				"key": "trolleys",
+				"name": "Trolleys available",
+				"slug": "trolleys",
+				"meta": {
+					"sb_order": 7,
+					"sb_card": ""
+				}
+			},
+			{
+				"key": "pin",
+				"name": "24/7 PIN access",
+				"slug": "pin",
+				"meta": {
+					"sb_order": 8,
+					"sb_card": ""
+				}
+			}
+		],
+		"category": [
+			{
+				"key": "business",
+				"name": "Business",
+				"slug": "business"
+			},
+			{
+				"key": "guides",
+				"name": "Guides",
+				"slug": "guides"
+			},
+			{
+				"key": "moving",
+				"name": "Moving",
+				"slug": "moving"
+			},
+			{
+				"key": "storage-tips",
+				"name": "Storage tips",
+				"slug": "storage-tips"
+			}
+		]
+	},
+	"posts": [
+		{
+			"key": "location-haarlem",
+			"type": "sb_location",
+			"title": "Haarlem Oudeweg",
+			"slug": "haarlem-oudeweg",
+			"excerpt": "Set up for business storage, with pallet delivery accepted on your behalf and a signing-in desk during office hours.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Built for businesses.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Set up for business storage, with pallet delivery accepted on your behalf and a signing-in desk during office hours.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The site is fenced and gated, with number-plate recognition at the barrier and a PIN at the door. Every unit has its own alarm contact, and the corridors are covered by cameras recording around the clock.</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 3,
+			"image": "vehicle-bay",
+			"meta": {
+				"_sb_area_name": "Haarlem",
+				"_sb_street": "Oudeweg 91",
+				"_sb_postcode": "2031 CC",
+				"_sb_city": "Haarlem",
+				"_sb_phone": "023 000 0003",
+				"_sb_email": "",
+				"_sb_access": "06:00–23:00",
+				"_sb_units_total": 158,
+				"_sb_units_free": 3,
+				"_sb_tags": "Business storage\nPallet delivery\nRacking",
+				"_sb_lat": 52.3867,
+				"_sb_lng": 4.6621,
+				"_sb_gallery": "{{images:unit-open-door}}",
+				"_sb_hours": {
+					"0": "Closed",
+					"1": "09:00–17:00",
+					"2": "09:00–17:00",
+					"3": "09:00–17:00",
+					"4": "09:00–17:00",
+					"5": "09:00–17:00",
+					"6": "Closed"
+				}
+			}
+		},
+		{
+			"key": "location-noord",
+			"type": "sb_location",
+			"title": "Amsterdam Noord",
+			"slug": "amsterdam-noord",
+			"excerpt": "Our largest facility, on the north bank. Indoor units across two heated floors, with a covered loading bay and drive-up access on the ground floor.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Built for moving day.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Our largest facility, on the north bank. Indoor units across two heated floors, with a covered loading bay and drive-up access on the ground floor.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The site is fenced and gated, with number-plate recognition at the barrier and a PIN at the door. Every unit has its own alarm contact, and the corridors are covered by cameras recording around the clock.</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 1,
+			"image": "storage-lockers",
+			"meta": {
+				"_sb_area_name": "Noord",
+				"_sb_street": "Distelweg 112",
+				"_sb_postcode": "1031 HH",
+				"_sb_city": "Amsterdam",
+				"_sb_phone": "020 000 0001",
+				"_sb_email": "",
+				"_sb_access": "24/7",
+				"_sb_units_total": 318,
+				"_sb_units_free": 14,
+				"_sb_tags": "24/7 access\nClimate controlled\nTwo floors",
+				"_sb_lat": 52.3938,
+				"_sb_lng": 4.8923,
+				"_sb_gallery": "{{images:storage-corridor-wide}}",
+				"_sb_hours": {
+					"0": "Closed",
+					"1": "09:00–17:30",
+					"2": "09:00–17:30",
+					"3": "09:00–17:30",
+					"4": "09:00–17:30",
+					"5": "09:00–17:30",
+					"6": "Closed"
+				}
+			}
+		},
+		{
+			"key": "location-zuidoost",
+			"type": "sb_location",
+			"title": "Amsterdam Zuidoost",
+			"slug": "amsterdam-zuidoost",
+			"excerpt": "Drive right up to your unit. Every door on this site is at ground level, so there are no lifts or corridors between the van and your storage.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Built for moving day.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Drive right up to your unit. Every door on this site is at ground level, so there are no lifts or corridors between the van and your storage.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The site is fenced and gated, with number-plate recognition at the barrier and a PIN at the door. Every unit has its own alarm contact, and the corridors are covered by cameras recording around the clock.</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 2,
+			"image": "drive-up-units",
+			"meta": {
+				"_sb_area_name": "Zuidoost",
+				"_sb_street": "Paalbergweg 24",
+				"_sb_postcode": "1105 AG",
+				"_sb_city": "Amsterdam",
+				"_sb_phone": "020 000 0002",
+				"_sb_email": "",
+				"_sb_access": "24/7",
+				"_sb_units_total": 264,
+				"_sb_units_free": 6,
+				"_sb_tags": "24/7 access\nDrive-up\nGround level",
+				"_sb_lat": 52.3009,
+				"_sb_lng": 4.9532,
+				"_sb_gallery": "{{images:unit-open-door}}",
+				"_sb_hours": {
+					"0": "Closed",
+					"1": "08:00–18:00",
+					"2": "08:00–18:00",
+					"3": "08:00–18:00",
+					"4": "08:00–18:00",
+					"5": "08:00–18:00",
+					"6": "08:00–18:00"
+				}
+			}
+		},
+		{
+			"key": "unit-archive-4",
+			"type": "sb_unit",
+			"title": "Document archive",
+			"slug": "archive-4",
+			"excerpt": "Around 200 archive boxes. Business storage at Amsterdam Noord.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What fits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Around 200 archive boxes. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In square feet that is <b>43 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 1,
+			"image": "unit-shelving",
+			"meta": {
+				"_sb_area": 4,
+				"_sb_width": 2,
+				"_sb_depth": 2,
+				"_sb_ceiling": 2.4,
+				"_sb_floor": "First floor",
+				"_sb_price": 65,
+				"_sb_available": 7,
+				"_sb_location": "{{post:location-noord}}",
+				"_sb_fits": "Around 200 archive boxes",
+				"_sb_highlights": "",
+				"_sb_gallery": "{{images:storage-corridor-wide,unit-open-door,storage-corridor-trolley}}",
+				"_sb_featured": ""
+			},
+			"terms": {
+				"sb_unit_type": [
+					"business"
+				],
+				"sb_unit_size": [
+					"small"
+				],
+				"sb_unit_feature": [
+					"climate",
+					"alarm",
+					"cctv",
+					"padlock",
+					"trolleys",
+					"pin"
+				]
+			}
+		},
+		{
+			"key": "unit-large-20",
+			"type": "sb_unit",
+			"title": "Large",
+			"slug": "large-20",
+			"excerpt": "A four-bedroom house. Drive right up to the door.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What fits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A four-bedroom house. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In square feet that is <b>215 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 2,
+			"image": "storage-corridor-trolley",
+			"meta": {
+				"_sb_area": 20,
+				"_sb_width": 4,
+				"_sb_depth": 5,
+				"_sb_ceiling": 2.7,
+				"_sb_floor": "Ground floor",
+				"_sb_price": 149,
+				"_sb_available": 0,
+				"_sb_location": "{{post:location-zuidoost}}",
+				"_sb_fits": "A four-bedroom house",
+				"_sb_highlights": "Fits a four-bedroom home\nVehicle access to the door\nSuitable for business stock",
+				"_sb_gallery": "{{images:storage-corridor-wide,unit-open-door,unit-small-yellow}}",
+				"_sb_featured": "1"
+			},
+			"terms": {
+				"sb_unit_type": [
+					"self"
+				],
+				"sb_unit_size": [
+					"large"
+				],
+				"sb_unit_feature": [
+					"drive-up",
+					"power",
+					"alarm",
+					"cctv",
+					"padlock",
+					"trolleys",
+					"pin"
+				]
+			}
+		},
+		{
+			"key": "unit-large-30",
+			"type": "sb_unit",
+			"title": "Large",
+			"slug": "large-30",
+			"excerpt": "A small stockroom. Pallet delivery accepted on your behalf.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What fits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A small business stockroom. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In square feet that is <b>323 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 3,
+			"image": "drive-up-units",
+			"meta": {
+				"_sb_area": 30,
+				"_sb_width": 5,
+				"_sb_depth": 6,
+				"_sb_ceiling": 2.7,
+				"_sb_floor": "Ground floor",
+				"_sb_price": 209,
+				"_sb_available": 3,
+				"_sb_location": "{{post:location-haarlem}}",
+				"_sb_fits": "A small business stockroom",
+				"_sb_highlights": "",
+				"_sb_gallery": "{{images:storage-corridor-wide,unit-open-door,storage-corridor-trolley}}",
+				"_sb_featured": ""
+			},
+			"terms": {
+				"sb_unit_type": [
+					"business"
+				],
+				"sb_unit_size": [
+					"large"
+				],
+				"sb_unit_feature": [
+					"drive-up",
+					"power",
+					"alarm",
+					"cctv",
+					"padlock",
+					"trolleys"
+				]
+			}
+		},
+		{
+			"key": "unit-locker-2",
+			"type": "sb_unit",
+			"title": "Locker",
+			"slug": "locker-2",
+			"excerpt": "A wardrobe's worth. Seasonal boxes, a bike, a few suitcases.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What fits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A wardrobe and a bike. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In square feet that is <b>22 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 4,
+			"image": "door-padlock",
+			"meta": {
+				"_sb_area": 2,
+				"_sb_width": 1.4,
+				"_sb_depth": 1.4,
+				"_sb_ceiling": 2.4,
+				"_sb_floor": "First floor",
+				"_sb_price": 35,
+				"_sb_available": 9,
+				"_sb_location": "{{post:location-noord}}",
+				"_sb_fits": "A wardrobe and a bike",
+				"_sb_highlights": "",
+				"_sb_gallery": "{{images:storage-corridor-wide,unit-open-door,storage-corridor-trolley}}",
+				"_sb_featured": ""
+			},
+			"terms": {
+				"sb_unit_type": [
+					"self"
+				],
+				"sb_unit_size": [
+					"small"
+				],
+				"sb_unit_feature": [
+					"climate",
+					"alarm",
+					"cctv",
+					"padlock",
+					"trolleys",
+					"pin"
+				]
+			}
+		},
+		{
+			"key": "unit-medium-10",
+			"type": "sb_unit",
+			"title": "Medium",
+			"slug": "medium-10",
+			"excerpt": "A two-bedroom home, or a single garage. Climate controlled.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What fits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A two-bedroom home. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In square feet that is <b>108 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 5,
+			"image": "unit-open-door",
+			"meta": {
+				"_sb_area": 10,
+				"_sb_width": 2.5,
+				"_sb_depth": 4,
+				"_sb_ceiling": 2.4,
+				"_sb_floor": "Ground floor",
+				"_sb_price": 89,
+				"_sb_available": 2,
+				"_sb_location": "{{post:location-noord}}",
+				"_sb_fits": "A two-bedroom home",
+				"_sb_highlights": "Fits a two-bedroom home\nClimate controlled\nTrolley and loading bay",
+				"_sb_gallery": "{{images:storage-corridor-wide,storage-corridor-trolley,unit-small-yellow}}",
+				"_sb_featured": "1"
+			},
+			"terms": {
+				"sb_unit_type": [
+					"self"
+				],
+				"sb_unit_size": [
+					"medium"
+				],
+				"sb_unit_feature": [
+					"climate",
+					"drive-up",
+					"power",
+					"alarm",
+					"cctv",
+					"padlock",
+					"trolleys",
+					"pin"
+				]
+			}
+		},
+		{
+			"key": "unit-medium-15",
+			"type": "sb_unit",
+			"title": "Medium",
+			"slug": "medium-15",
+			"excerpt": "A three-bedroom home, or business stock with shelving.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What fits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A three-bedroom home. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In square feet that is <b>161 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 6,
+			"image": "unit-small-yellow",
+			"meta": {
+				"_sb_area": 15,
+				"_sb_width": 3,
+				"_sb_depth": 5,
+				"_sb_ceiling": 2.4,
+				"_sb_floor": "Ground floor",
+				"_sb_price": 119,
+				"_sb_available": 4,
+				"_sb_location": "{{post:location-zuidoost}}",
+				"_sb_fits": "A three-bedroom home",
+				"_sb_highlights": "",
+				"_sb_gallery": "{{images:storage-corridor-wide,unit-open-door,storage-corridor-trolley}}",
+				"_sb_featured": ""
+			},
+			"terms": {
+				"sb_unit_type": [
+					"business"
+				],
+				"sb_unit_size": [
+					"medium"
+				],
+				"sb_unit_feature": [
+					"drive-up",
+					"power",
+					"alarm",
+					"cctv",
+					"padlock",
+					"trolleys",
+					"pin"
+				]
+			}
+		},
+		{
+			"key": "unit-small-5",
+			"type": "sb_unit",
+			"title": "Small",
+			"slug": "small-5",
+			"excerpt": "A one-bedroom flat. Bed, sofa, table and twenty boxes.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What fits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A one-bedroom flat. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In square feet that is <b>54 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 7,
+			"image": "storage-lockers",
+			"meta": {
+				"_sb_area": 5,
+				"_sb_width": 2,
+				"_sb_depth": 2.5,
+				"_sb_ceiling": 2.4,
+				"_sb_floor": "Ground floor",
+				"_sb_price": 59,
+				"_sb_available": 6,
+				"_sb_location": "{{post:location-noord}}",
+				"_sb_fits": "A one-bedroom flat",
+				"_sb_highlights": "Fits a one-bedroom flat\nGround floor, drive-up access\nPower socket available",
+				"_sb_gallery": "{{images:storage-corridor-wide,unit-open-door,storage-corridor-trolley}}",
+				"_sb_featured": "1"
+			},
+			"terms": {
+				"sb_unit_type": [
+					"self"
+				],
+				"sb_unit_size": [
+					"small"
+				],
+				"sb_unit_feature": [
+					"climate",
+					"drive-up",
+					"power",
+					"alarm",
+					"cctv",
+					"padlock",
+					"trolleys",
+					"pin"
+				]
+			}
+		},
+		{
+			"key": "unit-vehicle-18",
+			"type": "sb_unit",
+			"title": "Vehicle bay",
+			"slug": "vehicle-18",
+			"excerpt": "A car, camper or small boat. Vehicle storage at Haarlem Oudeweg.",
+			"content": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What fits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A car, camper or small boat. That assumes stacking to about 2.2 m and leaving an aisle so you can reach the back — pack tighter and you will fit more, but you will also be unloading half of it to find anything.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In square feet that is <b>194 ft²</b>. For comparison, a single garage is about 15 m² and a standard parking space about 12 m².</p>\n<!-- /wp:paragraph -->",
+			"menu_order": 8,
+			"image": "vehicle-bay",
+			"meta": {
+				"_sb_area": 18,
+				"_sb_width": 3,
+				"_sb_depth": 6,
+				"_sb_ceiling": 2.7,
+				"_sb_floor": "Ground floor",
+				"_sb_price": 139,
+				"_sb_available": 5,
+				"_sb_location": "{{post:location-haarlem}}",
+				"_sb_fits": "A car, camper or small boat",
+				"_sb_highlights": "",
+				"_sb_gallery": "{{images:storage-corridor-wide,unit-open-door,storage-corridor-trolley}}",
+				"_sb_featured": ""
+			},
+			"terms": {
+				"sb_unit_type": [
+					"vehicle"
+				],
+				"sb_unit_size": [
+					"large"
+				],
+				"sb_unit_feature": [
+					"drive-up",
+					"power",
+					"alarm",
+					"cctv",
+					"padlock",
+					"trolleys"
+				]
+			}
+		},
+		{
+			"key": "post-how-to-pack-a-storage-unit",
+			"type": "post",
+			"title": "How to pack a storage unit so you can still reach everything",
+			"slug": "how-to-pack-a-storage-unit",
+			"excerpt": "The mistake is packing it like a removal van. Here is the layout that leaves an aisle and keeps the things you need at the front.",
+			"content": "<!-- wp:paragraph -->\n<p>Most people pack a storage unit the way they would pack a removal van: biggest things in first, everything wedged together, doors closed on a solid wall of stuff. It works for the van, because the van gets unloaded all at once. A storage unit does not.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Leave an aisle. Always.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The single biggest improvement is an aisle down the middle — or along one side in a narrow unit. It costs you about a fifth of the floor area, and it means you can reach the back without unloading the front.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>That fifth is already built into the size calculator's recommendations, which is why it sometimes suggests a size bigger than you expected.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>If you cannot reach it without unloading half the unit, you do not really have it stored — you have it buried.</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Heavy at the bottom, often-needed at the front</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>Books, tools and anything dense go in small boxes, on the floor.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Things you will want back soon — seasonal clothes, paperwork, the good pans — go nearest the door.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Label two sides of every box, not just the top. Once boxes are stacked, the top is the one side you cannot see.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-sb-callout\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-sb-callout\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Stand sofas on their end</h3>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p>An upright sofa takes about a third of the floor space. Wrap it in a breathable cover rather than plastic sheeting, which traps moisture against the fabric.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Use the height</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every StoreBox unit is at least 2.4 m tall. Boxes of the same size stack safely to about 2.2 m, so buying one size of box — rather than collecting whatever the supermarket had — is worth more than it sounds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Keep a gap of a few centimetres from the walls for air to circulate, and put a pallet or a couple of planks under anything that should not touch concrete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Keep a list on your phone</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Photograph each box before you seal it, and number them. When you are looking for the kettle in three months' time, you will know it is in box 14, left-hand stack, second from the bottom.</p>\n<!-- /wp:paragraph -->",
+			"date": "2026-09-14 09:00:00",
+			"image": "packing-table",
+			"comments": false,
+			"meta": {
+				"_storebox_read_time": 6
+			},
+			"terms": {
+				"category": [
+					"guides"
+				]
+			}
+		},
+		{
+			"key": "post-what-size-unit",
+			"type": "post",
+			"title": "What size storage unit do I actually need?",
+			"slug": "what-size-unit",
+			"excerpt": "A room-by-room guide, with the one rule that stops most people renting a size too big.",
+			"content": "<!-- wp:paragraph -->\n<p>Most people pack a storage unit the way they would pack a removal van: biggest things in first, everything wedged together, doors closed on a solid wall of stuff. It works for the van, because the van gets unloaded all at once. A storage unit does not.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Leave an aisle. Always.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The single biggest improvement is an aisle down the middle — or along one side in a narrow unit. It costs you about a fifth of the floor area, and it means you can reach the back without unloading the front.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>That fifth is already built into the size calculator's recommendations, which is why it sometimes suggests a size bigger than you expected.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>If you cannot reach it without unloading half the unit, you do not really have it stored — you have it buried.</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Heavy at the bottom, often-needed at the front</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>Books, tools and anything dense go in small boxes, on the floor.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Things you will want back soon — seasonal clothes, paperwork, the good pans — go nearest the door.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Label two sides of every box, not just the top. Once boxes are stacked, the top is the one side you cannot see.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-sb-callout\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-sb-callout\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Stand sofas on their end</h3>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p>An upright sofa takes about a third of the floor space. Wrap it in a breathable cover rather than plastic sheeting, which traps moisture against the fabric.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Use the height</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every StoreBox unit is at least 2.4 m tall. Boxes of the same size stack safely to about 2.2 m, so buying one size of box — rather than collecting whatever the supermarket had — is worth more than it sounds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Keep a gap of a few centimetres from the walls for air to circulate, and put a pallet or a couple of planks under anything that should not touch concrete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Keep a list on your phone</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Photograph each box before you seal it, and number them. When you are looking for the kettle in three months' time, you will know it is in box 14, left-hand stack, second from the bottom.</p>\n<!-- /wp:paragraph -->",
+			"date": "2026-09-02 09:00:00",
+			"image": "unit-open-door",
+			"comments": false,
+			"meta": {
+				"_storebox_read_time": 5
+			},
+			"terms": {
+				"category": [
+					"guides"
+				]
+			}
+		},
+		{
+			"key": "post-storing-furniture-winter",
+			"type": "post",
+			"title": "Storing furniture through a Dutch winter",
+			"slug": "storing-furniture-winter",
+			"excerpt": "Damp is the enemy, not cold. What to wrap, what to leave uncovered, and why plastic sheeting makes things worse.",
+			"content": "<!-- wp:paragraph -->\n<p>Most people pack a storage unit the way they would pack a removal van: biggest things in first, everything wedged together, doors closed on a solid wall of stuff. It works for the van, because the van gets unloaded all at once. A storage unit does not.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Leave an aisle. Always.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The single biggest improvement is an aisle down the middle — or along one side in a narrow unit. It costs you about a fifth of the floor area, and it means you can reach the back without unloading the front.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>That fifth is already built into the size calculator's recommendations, which is why it sometimes suggests a size bigger than you expected.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>If you cannot reach it without unloading half the unit, you do not really have it stored — you have it buried.</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Heavy at the bottom, often-needed at the front</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>Books, tools and anything dense go in small boxes, on the floor.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Things you will want back soon — seasonal clothes, paperwork, the good pans — go nearest the door.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Label two sides of every box, not just the top. Once boxes are stacked, the top is the one side you cannot see.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-sb-callout\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-sb-callout\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Stand sofas on their end</h3>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p>An upright sofa takes about a third of the floor space. Wrap it in a breathable cover rather than plastic sheeting, which traps moisture against the fabric.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Use the height</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every StoreBox unit is at least 2.4 m tall. Boxes of the same size stack safely to about 2.2 m, so buying one size of box — rather than collecting whatever the supermarket had — is worth more than it sounds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Keep a gap of a few centimetres from the walls for air to circulate, and put a pallet or a couple of planks under anything that should not touch concrete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Keep a list on your phone</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Photograph each box before you seal it, and number them. When you are looking for the kettle in three months' time, you will know it is in box 14, left-hand stack, second from the bottom.</p>\n<!-- /wp:paragraph -->",
+			"date": "2026-08-21 09:00:00",
+			"image": "unit-shelving",
+			"comments": false,
+			"meta": {
+				"_storebox_read_time": 4
+			},
+			"terms": {
+				"category": [
+					"storage-tips"
+				]
+			}
+		},
+		{
+			"key": "post-business-stock-storage",
+			"type": "post",
+			"title": "Using self storage as a stockroom",
+			"slug": "business-stock-storage",
+			"excerpt": "Pallet deliveries, racking and 24/7 access: how three local shops cut their rent by moving stock out of the high street.",
+			"content": "<!-- wp:paragraph -->\n<p>Most people pack a storage unit the way they would pack a removal van: biggest things in first, everything wedged together, doors closed on a solid wall of stuff. It works for the van, because the van gets unloaded all at once. A storage unit does not.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Leave an aisle. Always.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The single biggest improvement is an aisle down the middle — or along one side in a narrow unit. It costs you about a fifth of the floor area, and it means you can reach the back without unloading the front.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>That fifth is already built into the size calculator's recommendations, which is why it sometimes suggests a size bigger than you expected.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>If you cannot reach it without unloading half the unit, you do not really have it stored — you have it buried.</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Heavy at the bottom, often-needed at the front</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>Books, tools and anything dense go in small boxes, on the floor.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Things you will want back soon — seasonal clothes, paperwork, the good pans — go nearest the door.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Label two sides of every box, not just the top. Once boxes are stacked, the top is the one side you cannot see.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-sb-callout\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-sb-callout\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Stand sofas on their end</h3>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p>An upright sofa takes about a third of the floor space. Wrap it in a breathable cover rather than plastic sheeting, which traps moisture against the fabric.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Use the height</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every StoreBox unit is at least 2.4 m tall. Boxes of the same size stack safely to about 2.2 m, so buying one size of box — rather than collecting whatever the supermarket had — is worth more than it sounds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Keep a gap of a few centimetres from the walls for air to circulate, and put a pallet or a couple of planks under anything that should not touch concrete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Keep a list on your phone</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Photograph each box before you seal it, and number them. When you are looking for the kettle in three months' time, you will know it is in box 14, left-hand stack, second from the bottom.</p>\n<!-- /wp:paragraph -->",
+			"date": "2026-08-09 09:00:00",
+			"image": "storage-corridor-trolley",
+			"comments": false,
+			"meta": {
+				"_storebox_read_time": 7
+			},
+			"terms": {
+				"category": [
+					"business"
+				]
+			}
+		},
+		{
+			"key": "post-moving-between-homes",
+			"type": "post",
+			"title": "The gap between two tenancies, solved",
+			"slug": "moving-between-homes",
+			"excerpt": "When the old lease ends before the new one starts. A short-term plan that costs less than a second month of rent.",
+			"content": "<!-- wp:paragraph -->\n<p>Most people pack a storage unit the way they would pack a removal van: biggest things in first, everything wedged together, doors closed on a solid wall of stuff. It works for the van, because the van gets unloaded all at once. A storage unit does not.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Leave an aisle. Always.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The single biggest improvement is an aisle down the middle — or along one side in a narrow unit. It costs you about a fifth of the floor area, and it means you can reach the back without unloading the front.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>That fifth is already built into the size calculator's recommendations, which is why it sometimes suggests a size bigger than you expected.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>If you cannot reach it without unloading half the unit, you do not really have it stored — you have it buried.</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Heavy at the bottom, often-needed at the front</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>Books, tools and anything dense go in small boxes, on the floor.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Things you will want back soon — seasonal clothes, paperwork, the good pans — go nearest the door.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Label two sides of every box, not just the top. Once boxes are stacked, the top is the one side you cannot see.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-sb-callout\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-sb-callout\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Stand sofas on their end</h3>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p>An upright sofa takes about a third of the floor space. Wrap it in a breathable cover rather than plastic sheeting, which traps moisture against the fabric.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Use the height</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every StoreBox unit is at least 2.4 m tall. Boxes of the same size stack safely to about 2.2 m, so buying one size of box — rather than collecting whatever the supermarket had — is worth more than it sounds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Keep a gap of a few centimetres from the walls for air to circulate, and put a pallet or a couple of planks under anything that should not touch concrete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Keep a list on your phone</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Photograph each box before you seal it, and number them. When you are looking for the kettle in three months' time, you will know it is in box 14, left-hand stack, second from the bottom.</p>\n<!-- /wp:paragraph -->",
+			"date": "2026-07-28 09:00:00",
+			"image": "moving-boxes-room",
+			"comments": false,
+			"meta": {
+				"_storebox_read_time": 5
+			},
+			"terms": {
+				"category": [
+					"moving"
+				]
+			}
+		},
+		{
+			"key": "post-student-summer-storage",
+			"type": "post",
+			"title": "Summer storage for students",
+			"slug": "student-summer-storage",
+			"excerpt": "Split a 2 m² locker with a housemate and keep your room over the break for less than a weekend away.",
+			"content": "<!-- wp:paragraph -->\n<p>Most people pack a storage unit the way they would pack a removal van: biggest things in first, everything wedged together, doors closed on a solid wall of stuff. It works for the van, because the van gets unloaded all at once. A storage unit does not.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Leave an aisle. Always.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The single biggest improvement is an aisle down the middle — or along one side in a narrow unit. It costs you about a fifth of the floor area, and it means you can reach the back without unloading the front.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>That fifth is already built into the size calculator's recommendations, which is why it sometimes suggests a size bigger than you expected.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>If you cannot reach it without unloading half the unit, you do not really have it stored — you have it buried.</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Heavy at the bottom, often-needed at the front</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>Books, tools and anything dense go in small boxes, on the floor.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Things you will want back soon — seasonal clothes, paperwork, the good pans — go nearest the door.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Label two sides of every box, not just the top. Once boxes are stacked, the top is the one side you cannot see.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-sb-callout\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-sb-callout\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Stand sofas on their end</h3>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p>An upright sofa takes about a third of the floor space. Wrap it in a breathable cover rather than plastic sheeting, which traps moisture against the fabric.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Use the height</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every StoreBox unit is at least 2.4 m tall. Boxes of the same size stack safely to about 2.2 m, so buying one size of box — rather than collecting whatever the supermarket had — is worth more than it sounds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Keep a gap of a few centimetres from the walls for air to circulate, and put a pallet or a couple of planks under anything that should not touch concrete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Keep a list on your phone</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Photograph each box before you seal it, and number them. When you are looking for the kettle in three months' time, you will know it is in box 14, left-hand stack, second from the bottom.</p>\n<!-- /wp:paragraph -->",
+			"date": "2026-07-12 09:00:00",
+			"image": "door-padlock",
+			"comments": false,
+			"meta": {
+				"_storebox_read_time": 3
+			},
+			"terms": {
+				"category": [
+					"moving"
+				]
+			}
+		},
+		{
+			"key": "post-what-not-to-store",
+			"type": "post",
+			"title": "Twelve things you cannot put in storage",
+			"slug": "what-not-to-store",
+			"excerpt": "Some are obvious. A few catch people out every month, including one thing almost everyone owns.",
+			"content": "<!-- wp:paragraph -->\n<p>Most people pack a storage unit the way they would pack a removal van: biggest things in first, everything wedged together, doors closed on a solid wall of stuff. It works for the van, because the van gets unloaded all at once. A storage unit does not.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Leave an aisle. Always.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The single biggest improvement is an aisle down the middle — or along one side in a narrow unit. It costs you about a fifth of the floor area, and it means you can reach the back without unloading the front.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>That fifth is already built into the size calculator's recommendations, which is why it sometimes suggests a size bigger than you expected.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\n<p>If you cannot reach it without unloading half the unit, you do not really have it stored — you have it buried.</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Heavy at the bottom, often-needed at the front</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>Books, tools and anything dense go in small boxes, on the floor.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Things you will want back soon — seasonal clothes, paperwork, the good pans — go nearest the door.</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Label two sides of every box, not just the top. Once boxes are stacked, the top is the one side you cannot see.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:group {\"className\":\"is-style-sb-callout\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group is-style-sb-callout\"><!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">Stand sofas on their end</h3>\n<!-- /wp:heading -->\n<!-- wp:paragraph -->\n<p>An upright sofa takes about a third of the floor space. Wrap it in a breathable cover rather than plastic sheeting, which traps moisture against the fabric.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Use the height</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every StoreBox unit is at least 2.4 m tall. Boxes of the same size stack safely to about 2.2 m, so buying one size of box — rather than collecting whatever the supermarket had — is worth more than it sounds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Keep a gap of a few centimetres from the walls for air to circulate, and put a pallet or a couple of planks under anything that should not touch concrete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Keep a list on your phone</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Photograph each box before you seal it, and number them. When you are looking for the kettle in three months' time, you will know it is in box 14, left-hand stack, second from the bottom.</p>\n<!-- /wp:paragraph -->",
+			"date": "2026-06-30 09:00:00",
+			"image": "storage-lockers",
+			"comments": false,
+			"meta": {
+				"_storebox_read_time": 4
+			},
+			"terms": {
+				"category": [
+					"storage-tips"
+				]
+			}
+		},
+		{
+			"key": "page-home",
+			"type": "page",
+			"title": "Home",
+			"slug": "home",
+			"content": "<p>Self storage · from €35 a month</p>\n<p>Dry, alarmed units from 2 to 30 m² in Amsterdam and Haarlem. Reserve online, move in today, cancel whenever you like.</p>\n<p><a href=\"{{url:page-sizes}}\">Find your size</a></p>\n<p><a href=\"{{url:page-units}}\">Units &amp; prices</a></p>\n<p>3</p>\n<p>Facilities</p>\n<p>740</p>\n<p>Units available</p>\n<p>4.8</p>\n<p>Average rating</p>\n<p>€0</p>\n<p>Deposit</p>\n<p>Move in today</p>\n<p>Reserve before 2pm and the unit is ready this afternoon.</p>\n<p>Find your size</p>\n<h2>Drawn to scale, so you can actually picture it.</h2>\n<p>Every size compared side by side at true proportion. Tap one to see what fits and what it costs.</p>\n<p>Why StoreBox</p>\n<h2>Four things we refuse to cut corners on.</h2>\n<p>01</p>\n<h3>Every door individually alarmed</h3>\n<p>Not just the building. Each unit has its own contact alarm, cameras cover the corridors around the clock, and footage is kept for thirty days.</p>\n<p>02</p>\n<h3>Held between 10 and 20°C</h3>\n<p>Every indoor unit is heated and ventilated, so documents, electronics and upholstery come out the way they went in — even after a Dutch winter.</p>\n<p>03</p>\n<h3>The price you were quoted</h3>\n<p>No admin fee, no deposit, and no increase in your first twelve months. If you move to a different size, you just pay the difference.</p>\n<p>04</p>\n<h3>Park at the door</h3>\n<p>Drive-up bays at all three facilities, with free trolleys and a covered loading area so you are never carrying boxes across an open yard in the rain.</p>\n<p>Locations</p>\n<h2>Three facilities, one price list.</h2>\n<p><a href=\"{{url:page-locations}}\">Get directions</a></p>\n<p>What people say</p>\n<p>\"I booked at nine in the evening and had my things in by lunchtime the next day. No one asked me to come in and sign anything.\"</p>\n<p>MK</p>\n<p>Marieke K.</p>\n<p>Moved from Amsterdam Oost · stored 6 months</p>\n<p>Questions</p>\n<h2>The things people actually ask.</h2>\n<p>Can't see yours? Call us on 020 000 0000 — a person answers.</p>\n<p>Ready when you are</p>\n<h2>Reserve a unit in under two minutes.</h2>\n<p>No deposit, nothing to sign today, and we hold it free for seven days while you sort the van.</p>\n<p><a href=\"{{url:page-sizes}}\">Find your size</a></p>\n<p><a href=\"tel:+31200000000\">020 000 0000</a></p>",
+			"menu_order": 0,
+			"comments": false,
+			"template": "elementor_header_footer",
+			"elementor": "elementor/page-home.json"
+		},
+		{
+			"key": "page-units",
+			"type": "page",
+			"title": "Units",
+			"slug": "units",
+			"content": "<a href=\"{{home}}\">Home</a> <span aria-hidden=\"true\">/</span> <span aria-current=\"page\">Units</span>\n<p>Units &amp; prices</p>\n<p>From a 2 m² locker to a 30 m² stockroom, across three facilities. Every price includes 24/7 security and no deposit.</p>\n<p>Not sure which?</p>\n<h2>Tell us what you are storing instead.</h2>\n<p>The calculator turns a list of furniture into a size in about thirty seconds, and it errs small.</p>\n<p><a href=\"{{url:page-sizes}}\">Open the calculator</a></p>\n<p>Ready when you are</p>\n<h2>Reserve a unit in under two minutes.</h2>\n<p>No deposit, nothing to sign today, and we hold it free for seven days while you sort the van.</p>\n<p><a href=\"{{url:page-sizes}}\">Find your size</a></p>\n<p><a href=\"tel:+31200000000\">020 000 0000</a></p>",
+			"menu_order": 1,
+			"comments": false,
+			"template": "elementor_header_footer",
+			"elementor": "elementor/page-units.json"
+		},
+		{
+			"key": "page-sizes",
+			"type": "page",
+			"title": "Find your size",
+			"slug": "sizes",
+			"content": "<a href=\"{{home}}\">Home</a> <span aria-hidden=\"true\">/</span> <span aria-current=\"page\">Find your size</span>\n<p>Find your size</p>\n<p>A calculator, a to-scale comparison and a room-by-room guide. Most people end up a size smaller than they expected.</p>\n<p>01 · The calculator</p>\n<h2>Add what you are storing.</h2>\n<p>Rough numbers are fine. It assumes you stack to 2.2 m and leave an aisle to reach the back — the two things people forget.</p>\n<p>01</p>\n<h3>Pick your items</h3>\n<p>Tap plus for each piece of furniture and every ten boxes.</p>\n<p>02</p>\n<h3>Read the size</h3>\n<p>It updates as you go, with the price and how full the unit would be.</p>\n<p>03</p>\n<h3>Check it is free</h3>\n<p>The button takes you straight to that size at every location.</p>\n<p>02 · Drawn to scale</p>\n<h2>Compare them the way you would compare rooms.</h2>\n<p>Every size at true proportion by floor area. Tap one to see what fits and what it costs.</p>\n<p>03 · Room by room</p>\n<h2>The size guide.</h2>\n<p>What each size holds in practice, based on what our customers actually store.</p>\n<p>Ready when you are</p>\n<h2>Reserve a unit in under two minutes.</h2>\n<p>No deposit, nothing to sign today, and we hold it free for seven days while you sort the van.</p>\n<p><a href=\"{{url:page-sizes}}\">Find your size</a></p>\n<p><a href=\"tel:+31200000000\">020 000 0000</a></p>",
+			"menu_order": 2,
+			"comments": false,
+			"template": "elementor_header_footer",
+			"elementor": "elementor/page-sizes.json"
+		},
+		{
+			"key": "page-locations",
+			"type": "page",
+			"title": "Locations",
+			"slug": "locations",
+			"content": "<a href=\"{{home}}\">Home</a> <span aria-hidden=\"true\">/</span> <span aria-current=\"page\">Locations</span>\n<p>Locations</p>\n<p>Two in Amsterdam, one in Haarlem. The same prices, the same security and the same contract at all three.</p>\n<p>At every facility</p>\n<h2>The same standard, whichever you pick.</h2>\n<p>Individually alarmed doors</p>\n<p>Yes</p>\n<p>CCTV kept for 30 days</p>\n<p>Yes</p>\n<p>Free trolleys and loading bay</p>\n<p>Yes</p>\n<p>Your own padlock and PIN</p>\n<p>Yes</p>\n<p>Monthly rolling contract</p>\n<p>Yes</p>\n<p>Swap sizes without a fee</p>\n<p>Yes</p>\n<p>Ready when you are</p>\n<h2>Reserve a unit in under two minutes.</h2>\n<p>No deposit, nothing to sign today, and we hold it free for seven days while you sort the van.</p>\n<p><a href=\"{{url:page-sizes}}\">Find your size</a></p>\n<p><a href=\"tel:+31200000000\">020 000 0000</a></p>",
+			"menu_order": 3,
+			"comments": false,
+			"template": "elementor_header_footer",
+			"elementor": "elementor/page-locations.json"
+		},
+		{
+			"key": "page-about",
+			"type": "page",
+			"title": "About",
+			"slug": "about",
+			"content": "<a href=\"{{home}}\">Home</a> <span aria-hidden=\"true\">/</span> <span aria-current=\"page\">About</span>\n<p>About</p>\n<p>In 2014 the options were a damp garage or a warehouse with a four-page contract. So we built the thing we wanted to rent.</p>\n<p>It should be as easy to rent a storage unit as it is to book a hotel room — <mark>no deposit, no minimum term</mark>, and a price you can see before you call.</p>\n<p>Our founders were between flats with a houseful of furniture and nowhere to put it. The places they found wanted a deposit, a twelve-month contract and a viewing appointment three days away.</p><p>So in 2014 we opened our first facility in Amsterdam Noord with one rule, the one above. Twelve years and three facilities later, it has not changed.</p>\n<p>We have grown entirely by word of mouth, which is why we still answer the phone ourselves and why the person who picks up can usually tell you which units are free before you finish asking.</p><p><a class=\"sb-link\" href=\"{{url:page-locations}}\">Visit a facility</a> — walk-rounds are welcome during office hours, no appointment needed.</p>\n<p>What we stand for</p>\n<h2>Three promises we have never broken.</h2>\n<p>01</p>\n<h3>The price you see is the price you pay</h3>\n<p>No admin fee, no deposit, and no increase in your first twelve months. If a competitor is cheaper for the same size, tell us.</p>\n<p>02</p>\n<h3>Your things, your key</h3>\n<p>Only you can open your unit. Staff cannot get in without you, and we never cut a lock without a court order.</p>\n<p>03</p>\n<h3>Leave whenever you like</h3>\n<p>Two weeks' notice, unused days refunded. We would rather you came back than felt trapped.</p>\n<p>Since 2014</p>\n<h2>From one corridor to three facilities.</h2>\n<p>2014</p>\n<h3>Amsterdam Noord opens</h3>\n<p>84 units on a single floor of a former print works.</p>\n<p>2017</p>\n<h3>Second floor, climate control</h3>\n<p>Noord grows to 318 units, all heated and ventilated.</p>\n<p>2020</p>\n<h3>Amsterdam Zuidoost</h3>\n<p>Our first drive-up site: every door at ground level.</p>\n<p>2023</p>\n<h3>Haarlem Oudeweg</h3>\n<p>Built around business storage, with pallet delivery and racking.</p>\n<p>2026</p>\n<h3>Reserve online, move in today</h3>\n<p>The whole process moves online, from quote to PIN.</p>\n<p>The team</p>\n<h2>The people who pick up the phone.</h2>\n<p>ED</p>\n<h3>Eva de Vries</h3>\n<p>Founder</p>\n<p>Still does a shift at Noord reception every Friday.</p>\n<p>JB</p>\n<h3>Jasper Bakker</h3>\n<p>Operations</p>\n<p>Knows every door code change and every leaking gutter.</p>\n<p>SM</p>\n<h3>Samira Mansour</h3>\n<p>Customer care</p>\n<p>The voice on the phone, most likely, if you call.</p>\n<p>TK</p>\n<h3>Tom Kuipers</h3>\n<p>Business accounts</p>\n<p>Sets up racking, pallet deliveries and invoicing for shops.</p>\n<p>Ready when you are</p>\n<h2>Reserve a unit in under two minutes.</h2>\n<p>No deposit, nothing to sign today, and we hold it free for seven days while you sort the van.</p>\n<p><a href=\"{{url:page-sizes}}\">Find your size</a></p>\n<p><a href=\"tel:+31200000000\">020 000 0000</a></p>",
+			"menu_order": 4,
+			"comments": false,
+			"template": "elementor_header_footer",
+			"elementor": "elementor/page-about.json"
+		},
+		{
+			"key": "page-contact",
+			"type": "page",
+			"title": "Contact",
+			"slug": "contact",
+			"content": "<a href=\"{{home}}\">Home</a> <span aria-hidden=\"true\">/</span> <span aria-current=\"page\">Contact</span>\n<p>Contact</p>\n<p>Call, email or drop in. We answer the phone during office hours, and email replies usually come within the hour.</p>\n<p>Call</p>\n<p>020 000 0000</p>\n<p>Mon–Sat 08:00–18:00</p>\n<p>Email</p>\n<p>hello@example.com</p>\n<p>Usually answered within the hour</p>\n<p>WhatsApp</p>\n<p>06 00 00 00 00</p>\n<p>Photos of what you are storing welcome</p>\n<p>Visit</p>\n<p>Three facilities</p>\n<p>Walk-round any time during office hours</p>\n<p>Questions</p>\n<h2>The things people actually ask.</h2>",
+			"menu_order": 5,
+			"comments": false,
+			"template": "elementor_header_footer",
+			"elementor": "elementor/page-contact.json"
+		},
+		{
+			"key": "page-blog",
+			"type": "page",
+			"title": "Blog",
+			"slug": "blog",
+			"content": "",
+			"menu_order": 20,
+			"comments": false,
+			"image": "unit-shelving",
+			"meta": {
+				"_storebox_hero_title": "Guides from people who store things for a living.",
+				"_storebox_hero_intro": "Packing, sizing, moving and running a business out of a storage unit."
+			}
+		}
+	],
+	"templates": [],
+	"menus": [
+		{
+			"key": "primary",
+			"name": "Main menu",
+			"location": "primary",
+			"items": [
+				{
+					"title": "Units",
+					"post": "page-units"
+				},
+				{
+					"title": "Find your size",
+					"post": "page-sizes"
+				},
+				{
+					"title": "Locations",
+					"post": "page-locations"
+				},
+				{
+					"title": "About",
+					"post": "page-about"
+				},
+				{
+					"title": "Blog",
+					"post": "page-blog"
+				},
+				{
+					"title": "Contact",
+					"post": "page-contact"
+				}
+			]
+		},
+		{
+			"key": "footer-units",
+			"name": "Units",
+			"location": "footer-1",
+			"items": [
+				{
+					"title": "2 m² — €35",
+					"post": "unit-locker-2"
+				},
+				{
+					"title": "5 m² — €59",
+					"post": "unit-small-5"
+				},
+				{
+					"title": "10 m² — €89",
+					"post": "unit-medium-10"
+				},
+				{
+					"title": "Business storage",
+					"url": "{{url:page-units}}?unit_type=business-storage"
+				}
+			]
+		},
+		{
+			"key": "footer-locations",
+			"name": "Locations",
+			"location": "footer-2",
+			"items": [
+				{
+					"title": "Amsterdam Noord",
+					"post": "location-noord"
+				},
+				{
+					"title": "Amsterdam Zuidoost",
+					"post": "location-zuidoost"
+				},
+				{
+					"title": "Haarlem Oudeweg",
+					"post": "location-haarlem"
+				}
+			]
+		},
+		{
+			"key": "footer-help",
+			"name": "Help",
+			"location": "footer-3",
+			"items": [
+				{
+					"title": "Find your size",
+					"url": "{{url:page-sizes#calc}}"
+				},
+				{
+					"title": "FAQ",
+					"url": "{{url:page-contact#faq}}"
+				},
+				{
+					"title": "Contact",
+					"post": "page-contact"
+				},
+				{
+					"title": "Blog",
+					"post": "page-blog"
+				}
+			]
+		}
+	],
+	"theme_mods": {
+		"storebox_preset": "editorial",
+		"storebox_header_layout": "auto",
+		"storebox_header_transparent": "all",
+		"storebox_header_phone": "020 000 0000",
+		"storebox_header_cta_text": "Reserve a unit",
+		"storebox_header_cta_url": "{{url:page-units}}",
+		"storebox_topbar_enable": true,
+		"storebox_topbar_item_1": "Open 24/7, every day of the year",
+		"storebox_topbar_item_2": "Amsterdam & Haarlem",
+		"storebox_topbar_email": "hello@example.com",
+		"storebox_footer_text": "Self storage in Amsterdam and Haarlem. Month to month, no deposit, your own key.",
+		"storebox_footer_copyright": "© {year} {site}",
+		"storebox_footer_note": "Demo content · Storebox WordPress theme",
+		"storebox_social_facebook": "https://facebook.com/",
+		"storebox_social_instagram": "https://instagram.com/",
+		"storebox_social_linkedin": "https://linkedin.com/",
+		"storebox_hero_image": "{{image:storage-corridor-wide}}",
+		"storebox_breadcrumbs": true,
+		"storebox_cta_enable": true,
+		"storebox_cta_eyebrow": "Ready when you are",
+		"storebox_cta_title": "Reserve a unit in under two minutes.",
+		"storebox_cta_text": "No deposit, nothing to sign today, and we hold it free for seven days while you sort the van.",
+		"storebox_cta_btn1_text": "Find your size",
+		"storebox_cta_btn1_url": "{{url:page-sizes}}",
+		"storebox_cta_btn2_text": "020 000 0000",
+		"storebox_cta_btn2_url": "tel:+31200000000",
+		"storebox_cta_image": "{{image:storage-corridor-trolley}}",
+		"storebox_blog_related_eyebrow": "Keep reading",
+		"storebox_blog_related_title": "More guides.",
+		"storebox_notfound_title": "This unit is empty.",
+		"storebox_notfound_text": "The page you were after has moved, or never existed. Everything else is where you left it."
+	},
+	"options": {
+		"show_on_front": "page",
+		"page_on_front": "{{post:page-home}}",
+		"page_for_posts": "{{post:page-blog}}",
+		"posts_per_page": 9,
+		"elementor_disable_color_schemes": "yes",
+		"elementor_disable_typography_schemes": "yes",
+		"elementor_experiment-container": "active",
+		"elementor_load_fa4_shim": "",
+		"elementor_font_display": "swap"
+	},
+	"settings": {
+		"currency_symbol": "€",
+		"currency_position": "before",
+		"units_page": "{{post:page-units}}",
+		"locations_page": "{{post:page-locations}}",
+		"help_phone": "020 000 0000",
+		"reservation_info": "<h2>How reserving works</h2>\n<ul>\n<li>Reserve online with no deposit and nothing to sign. We hold it for seven days.</li>\n<li>Sign on your phone or at reception on move-in day, fit your own padlock, and collect your PIN.</li>\n<li>Pay monthly. Give two weeks' notice to leave, and unused days are refunded.</li>\n</ul>",
+		"booking_rows": "Deposit | None\nMinimum term | None",
+		"booking_note": "Held free for 7 days · cancel any time",
+		"privacy_note": "We only use your details to answer this enquiry."
+	},
+	"kit": {
+		"system_colors": [
+			{
+				"_id": "primary",
+				"title": "Primary",
+				"color": "#16303F"
+			},
+			{
+				"_id": "secondary",
+				"title": "Secondary",
+				"color": "#F2B705"
+			},
+			{
+				"_id": "text",
+				"title": "Text",
+				"color": "#1B2429"
+			},
+			{
+				"_id": "accent",
+				"title": "Accent",
+				"color": "#2C5871"
+			}
+		],
+		"custom_colors": [
+			{
+				"_id": "sbheading",
+				"title": "Heading",
+				"color": "#16303F"
+			},
+			{
+				"_id": "sbbg",
+				"title": "Background",
+				"color": "#FBFBFA"
+			},
+			{
+				"_id": "sbsurface",
+				"title": "Surface",
+				"color": "#F1EFEA"
+			},
+			{
+				"_id": "sbborder",
+				"title": "Border",
+				"color": "#E3E0D9"
+			},
+			{
+				"_id": "sbdark",
+				"title": "Dark",
+				"color": "#0D1D26"
+			},
+			{
+				"_id": "sbmuted",
+				"title": "Muted text",
+				"color": "#5F6E77"
+			},
+			{
+				"_id": "sbsuccess",
+				"title": "Success",
+				"color": "#1A7F53"
+			},
+			{
+				"_id": "sbwarning",
+				"title": "Warning",
+				"color": "#AD601E"
+			},
+			{
+				"_id": "sbwhite",
+				"title": "White",
+				"color": "#FFFFFF"
+			}
+		],
+		"system_typography": [
+			{
+				"_id": "primary",
+				"title": "Primary Heading",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_weight": "900",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.02,
+					"sizes": []
+				},
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": -0.04,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "secondary",
+				"title": "Secondary Heading",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 1.1,
+					"sizes": []
+				},
+				"typography_font_weight": "700",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.28,
+					"sizes": []
+				},
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": -0.02,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "text",
+				"title": "Body",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 1.0625,
+					"sizes": []
+				},
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.62,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "accent",
+				"title": "Caption / Eyebrow",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 0.72,
+					"sizes": []
+				},
+				"typography_font_weight": "800",
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": 0.2,
+					"sizes": []
+				},
+				"typography_text_transform": "uppercase"
+			}
+		],
+		"custom_typography": [
+			{
+				"_id": "sbh1",
+				"title": "Hero Title",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "custom",
+					"size": "clamp(2.7rem, 5.6vw, 4.6rem)",
+					"sizes": []
+				},
+				"typography_font_weight": "900",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.02,
+					"sizes": []
+				},
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": -0.04,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbpage",
+				"title": "Page Title",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "custom",
+					"size": "clamp(2.7rem, 5.6vw, 4.6rem)",
+					"sizes": []
+				},
+				"typography_font_weight": "900",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.02,
+					"sizes": []
+				},
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": -0.04,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbh2",
+				"title": "Section Title",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "custom",
+					"size": "clamp(2rem, 3.9vw, 3.2rem)",
+					"sizes": []
+				},
+				"typography_font_weight": "900",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.02,
+					"sizes": []
+				},
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": -0.04,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sblede",
+				"title": "Lead Paragraph",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 1.1,
+					"sizes": []
+				},
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.62,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbledel",
+				"title": "Hero Lead",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 1.1,
+					"sizes": []
+				},
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.62,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbnumber",
+				"title": "Numbers",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 1.9,
+					"sizes": []
+				},
+				"typography_font_weight": "900",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1,
+					"sizes": []
+				},
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": -0.045,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbbig",
+				"title": "Callout Number",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 1.5,
+					"sizes": []
+				},
+				"typography_font_weight": "900",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.1,
+					"sizes": []
+				},
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": -0.04,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbquote",
+				"title": "Quote",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "custom",
+					"size": "clamp(1.5rem, 2.7vw, 2.15rem)",
+					"sizes": []
+				},
+				"typography_font_weight": "800",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.28,
+					"sizes": []
+				},
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": -0.03,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbbutton",
+				"title": "Button",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 0.99,
+					"sizes": []
+				},
+				"typography_font_weight": "700",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.2,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbnav",
+				"title": "Navigation",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 0.95,
+					"sizes": []
+				},
+				"typography_font_weight": "600"
+			},
+			{
+				"_id": "sbsmall",
+				"title": "Small Text",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 0.84,
+					"sizes": []
+				},
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.45,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbfaq",
+				"title": "Question",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 1.03,
+					"sizes": []
+				},
+				"typography_font_weight": "700",
+				"typography_line_height": {
+					"unit": "em",
+					"size": 1.4,
+					"sizes": []
+				}
+			},
+			{
+				"_id": "sbnum",
+				"title": "Step Number",
+				"typography_typography": "custom",
+				"typography_font_family": "Archivo",
+				"typography_font_size": {
+					"unit": "rem",
+					"size": 0.82,
+					"sizes": []
+				},
+				"typography_font_weight": "900",
+				"typography_letter_spacing": {
+					"unit": "em",
+					"size": 0.08,
+					"sizes": []
+				},
+				"typography_text_transform": "uppercase"
+			}
+		],
+		"default_generic_fonts": "system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif",
+		"container_width": {
+			"unit": "px",
+			"size": 1220,
+			"sizes": []
+		},
+		"container_padding": {
+			"unit": "px",
+			"top": "0",
+			"right": "0",
+			"bottom": "0",
+			"left": "0",
+			"isLinked": true
+		},
+		"space_between_widgets": {
+			"column": "20",
+			"row": "20",
+			"isLinked": true,
+			"unit": "px",
+			"size": 20
+		},
+		"body_background_background": "classic",
+		"body_background_color": "#FBFBFA",
+		"body_color": "#1B2429",
+		"body_typography_typography": "custom",
+		"body_typography_font_family": "Archivo",
+		"body_typography_font_size": {
+			"unit": "rem",
+			"size": 1.0625,
+			"sizes": []
+		},
+		"body_typography_line_height": {
+			"unit": "em",
+			"size": 1.62,
+			"sizes": []
+		},
+		"link_normal_color": "#16303F",
+		"link_hover_color": "#2C5871",
+		"h1_color": "#16303F",
+		"h2_color": "#16303F",
+		"h3_color": "#16303F",
+		"h4_color": "#16303F",
+		"h5_color": "#16303F",
+		"h6_color": "#16303F",
+		"button_typography_typography": "custom",
+		"button_typography_font_family": "Archivo",
+		"button_typography_font_size": {
+			"unit": "rem",
+			"size": 0.99,
+			"sizes": []
+		},
+		"button_typography_font_weight": "700",
+		"button_text_color": "#0D1D26",
+		"button_background_background": "classic",
+		"button_background_color": "#F2B705",
+		"button_hover_text_color": "#0D1D26",
+		"button_hover_background_background": "classic",
+		"button_hover_background_color": "#FFC422",
+		"button_border_radius": {
+			"unit": "px",
+			"top": "4",
+			"right": "4",
+			"bottom": "4",
+			"left": "4",
+			"isLinked": true
+		},
+		"button_padding": {
+			"unit": "px",
+			"top": "16",
+			"right": "28",
+			"bottom": "16",
+			"left": "28",
+			"isLinked": false
+		},
+		"form_field_typography_typography": "custom",
+		"form_field_typography_font_family": "Archivo",
+		"form_field_text_color": "#1B2429",
+		"form_field_background_color": "#FFFFFF",
+		"form_field_border_border": "solid",
+		"form_field_border_width": {
+			"unit": "px",
+			"top": "1",
+			"right": "1",
+			"bottom": "1",
+			"left": "1",
+			"isLinked": true
+		},
+		"form_field_border_color": "#E3E0D9",
+		"form_field_border_radius": {
+			"unit": "px",
+			"top": "4",
+			"right": "4",
+			"bottom": "4",
+			"left": "4",
+			"isLinked": true
+		},
+		"form_field_padding": {
+			"unit": "px",
+			"top": "13",
+			"right": "15",
+			"bottom": "13",
+			"left": "15",
+			"isLinked": false
+		},
+		"form_field_focus_border_color": "#16303F"
+	},
+	"sidebars": {
+		"footer-1": [],
+		"footer-2": [],
+		"footer-3": [],
+		"sidebar-blog": []
+	}
+}

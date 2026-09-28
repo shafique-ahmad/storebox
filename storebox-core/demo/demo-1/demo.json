@@ -1,0 +1,11 @@
+{
+	"slug": "demo-1",
+	"name": "Self Storage",
+	"description": "Rounded, photo-led design with an overlay header, bento features and a size calculator.",
+	"preset": "soft",
+	"preview": "preview.jpg",
+	"order": 1,
+	"requires": {
+		"elementor": "3.20.0"
+	}
+}

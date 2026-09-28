@@ -358,6 +358,31 @@ function storebox_core_get_features() {
 }
 
 /**
+ * A location's tags: one per line (or comma separated), without the one that
+ * repeats the access chip (it is shown separately).
+ *
+ * @param string $raw         Stored tags.
+ * @param string $access_chip Access chip label, e.g. "24/7 access".
+ * @return string[]
+ */
+function storebox_core_location_tags( $raw, $access_chip = '' ) {
+	$tags = storebox_core_lines( str_replace( ',', "\n", $raw ) );
+
+	if ( '' !== $access_chip ) {
+		$tags = array_values(
+			array_filter(
+				$tags,
+				static function ( $tag ) use ( $access_chip ) {
+					return 0 !== strcasecmp( trim( $tag ), trim( $access_chip ) );
+				}
+			)
+		);
+	}
+
+	return $tags;
+}
+
+/**
  * Location data, normalised for templates.
  *
  * @param int|WP_Post|null $post Location post.
@@ -413,7 +438,7 @@ function storebox_core_get_location( $post = null ) {
 		'units_meta'     => $total ? sprintf( __( '%1$s units · %2$s free now', 'storebox-core' ), number_format_i18n( $total ), number_format_i18n( $free ) ) : '',
 		/* translators: %s: number of units free now. */
 		'free_label'     => sprintf( __( '%s free', 'storebox-core' ), number_format_i18n( $free ) ),
-		'tags'           => storebox_core_lines( str_replace( ',', "\n", (string) $meta( '_sb_tags' ) ) ),
+		'tags'           => storebox_core_location_tags( (string) $meta( '_sb_tags' ), storebox_core_access_label( $access, 'chip' ) ),
 		'hours'          => storebox_core_location_hours( $post->ID ),
 		'lat'            => '' !== $lat && null !== $lat ? (float) $lat : 0.0,
 		'lng'            => '' !== $lng && null !== $lng ? (float) $lng : 0.0,

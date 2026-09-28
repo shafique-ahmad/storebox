@@ -14,8 +14,8 @@
  * site had before the first import.
  *
  * Demo files may contain placeholders that are resolved on import:
- * {{post:key}} and {{image:key}} (IDs), {{url:key}} and {{image_url:key}}
- * (URLs), {{images:a,b}} (ID list), {{term:taxonomy/key}}, {{menu:key}}
+ * {{post:key}} and {{image:key}} (IDs), {{sid:key}} (ID as a string),
+ * {{url:key}} and {{image_url:key}} (URLs), {{images:a,b}} (ID list), {{term:taxonomy/key}}, {{menu:key}}
  * (menu slug), {{menu_id:key}} and {{home}}.
  *
  * @package Storebox_Core
@@ -1484,6 +1484,10 @@ class Importer {
 
 			case 'post':
 				return isset( self::$map['posts'][ $arg ] ) ? (int) self::$map['posts'][ $arg ] : 0;
+
+			case 'sid':
+				// Post ID as a string, as Elementor select controls store it.
+				return isset( self::$map['posts'][ $arg ] ) ? (string) self::$map['posts'][ $arg ] : '';
 
 			case 'url':
 				$parts = explode( '#', $arg, 2 );

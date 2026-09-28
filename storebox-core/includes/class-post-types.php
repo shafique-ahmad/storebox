@@ -288,7 +288,7 @@ class Post_Types {
 				array(
 					'type'              => 'integer',
 					'single'            => true,
-					'sanitize_callback' => 'intval',
+					'sanitize_callback' => array( __CLASS__, 'sanitize_int' ),
 					'show_in_rest'      => true,
 				)
 			);
@@ -356,6 +356,17 @@ class Post_Types {
 	 */
 	public static function sanitize_id_list( $value ) {
 		return implode( ',', storebox_core_parse_ids( $value ) );
+	}
+
+	/**
+	 * Sanitizes an integer. (Internal functions such as intval() cannot be
+	 * meta sanitize callbacks: WordPress passes them four arguments.)
+	 *
+	 * @param mixed $value Raw value.
+	 * @return int
+	 */
+	public static function sanitize_int( $value ) {
+		return (int) $value;
 	}
 
 	/**
