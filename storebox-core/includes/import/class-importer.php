@@ -53,6 +53,7 @@ class Importer {
 		'page_on_front',
 		'page_for_posts',
 		'posts_per_page',
+		'date_format',
 		'elementor_disable_color_schemes',
 		'elementor_disable_typography_schemes',
 		'elementor_experiment-container',
@@ -1280,8 +1281,9 @@ class Importer {
 		}
 
 		if ( $data['settings'] && class_exists( '\Storebox_Core\Settings' ) ) {
+			// Defaults first, so settings the demo leaves out keep their default values.
 			$current = get_option( \Storebox_Core\Settings::OPTION, array() );
-			$merged  = array_merge( is_array( $current ) ? $current : array(), (array) self::resolve( $data['settings'] ) );
+			$merged  = array_merge( storebox_core_settings_defaults(), is_array( $current ) ? $current : array(), (array) self::resolve( $data['settings'] ) );
 			update_option( \Storebox_Core\Settings::OPTION, \Storebox_Core\Settings::sanitize( $merged ) );
 		}
 

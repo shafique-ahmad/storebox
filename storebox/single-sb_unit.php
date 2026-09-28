@@ -81,7 +81,7 @@ if ( ! storebox_do_elementor_location( 'single' ) ) :
 				<div class="sb-head sb-head--split sb-rv">
 					<div>
 						<span class="<?php echo $storebox_soft ? 'sb-eyebrow sb-eyebrow--dark' : 'sb-kicker'; ?>"><?php esc_html_e( 'Similar sizes', 'storebox' ); ?></span>
-						<h2 id="sb-similar-title" class="sb-head__title"><?php esc_html_e( 'Or a little bigger, or smaller.', 'storebox' ); ?></h2>
+						<h2 id="sb-similar-title" class="sb-head__title"><?php echo esc_html( $storebox_soft ? __( 'Or a little bigger, or smaller.', 'storebox' ) : __( 'A little bigger, or smaller.', 'storebox' ) ); ?></h2>
 					</div>
 					<?php
 					$storebox_units_url = storebox_core_page_url( 'units' );
@@ -105,8 +105,6 @@ if ( ! storebox_do_elementor_location( 'single' ) ) :
 		</section>
 		<?php
 	endwhile;
-
-	storebox_cta_band();
 endif;
 
 get_footer();

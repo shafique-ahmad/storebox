@@ -130,6 +130,16 @@ function numbered( D, n, title, body, o = {} ) {
 	];
 }
 
+/** "How reserving works" copy of each design (unit pages and plugin settings). */
+function reservingHtml( D ) {
+	const soft = 'soft' === ( D.key || D );
+	return '<h2>How reserving works</h2>\n<ul>\n<li>Reserve online with no deposit and nothing to sign. We hold it for seven days.</li>\n' +
+		( soft
+			? '<li>Sign on your phone or at reception on move-in day, fit your own padlock, and collect your PIN.</li>\n<li>Pay monthly. Give two weeks\' notice to leave, and unused days are refunded.</li>\n'
+			: '<li>Sign on your phone or at reception on move-in day, fit your own padlock, collect your PIN.</li>\n<li>Pay monthly. Two weeks\' notice to leave, unused days refunded.</li>\n' ) +
+		'</ul>';
+}
+
 /** Small body text widget with a local size. */
 function small( html, o = {} ) {
 	const w = E.text( html, {
@@ -177,4 +187,4 @@ function faq( D, items ) {
 	} );
 }
 
-module.exports = { E, PHONE, PHONE_URL, url, sid, eyebrow, head, headSplit, numbered, small, faqItems, faq };
+module.exports = { E, PHONE, PHONE_URL, url, sid, eyebrow, head, headSplit, numbered, small, reservingHtml, faqItems, faq };

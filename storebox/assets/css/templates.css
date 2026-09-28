@@ -59,6 +59,10 @@ body.sb-preset-editorial {
 	font-size: .88rem;
 }
 
+.sb-preset-editorial .sb-chip[aria-current] {
+	background: var(--sb-primary);
+}
+
 .sb-meta {
 	display: flex;
 	flex-wrap: wrap;
@@ -1063,6 +1067,11 @@ body.sb-preset-editorial {
 	overflow: hidden;
 }
 
+/* As in the designs, the block shrinks to its content and sits centred. */
+.sb-nf > .sb-nf__in {
+	width: auto;
+}
+
 .sb-nf__code {
 	margin: 0;
 	font-size: clamp(7rem, 20vw, 15rem);
@@ -1085,6 +1094,7 @@ body.sb-preset-editorial {
 
 .sb-nf--soft {
 	min-height: 100svh;
+	padding-block: 104px;
 	background: var(--sb-primary);
 	color: #fff;
 }
@@ -1131,6 +1141,7 @@ body.sb-preset-editorial {
 
 .sb-nf--editorial {
 	min-height: 72vh;
+	padding-block: 106px;
 	border-bottom: 1px solid var(--sb-border);
 }
 
@@ -1327,7 +1338,7 @@ body.sb-preset-editorial {
 }
 
 .sb-sec--facts {
-	padding-block: 0;
+	padding-top: 0;
 }
 
 .sb-preset-editorial .sb-sec--facts {
@@ -1346,7 +1357,7 @@ body.sb-preset-editorial {
 	margin-top: 16px;
 }
 
-.sb-location-content h2 {
+.sb-sec--location .sb-prose.sb-location-content h2 {
 	margin: 0 0 20px;
 	font-size: var(--sb-h2);
 }
@@ -1408,6 +1419,14 @@ body.sb-preset-editorial {
 
 	.sb-nf__doors {
 		display: none;
+	}
+
+	.sb-nf--soft {
+		padding-block: 72px;
+	}
+
+	.sb-nf--editorial {
+		padding-block: 70px;
 	}
 
 	.sb-comment-list .comment-metadata,

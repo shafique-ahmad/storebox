@@ -52,7 +52,17 @@ if ( ! storebox_do_elementor_location( 'single' ) ) :
 				<div class="sb-rv">
 					<span class="<?php echo esc_attr( $storebox_eyebrow ); ?>"><?php esc_html_e( 'About this facility', 'storebox' ); ?></span>
 					<div class="sb-prose entry-content sb-location-content"><?php the_content(); ?></div>
-					<?php storebox_core_component( 'location-tags', array( 'location' => $storebox_location['id'] ) ); ?>
+					<?php
+					// The editorial design shows the access chip, one tag and the free units.
+					storebox_core_component(
+						'location-tags',
+						array(
+							'location'  => $storebox_location['id'],
+							'limit'     => $storebox_soft ? 0 : 1,
+							'show_free' => ! $storebox_soft,
+						)
+					);
+					?>
 				</div>
 				<div class="sb-rv">
 					<?php
@@ -89,10 +99,11 @@ if ( ! storebox_do_elementor_location( 'single' ) ) :
 				storebox_core_component(
 					'unit-grid',
 					array(
-						'source'   => 'location',
-						'location' => $storebox_location['id'],
-						'count'    => 8,
-						'columns'  => 3,
+						'source'    => 'location',
+						'location'  => $storebox_location['id'],
+						'count'     => 8,
+						'columns'   => 3,
+						'show_name' => $storebox_soft,
 					)
 				);
 				?>

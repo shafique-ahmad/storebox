@@ -6,6 +6,7 @@
 
 const path = require( 'path' );
 const scenes = require( path.join( __dirname, '..', '..', 'demo-images', 'scenes' ) );
+const { reservingHtml } = require( '../pages/common' );
 
 const LOCATION_SLUGS = { noord: 'amsterdam-noord', zuidoost: 'amsterdam-zuidoost', haarlem: 'haarlem-oudeweg' };
 const LOCATION_BY_TITLE = { 'Amsterdam Noord': 'noord', 'Amsterdam Zuidoost': 'zuidoost', 'Haarlem Oudeweg': 'haarlem' };
@@ -83,6 +84,8 @@ function isoDate( label ) {
 function build( src, demo, built, kit ) {
 	const soft = 'soft' === demo.preset;
 
+	const businessFeatures = new Set( [].concat( ...src.units.map( ( u ) => ( u.features_business || [] ).map( ( n ) => n.replace( / door$/, '' ) ) ) ) );
+
 	// Images.
 	const images = {};
 	Object.entries( scenes ).forEach( ( [ key, scene ] ) => {
@@ -101,7 +104,9 @@ function build( src, demo, built, kit ) {
 			{ key: 'medium', name: 'Medium', slug: 'medium', description: '10 to 15 m²', meta: { sb_order: 2 } },
 			{ key: 'large', name: 'Large', slug: 'large', description: '18 m² and up', meta: { sb_order: 3 } },
 		],
-		sb_unit_feature: FEATURES.map( ( f, i ) => ( { key: f[ 0 ], name: f[ 1 ], slug: f[ 0 ], meta: { sb_order: i + 1, sb_card: f[ 2 ] ? '1' : '' } } ) ),
+		// The business design lists fewer features, and calls the alarm one
+		// "Individually alarmed door".
+		sb_unit_feature: FEATURES.filter( ( f ) => soft || businessFeatures.has( f[ 1 ] ) ).map( ( f, i ) => ( { key: f[ 0 ], name: ! soft && 'alarm' === f[ 0 ] ? f[ 1 ] + ' door' : f[ 1 ], slug: f[ 0 ], meta: { sb_order: i + 1, sb_card: f[ 2 ] ? '1' : '' } } ) ),
 		category: Object.entries( src.categories ).map( ( [ key, name ] ) => ( { key, name, slug: key } ) ),
 	};
 	const featureKey = ( name ) => {
@@ -150,7 +155,7 @@ function build( src, demo, built, kit ) {
 
 	// Units.
 	src.units.forEach( ( u, i ) => {
-		const features = u.features.map( featureKey ).filter( Boolean );
+		const features = ( soft ? u.features : u.features_business || u.features ).map( featureKey ).filter( Boolean );
 		const excerpt = u.rail_business || u.card_business || u.fits + '.';
 		posts.push( {
 			key: 'unit-' + u.slug,
@@ -184,7 +189,7 @@ function build( src, demo, built, kit ) {
 	} );
 
 	// Blog posts (newest first in the design; dates set so the order holds).
-	const body = toBlocks( src.post_body );
+	const body = toBlocks( soft ? src.post_body : src.post_body_business || src.post_body );
 	src.posts.forEach( ( p ) => {
 		posts.push( {
 			key: 'post-' + p.slug,
@@ -223,7 +228,8 @@ function build( src, demo, built, kit ) {
 		content: '',
 		menu_order: 20,
 		comments: false,
-		image: 'unit-shelving',
+		// The Self Storage blog header has a photo; the Business one is text only.
+		image: soft ? 'unit-shelving' : undefined,
 		meta: {
 			_storebox_hero_title: 'Guides from people who store things for a living.',
 			_storebox_hero_intro: 'Packing, sizing, moving and running a business out of a storage unit.',
@@ -303,7 +309,8 @@ function build( src, demo, built, kit ) {
 		social_facebook: 'https://facebook.com/',
 		social_instagram: 'https://instagram.com/',
 		social_linkedin: 'https://linkedin.com/',
-		hero_image: '{{image:storage-corridor-wide}}',
+		// Page headers of the Business design are text only.
+		hero_image: soft ? '{{image:storage-corridor-wide}}' : 0,
 		breadcrumbs: true,
 		cta_enable: true,
 		cta_eyebrow: 'Ready when you are',
@@ -314,6 +321,8 @@ function build( src, demo, built, kit ) {
 		cta_btn2_text: '020 000 0000',
 		cta_btn2_url: 'tel:+31200000000',
 		cta_image: soft ? '{{image:shutters-row}}' : '{{image:storage-corridor-trolley}}',
+		// Only the Self Storage design has share links under posts.
+		blog_share: soft,
 		blog_related_eyebrow: 'Keep reading',
 		blog_related_title: 'More guides.',
 		notfound_title: 'This unit is empty.',
@@ -326,7 +335,7 @@ function build( src, demo, built, kit ) {
 		units_page: '{{post:page-units}}',
 		locations_page: '{{post:page-locations}}',
 		help_phone: '020 000 0000',
-		reservation_info: '<h2>How reserving works</h2>\n<ul>\n<li>Reserve online with no deposit and nothing to sign. We hold it for seven days.</li>\n<li>Sign on your phone or at reception on move-in day, fit your own padlock, and collect your PIN.</li>\n<li>Pay monthly. Give two weeks\' notice to leave, and unused days are refunded.</li>\n</ul>',
+		reservation_info: reservingHtml( demo.preset ),
 		booking_rows: 'Deposit | None\nMinimum term | None',
 		booking_note: 'Held free for 7 days · cancel any time',
 		privacy_note: 'We only use your details to answer this enquiry.',
@@ -347,6 +356,8 @@ function build( src, demo, built, kit ) {
 			page_on_front: '{{post:page-home}}',
 			page_for_posts: '{{post:page-blog}}',
 			posts_per_page: 9,
+			// Both designs print dates as "14 Sep 2026".
+			date_format: 'j M Y',
 			elementor_disable_color_schemes: 'yes',
 			elementor_disable_typography_schemes: 'yes',
 			'elementor_experiment-container': 'active',

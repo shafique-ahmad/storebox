@@ -63,12 +63,19 @@ function exportDoc( title, type, elements, settings ) {
 	};
 }
 
+/** Breadcrumbs and eyebrow labels are left out of the fallback text. */
+function isChrome( s ) {
+	const classes = ( s._css_classes || '' ) + ' ' + ( s.css_classes || '' );
+	const typography = s.__globals__ && s.__globals__.typography_typography;
+	return /\bsb-e-crumbs\b/.test( classes ) || /id=accent$/.test( typography || '' );
+}
+
 /** Plain HTML fallback of a layout (post content without Elementor, SEO plugins). */
 function fallbackHtml( elements ) {
 	const out = [];
 	const walk = ( list ) =>
 		list.forEach( ( el ) => {
-			if ( 'widget' === el.elType ) {
+			if ( 'widget' === el.elType && ! isChrome( el.settings ) ) {
 				const s = el.settings;
 				if ( 'heading' === el.widgetType && s.title ) {
 					const tag = /^h[2-6]$/.test( s.header_size ) ? s.header_size : null;

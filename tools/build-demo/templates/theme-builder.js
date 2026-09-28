@@ -376,7 +376,7 @@ function templatesFor( demo, D, B, S ) {
 					author_name_tag: 'p',
 					__globals__: { name_color: E.color( 'primary' ), bio_color: E.color( 'sbmuted' ) },
 				} ),
-				E.widget( 'share-buttons', {
+				soft ? E.widget( 'share-buttons', {
 					share_buttons: [
 						{ _id: E.id(), button: 'facebook' },
 						{ _id: E.id(), button: 'twitter' },
@@ -392,7 +392,7 @@ function templatesFor( demo, D, B, S ) {
 					primary_color: D.colors.border,
 					secondary_color: D.colors.primary,
 					_margin: E.dims( 24, 0, 0, 0 ),
-				} ),
+				} ) : null,
 			] ),
 			E.section( { pad: [ D.sec, D.sec ], gutter: D.gutter, bg: { global: 'sbsurface' } }, [
 				C.headSplit( D, { eyebrow: 'Keep reading', title: 'More guides.' }, E.button( 'All posts', url.blog, soft ? B.dark : B.outline ) ),
@@ -475,19 +475,25 @@ function templatesFor( demo, D, B, S ) {
 		content: () => [
 			E.section(
 				{
-					pad: soft ? [ 140, 80 ] : [ 96, 96 ],
+					pad: soft ? [ 244, 184 ] : [ 186, 186 ],
+					padMobile: soft ? [ 212, 152 ] : [ 150, 150 ],
 					gutter: D.gutter,
 					bg: soft ? { global: 'primary' } : { global: 'sbbg' },
 					classes: soft ? 'sb-e-overlay-top' : '',
 					extra: Object.assign( { min_height: soft ? E.vh( 100 ) : E.vh( 72 ), flex_justify_content: 'center' }, soft ? {} : { border_border: 'solid', border_width: E.dims( 0, 0, 1, 0 ), __globals__: { border_color: E.color( 'sbborder' ) } } ),
 				},
 				[
-					E.heading( soft ? '404' : '<mark>404</mark>', { tag: 'p', color: soft ? 'secondary' : 'primary', classes: soft ? '' : 'sb-e-highlight', extra: { typography_typography: 'custom', typography_font_size: E.custom( soft ? 'clamp(4rem, 10vw, 7rem)' : 'clamp(4rem, 10vw, 7rem)' ), typography_font_weight: '900', typography_line_height: E.em( 1 ), typography_letter_spacing: E.em( -0.05 ) } } ),
-					E.heading( 'This unit is empty.', { tag: 'h1', color: soft ? 'sbwhite' : 'primary', margin: [ soft ? 18 : 22, 0, 0, 0 ], extra: { typography_typography: 'custom', typography_font_size: E.custom( 'clamp(1.9rem, 4vw, 3rem)' ), typography_font_weight: soft ? '800' : '900', typography_letter_spacing: E.em( -0.035 ), typography_line_height: E.em( 1.05 ) } } ),
-					E.text( 'The page you were after has moved, or never existed. Everything else is where you left it.', { typo: 'sblede', colorHex: soft ? 'rgba(255,255,255,0.7)' : undefined, color: soft ? undefined : 'sbmuted', margin: [ 16, 0, 0, 0 ], width: 560 } ),
-					E.row( { gap: 14, stack: 'mobile', extra: { margin: E.dims( 34, 0, 0, 0 ), flex_align_items_mobile: 'flex-start' } }, [
-						E.button( 'Back to the homepage', url.home, soft ? B.yellow : B.dark ),
-						E.button( 'Browse units', url.units, soft ? B.ghost : B.outline ),
+					// As in the designs, the block shrinks to its content and sits centred.
+					E.col( { extra: { width: E.custom( 'fit-content' ), width_tablet: E.custom( 'fit-content' ), width_mobile: E.pct( 100 ), _flex_align_self: 'center' } }, [
+						E.heading( soft ? '404' : '<mark>404</mark>', { tag: 'p', color: soft ? 'secondary' : 'primary', classes: soft ? '' : 'sb-e-highlight', extra: { typography_typography: 'custom', typography_font_size: E.custom( soft ? 'clamp(7rem, 20vw, 15rem)' : 'clamp(7rem, 19vw, 14rem)' ), typography_font_weight: '900', typography_line_height: E.em( 0.85 ), typography_letter_spacing: E.em( -0.07 ) } } ),
+						soft
+							? E.heading( 'This unit is empty.', { tag: 'h1', color: 'sbwhite', margin: [ 18, 0, 0, 0 ], extra: Object.assign( { typography_typography: 'custom', typography_font_size: E.custom( 'clamp(1.9rem, 4vw, 3rem)' ), typography_font_weight: '800', typography_letter_spacing: E.em( -0.035 ), typography_line_height: E.em( 1.05 ) }, E.measure( 620 ) ) } )
+							: E.heading( 'This unit is empty.', { tag: 'h1', typo: 'sbh1', color: 'primary', margin: [ 22, 0, 0, 0 ] } ),
+						E.text( 'The page you were after has moved, or never existed. Everything else is where you left it.', { typo: 'sblede', colorHex: soft ? 'rgba(255,255,255,0.72)' : undefined, color: soft ? undefined : 'sbmuted', margin: [ 16, 0, 0, 0 ], width: 560 } ),
+						E.row( { gap: 12, stack: 'mobile', extra: { margin: E.dims( soft ? 34 : 32, 0, 0, 0 ), flex_align_items_mobile: 'flex-start' } }, [
+							E.button( 'Back to the homepage', url.home, soft ? B.yellow : B.dark ),
+							E.button( 'Browse units', url.units, soft ? B.ghost : B.outline ),
+						] ),
 					] ),
 				]
 			),
@@ -520,7 +526,7 @@ function templatesFor( demo, D, B, S ) {
 						E.widget( 'theme-post-content', { _css_classes: 'sb-prose' } ),
 						E.heading( 'This unit has', { tag: 'h2', color: 'primary', margin: [ 40, 0, 14, 0 ], extra: { typography_typography: 'custom', typography_font_size: E.rem( 1.6 ), typography_font_weight: soft ? '800' : '900', typography_letter_spacing: E.em( -0.03 ) } } ),
 						E.widget( 'storebox-unit-features', { design: '' } ),
-						E.text( '<h2>How reserving works</h2><ul><li>Reserve online with no deposit and nothing to sign. We hold it for seven days.</li><li>Sign on your phone or at reception on move-in day, fit your own padlock, and collect your PIN.</li><li>Pay monthly. Give two weeks\' notice to leave, and unused days are refunded.</li></ul>', { classes: 'sb-prose', margin: [ 40, 0, 40, 0 ] } ),
+						E.text( C.reservingHtml( D ), { classes: 'sb-prose', margin: [ 40, 0, 40, 0 ] } ),
 						E.widget( 'storebox-enquiry-form', { design: '', type: 'auto', form_id: 'reserve', card: 'yes' } ),
 					] ),
 					E.col(
@@ -530,10 +536,9 @@ function templatesFor( demo, D, B, S ) {
 				] ),
 			] ),
 			E.section( { pad: [ D.sec, D.sec ], gutter: D.gutter, bg: { global: 'sbsurface' } }, [
-				C.headSplit( D, { eyebrow: 'Similar sizes', title: 'Or a little bigger, or smaller.' }, E.button( 'All units', url.units, soft ? B.dark : B.outline ) ),
+				C.headSplit( D, { eyebrow: 'Similar sizes', title: soft ? 'Or a little bigger, or smaller.' : 'A little bigger, or smaller.' }, E.button( 'All units', url.units, soft ? B.dark : B.outline ) ),
 				E.widget( 'storebox-unit-grid', { design: '', source: 'similar', count: 3, columns: '3', columns_tablet: '2', columns_mobile: '1' } ),
 			] ),
-			cta(),
 		],
 	} );
 
@@ -563,7 +568,7 @@ function templatesFor( demo, D, B, S ) {
 					E.col( { w: 50 }, [
 						C.eyebrow( D, 'About this facility' ),
 						E.widget( 'theme-post-content', { _css_classes: 'sb-prose', _margin: E.dims( 16, 0, 0, 0 ) } ),
-						E.widget( 'storebox-location-tags', { design: '', _margin: E.dims( 22, 0, 0, 0 ) } ),
+						E.widget( 'storebox-location-tags', Object.assign( { design: '', _margin: E.dims( soft ? 22 : 20, 0, 0, 0 ) }, soft ? {} : { limit: 1, show_free: 'yes' } ) ),
 					] ),
 					E.col( { w: 50, gap: 26 }, [
 						soft ? E.dyn( E.img( 'storage-corridor-wide', { alt: '', height: [ 420, 440, 260 ], radius: D.radiusLg } ), 'image', E.tag( 'storebox-location-image', { source: 'gallery' } ) ) : null,
@@ -577,7 +582,7 @@ function templatesFor( demo, D, B, S ) {
 					{ eyebrow: 'Units here', title: 'Available here.' },
 					E.button( 'All locations', url.units, soft ? B.dark : B.outline )
 				),
-				E.widget( 'storebox-unit-grid', { design: '', source: 'location', location: '', count: 8, columns: '3', columns_tablet: '2', columns_mobile: '1' } ),
+				E.widget( 'storebox-unit-grid', Object.assign( { design: '', source: 'location', location: '', count: 8, columns: '3', columns_tablet: '2', columns_mobile: '1' }, soft ? { show_name: 'yes' } : {} ) ),
 			] ),
 			E.section( { pad: [ D.sec, D.sec ], gutter: D.gutter }, [
 				C.head( D, { eyebrow: 'Getting here', title: 'Address' } ),

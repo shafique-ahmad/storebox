@@ -186,7 +186,12 @@ author = {
     'bio': text(first(r'<div class="author">.*?<b>.*?</b><span>(.*?)</span>', post_page)),
 }
 
+# The business design has its own, shorter article copy and byline.
+post_page_b = read(os.path.join(BUSINESS, 'post-how-to-pack-a-storage-unit.html'))
+body_b = clean_html(first(r'<div class="prose">(.*?)</div>\s*<div class="byline">', post_page_b))
+author['bio_business'] = text(first(r'<div class="byline">.*?<b>.*?</b><span>(.*?)</span>', post_page_b))
+
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 with open(OUT, 'w', encoding='utf-8') as f:
-    json.dump({'units': units, 'locations': locations, 'posts': posts, 'categories': categories, 'post_body': body, 'author': author}, f, indent=1, ensure_ascii=False)
+    json.dump({'units': units, 'locations': locations, 'posts': posts, 'categories': categories, 'post_body': body, 'post_body_business': body_b, 'author': author}, f, indent=1, ensure_ascii=False)
 print('units', len(units), 'locations', len(locations), 'posts', len(posts), '->', OUT)

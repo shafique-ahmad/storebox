@@ -44,6 +44,10 @@
 	font-size: .88rem;
 }
 
+.sb-pgrid.sb-s-editorial .sb-chip[aria-current] {
+	background: var(--sb-primary);
+}
+
 .sb-pgrid .sb-meta {
 	display: flex;
 	flex-wrap: wrap;

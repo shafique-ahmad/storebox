@@ -381,12 +381,14 @@
 										"design": "",
 										"_margin": {
 											"unit": "px",
-											"top": "22",
+											"top": "20",
 											"right": "0",
 											"bottom": "0",
 											"left": "0",
 											"isLinked": false
-										}
+										},
+										"limit": 1,
+										"show_free": "yes"
 									},
 									"elements": [],
 									"isInner": false

@@ -23,6 +23,83 @@ class Integrations {
 		add_filter( 'body_class', array( __CLASS__, 'body_class' ) );
 		add_filter( 'document_title_parts', array( __CLASS__, 'document_title' ) );
 		add_filter( 'display_post_states', array( __CLASS__, 'post_states' ), 10, 2 );
+		add_filter( 'nav_menu_css_class', array( __CLASS__, 'menu_section_class' ), 10, 2 );
+		add_filter( 'nav_menu_link_attributes', array( __CLASS__, 'menu_section_link' ), 20, 2 );
+	}
+
+	/**
+	 * Page that lists the current single item: the Units page for a unit, the
+	 * Locations page for a location and the posts page for a blog post.
+	 *
+	 * @return int Page ID, or 0.
+	 */
+	private static function section_page() {
+		static $page_id = null;
+
+		if ( null === $page_id ) {
+			$page_id = 0;
+			if ( is_singular( 'sb_unit' ) ) {
+				$page_id = absint( storebox_core_setting( 'units_page' ) );
+			} elseif ( is_singular( 'sb_location' ) ) {
+				$page_id = absint( storebox_core_setting( 'locations_page' ) );
+			} elseif ( is_singular( 'post' ) ) {
+				$page_id = absint( get_option( 'page_for_posts' ) );
+			}
+		}
+
+		return $page_id;
+	}
+
+	/**
+	 * Whether a menu item links to the page of the current section.
+	 *
+	 * @param \WP_Post $item Menu item.
+	 * @return bool
+	 */
+	private static function is_section_item( $item ) {
+		$page_id = self::section_page();
+
+		return $page_id && isset( $item->object, $item->object_id ) && 'page' === $item->object && (int) $item->object_id === $page_id;
+	}
+
+	/**
+	 * Marks the menu item of the current section ("Units" on a unit page), so
+	 * menus highlight where the visitor is.
+	 *
+	 * @param string[] $classes Item classes.
+	 * @param \WP_Post $item    Menu item.
+	 * @return string[]
+	 */
+	public static function menu_section_class( $classes, $item ) {
+		if ( self::is_section_item( $item ) ) {
+			$classes[] = 'current-section';
+		}
+
+		return $classes;
+	}
+
+	/**
+	 * Section item link: aria-current="true", and Elementor Pro's active class
+	 * when the menu is printed by its Nav Menu widget.
+	 *
+	 * @param array    $atts Link attributes.
+	 * @param \WP_Post $item Menu item.
+	 * @return array
+	 */
+	public static function menu_section_link( $atts, $item ) {
+		if ( ! self::is_section_item( $item ) ) {
+			return $atts;
+		}
+
+		if ( empty( $atts['aria-current'] ) ) {
+			$atts['aria-current'] = 'true';
+		}
+
+		if ( ! empty( $atts['class'] ) && preg_match( '/(^|\s)elementor-item(\s|$)/', $atts['class'] ) && false === strpos( $atts['class'], 'elementor-item-active' ) ) {
+			$atts['class'] .= ' elementor-item-active';
+		}
+
+		return $atts;
 	}
 
 	/**

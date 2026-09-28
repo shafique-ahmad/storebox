@@ -729,7 +729,8 @@
 						"count": 8,
 						"columns": "3",
 						"columns_tablet": "2",
-						"columns_mobile": "1"
+						"columns_mobile": "1",
+						"show_name": "yes"
 					},
 					"elements": [],
 					"isInner": false
