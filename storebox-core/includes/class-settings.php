@@ -61,7 +61,11 @@ class Settings {
 			'general'      => array(
 				'title'  => __( 'Prices and availability', 'storebox-core' ),
 				'fields' => array(
-					'currency_symbol'   => array( 'label' => __( 'Currency symbol', 'storebox-core' ), 'type' => 'text', 'class' => 'small-text' ),
+					'currency_symbol'   => array(
+						'label' => __( 'Currency symbol', 'storebox-core' ),
+						'type'  => 'text',
+						'class' => 'small-text',
+					),
 					'currency_position' => array(
 						'label'   => __( 'Currency position', 'storebox-core' ),
 						'type'    => 'select',
@@ -72,7 +76,12 @@ class Settings {
 							'after_space'  => __( 'After, with a space (59 €)', 'storebox-core' ),
 						),
 					),
-					'price_decimals'    => array( 'label' => __( 'Price decimals', 'storebox-core' ), 'type' => 'number', 'min' => 0, 'max' => 2 ),
+					'price_decimals'    => array(
+						'label' => __( 'Price decimals', 'storebox-core' ),
+						'type'  => 'number',
+						'min'   => 0,
+						'max'   => 2,
+					),
 					'low_threshold'     => array(
 						'label'       => __( '"Only a few left" from', 'storebox-core' ),
 						'type'        => 'number',
@@ -80,31 +89,106 @@ class Settings {
 						'max'         => 50,
 						'description' => __( 'Units with this many (or fewer) free show the warning status, e.g. "2 left".', 'storebox-core' ),
 					),
-					'label_full'        => array( 'label' => __( 'Status: fully booked', 'storebox-core' ), 'type' => 'text', 'placeholder' => __( 'Fully booked', 'storebox-core' ) ),
-					'label_low'         => array( 'label' => __( 'Status: few left', 'storebox-core' ), 'type' => 'text', 'placeholder' => __( '%d left', 'storebox-core' ), 'description' => __( '%d is replaced by the number free.', 'storebox-core' ) ),
-					'label_ok'          => array( 'label' => __( 'Status: available', 'storebox-core' ), 'type' => 'text', 'placeholder' => __( '%d available', 'storebox-core' ) ),
-					'weekly_text'       => array( 'label' => __( 'Weekly price line', 'storebox-core' ), 'type' => 'text', 'class' => 'regular-text', 'placeholder' => __( 'About %s a week · first month pro-rata', 'storebox-core' ), 'description' => __( '%s is replaced by the weekly price (monthly × 12 ÷ 52).', 'storebox-core' ) ),
+					'label_full'        => array(
+						'label'       => __( 'Status: fully booked', 'storebox-core' ),
+						'type'        => 'text',
+						'placeholder' => __( 'Fully booked', 'storebox-core' ),
+					),
+					'label_low'         => array(
+						'label'       => __( 'Status: few left', 'storebox-core' ),
+						'type'        => 'text',
+						/* translators: %d: number of units free. */
+						'placeholder' => __( '%d left', 'storebox-core' ),
+						/* translators: %d: literal placeholder shown to the user, keep as is. */
+						'description' => __( '%d is replaced by the number free.', 'storebox-core' ),
+					),
+					'label_ok'          => array(
+						'label'       => __( 'Status: available', 'storebox-core' ),
+						'type'        => 'text',
+						/* translators: %d: number of units free. */
+						'placeholder' => __( '%d available', 'storebox-core' ),
+					),
+					'weekly_text'       => array(
+						'label'       => __( 'Weekly price line', 'storebox-core' ),
+						'type'        => 'text',
+						'class'       => 'regular-text',
+						/* translators: %s: weekly price. */
+						'placeholder' => __( 'About %s a week · first month pro-rata', 'storebox-core' ),
+						/* translators: %s: literal placeholder shown to the user, keep as is. */
+						'description' => __( '%s is replaced by the weekly price (monthly × 12 ÷ 52).', 'storebox-core' ),
+					),
 				),
 			),
 			'pages'        => array(
 				'title'  => __( 'Pages', 'storebox-core' ),
 				'fields' => array(
-					'units_page'     => array( 'label' => __( 'Units page', 'storebox-core' ), 'type' => 'select', 'choices' => $pages, 'description' => __( 'The page with your unit list. Used for breadcrumbs and "All units" links.', 'storebox-core' ) ),
-					'locations_page' => array( 'label' => __( 'Locations page', 'storebox-core' ), 'type' => 'select', 'choices' => $pages ),
+					'units_page'     => array(
+						'label'       => __( 'Units page', 'storebox-core' ),
+						'type'        => 'select',
+						'choices'     => $pages,
+						'description' => __( 'The page with your unit list. Used for breadcrumbs and "All units" links.', 'storebox-core' ),
+					),
+					'locations_page' => array(
+						'label'   => __( 'Locations page', 'storebox-core' ),
+						'type'    => 'select',
+						'choices' => $pages,
+					),
 				),
 			),
 			'reservations' => array(
 				'title'  => __( 'Reservations and enquiries', 'storebox-core' ),
 				'fields' => array(
-					'notify_email'     => array( 'label' => __( 'Send enquiries to', 'storebox-core' ), 'type' => 'email', 'class' => 'regular-text', 'placeholder' => get_option( 'admin_email' ), 'description' => __( 'A location\'s own email address is used for requests about its units.', 'storebox-core' ) ),
-					'store_enquiries'  => array( 'label' => __( 'Keep a copy in Storebox → Enquiries', 'storebox-core' ), 'type' => 'checkbox' ),
-					'booking_rows'     => array( 'label' => __( 'Booking panel rows', 'storebox-core' ), 'type' => 'textarea', 'placeholder' => "Deposit | None\nMinimum term | None", 'description' => __( 'Extra rows below location and access, one per line as "Label | Value".', 'storebox-core' ) ),
-					'booking_note'     => array( 'label' => __( 'Booking panel note', 'storebox-core' ), 'type' => 'text', 'class' => 'regular-text', 'placeholder' => __( 'Held free for 7 days · cancel any time', 'storebox-core' ) ),
-					'help_title'       => array( 'label' => __( 'Help box heading', 'storebox-core' ), 'type' => 'text', 'class' => 'regular-text', 'placeholder' => __( 'Rather talk it through?', 'storebox-core' ) ),
-					'help_text'        => array( 'label' => __( 'Help box text', 'storebox-core' ), 'type' => 'text', 'class' => 'regular-text', 'placeholder' => __( 'A person answers, usually within three rings.', 'storebox-core' ) ),
-					'help_phone'       => array( 'label' => __( 'Help phone number', 'storebox-core' ), 'type' => 'text', 'description' => __( 'Shown in the booking panel help box. Defaults to the phone number in the theme header settings.', 'storebox-core' ) ),
-					'reservation_info' => array( 'label' => __( '"How reserving works" text', 'storebox-core' ), 'type' => 'editor', 'description' => __( 'Shown on single unit pages above the reservation form (theme template).', 'storebox-core' ) ),
-					'privacy_note'     => array( 'label' => __( 'Note below forms', 'storebox-core' ), 'type' => 'text', 'class' => 'large-text', 'placeholder' => __( 'We only use your details to answer this enquiry.', 'storebox-core' ) ),
+					'notify_email'     => array(
+						'label'       => __( 'Send enquiries to', 'storebox-core' ),
+						'type'        => 'email',
+						'class'       => 'regular-text',
+						'placeholder' => get_option( 'admin_email' ),
+						'description' => __( 'A location\'s own email address is used for requests about its units.', 'storebox-core' ),
+					),
+					'store_enquiries'  => array(
+						'label' => __( 'Keep a copy in Storebox → Enquiries', 'storebox-core' ),
+						'type'  => 'checkbox',
+					),
+					'booking_rows'     => array(
+						'label'       => __( 'Booking panel rows', 'storebox-core' ),
+						'type'        => 'textarea',
+						'placeholder' => "Deposit | None\nMinimum term | None",
+						'description' => __( 'Extra rows below location and access, one per line as "Label | Value".', 'storebox-core' ),
+					),
+					'booking_note'     => array(
+						'label'       => __( 'Booking panel note', 'storebox-core' ),
+						'type'        => 'text',
+						'class'       => 'regular-text',
+						'placeholder' => __( 'Held free for 7 days · cancel any time', 'storebox-core' ),
+					),
+					'help_title'       => array(
+						'label'       => __( 'Help box heading', 'storebox-core' ),
+						'type'        => 'text',
+						'class'       => 'regular-text',
+						'placeholder' => __( 'Rather talk it through?', 'storebox-core' ),
+					),
+					'help_text'        => array(
+						'label'       => __( 'Help box text', 'storebox-core' ),
+						'type'        => 'text',
+						'class'       => 'regular-text',
+						'placeholder' => __( 'A person answers, usually within three rings.', 'storebox-core' ),
+					),
+					'help_phone'       => array(
+						'label'       => __( 'Help phone number', 'storebox-core' ),
+						'type'        => 'text',
+						'description' => __( 'Shown in the booking panel help box. Defaults to the phone number in the theme header settings.', 'storebox-core' ),
+					),
+					'reservation_info' => array(
+						'label'       => __( '"How reserving works" text', 'storebox-core' ),
+						'type'        => 'editor',
+						'description' => __( 'Shown on single unit pages above the reservation form (theme template).', 'storebox-core' ),
+					),
+					'privacy_note'     => array(
+						'label'       => __( 'Note below forms', 'storebox-core' ),
+						'type'        => 'text',
+						'class'       => 'large-text',
+						'placeholder' => __( 'We only use your details to answer this enquiry.', 'storebox-core' ),
+					),
 				),
 			),
 			'map'          => array(
@@ -118,10 +202,27 @@ class Settings {
 							'illustrative' => __( 'Illustrative map (no external requests)', 'storebox-core' ),
 						),
 					),
-					'map_consent'     => array( 'label' => __( 'Load the live map only after a click', 'storebox-core' ), 'type' => 'checkbox', 'description' => __( 'Shows the illustrative map with a “Load interactive map” button first — useful for privacy regulations.', 'storebox-core' ) ),
-					'map_muted'       => array( 'label' => __( 'Muted map colours', 'storebox-core' ), 'type' => 'checkbox' ),
-					'map_tiles'       => array( 'label' => __( 'Tile URL', 'storebox-core' ), 'type' => 'url', 'class' => 'large-text code', 'description' => __( 'OpenStreetMap tiles are fine for small sites. For heavy traffic use a tile provider such as MapTiler, Stadia or Mapbox and paste its URL template here.', 'storebox-core' ) ),
-					'map_attribution' => array( 'label' => __( 'Tile attribution', 'storebox-core' ), 'type' => 'html', 'class' => 'large-text code', 'description' => __( 'Required by the tile provider.', 'storebox-core' ) ),
+					'map_consent'     => array(
+						'label'       => __( 'Load the live map only after a click', 'storebox-core' ),
+						'type'        => 'checkbox',
+						'description' => __( 'Shows the illustrative map with a “Load interactive map” button first — useful for privacy regulations.', 'storebox-core' ),
+					),
+					'map_muted'       => array(
+						'label' => __( 'Muted map colours', 'storebox-core' ),
+						'type'  => 'checkbox',
+					),
+					'map_tiles'       => array(
+						'label'       => __( 'Tile URL', 'storebox-core' ),
+						'type'        => 'url',
+						'class'       => 'large-text code',
+						'description' => __( 'OpenStreetMap tiles are fine for small sites. For heavy traffic use a tile provider such as MapTiler, Stadia or Mapbox and paste its URL template here.', 'storebox-core' ),
+					),
+					'map_attribution' => array(
+						'label'       => __( 'Tile attribution', 'storebox-core' ),
+						'type'        => 'html',
+						'class'       => 'large-text code',
+						'description' => __( 'Required by the tile provider.', 'storebox-core' ),
+					),
 				),
 			),
 		);
@@ -151,7 +252,13 @@ class Settings {
 					array( __CLASS__, 'render_field' ),
 					self::PAGE,
 					'storebox_' . $section_id,
-					array_merge( $field, array( 'key' => $key, 'label_for' => 'storebox-' . $key ) )
+					array_merge(
+						$field,
+						array(
+							'key'       => $key,
+							'label_for' => 'storebox-' . $key,
+						)
+					)
 				);
 			}
 		}
@@ -195,7 +302,16 @@ class Settings {
 						$clean[ $key ] = sanitize_textarea_field( $value );
 						break;
 					case 'html':
-						$clean[ $key ] = wp_kses( $value, array( 'a' => array( 'href' => true, 'target' => true, 'rel' => true ) ) );
+						$clean[ $key ] = wp_kses(
+							$value,
+							array(
+								'a' => array(
+									'href'   => true,
+									'target' => true,
+									'rel'    => true,
+								),
+							)
+						);
 						break;
 					default:
 						$clean[ $key ] = sanitize_text_field( $value );

@@ -73,7 +73,16 @@ $chips_for = static function ( $location, $args ) {
 			<a class="sb-loc sb-loc--overlay" href="<?php echo esc_url( $location['url'] ); ?>">
 				<?php
 				if ( $image_id ) {
-					echo wp_get_attachment_image( $image_id, 'storebox-card', false, array( 'alt' => '', 'loading' => 'lazy', 'sizes' => '(max-width: 680px) 100vw, (max-width: 1000px) 50vw, 400px' ) );
+					echo wp_get_attachment_image(
+						$image_id,
+						'storebox-card',
+						false,
+						array(
+							'alt'     => '',
+							'loading' => 'lazy',
+							'sizes'   => '(max-width: 680px) 100vw, (max-width: 1000px) 50vw, 400px',
+						)
+					);
 				}
 				?>
 				<div class="sb-loc__in">
@@ -98,7 +107,16 @@ $chips_for = static function ( $location, $args ) {
 				<span class="sb-loc__img">
 					<?php
 					if ( $image_id ) {
-						echo wp_get_attachment_image( $image_id, 'storebox-card', false, array( 'alt' => '', 'loading' => 'lazy', 'sizes' => '(max-width: 680px) 100vw, (max-width: 1000px) 50vw, 400px' ) );
+						echo wp_get_attachment_image(
+							$image_id,
+							'storebox-card',
+							false,
+							array(
+								'alt'     => '',
+								'loading' => 'lazy',
+								'sizes'   => '(max-width: 680px) 100vw, (max-width: 1000px) 50vw, 400px',
+							)
+						);
 					}
 					?>
 				</span>
@@ -116,8 +134,7 @@ $chips_for = static function ( $location, $args ) {
 								<span><?php echo Components::icon( 'pin' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static SVG. ?> <?php echo esc_html( $location['address_inline'] ); ?></span>
 							<?php endif; ?>
 							<?php if ( $location['access'] ) : ?>
-								<?php /* translators: %s: access hours. */ ?>
-								<span><?php echo Components::icon( 'clock' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static SVG. ?> <?php echo esc_html( sprintf( __( 'Access %s', 'storebox-core' ), $location['access'] ) ); ?></span>
+								<span><?php echo Components::icon( 'clock' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static SVG. ?> <?php echo esc_html( sprintf( /* translators: %s: access hours. */ __( 'Access %s', 'storebox-core' ), $location['access'] ) ); ?></span>
 							<?php endif; ?>
 							<?php if ( $location['units_meta'] ) : ?>
 								<span><?php echo Components::icon( 'box' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static SVG. ?> <?php echo esc_html( $location['units_meta'] ); ?></span>
@@ -132,7 +149,16 @@ $chips_for = static function ( $location, $args ) {
 				<span class="sb-loc__thumb">
 					<?php
 					if ( $image_id ) {
-						echo wp_get_attachment_image( $image_id, 'storebox-thumb', false, array( 'alt' => '', 'loading' => 'lazy', 'sizes' => '108px' ) );
+						echo wp_get_attachment_image(
+							$image_id,
+							'storebox-thumb',
+							false,
+							array(
+								'alt'     => '',
+								'loading' => 'lazy',
+								'sizes'   => '108px',
+							)
+						);
 					}
 					?>
 				</span>

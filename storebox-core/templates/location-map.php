@@ -77,7 +77,16 @@ $config = array(
 	'mode'        => $mode,
 	'consent'     => $consent,
 	'tiles'       => esc_url_raw( storebox_core_setting( 'map_tiles' ) ),
-	'attribution' => wp_kses( storebox_core_setting( 'map_attribution' ), array( 'a' => array( 'href' => true, 'target' => true, 'rel' => true ) ) ),
+	'attribution' => wp_kses(
+		storebox_core_setting( 'map_attribution' ),
+		array(
+			'a' => array(
+				'href'   => true,
+				'target' => true,
+				'rel'    => true,
+			),
+		)
+	),
 	'zoom'        => max( 3, min( 18, absint( $args['zoom'] ) ) ),
 	'points'      => $points,
 );

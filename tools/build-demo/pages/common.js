@@ -30,7 +30,9 @@ const sid = ( key ) => '{{sid:' + key + '}}';
 function eyebrow( D, label, o = {} ) {
 	const soft = 'soft' === D.key;
 	let colorKey;
-	if ( o.color ) {
+	if ( o.colorHex ) {
+		colorKey = undefined; // A local colour; a global one would override it.
+	} else if ( o.color ) {
 		colorKey = o.color;
 	} else if ( o.onDark ) {
 		colorKey = 'secondary';
@@ -128,7 +130,7 @@ function headSplit( D, o, buttonWidget ) {
 /** Numbered item (steps, tips, values). */
 function numbered( D, n, title, body, o = {} ) {
 	return [
-		E.heading( n, { tag: 'p', typo: 'sbnum', color: 'secondary', margin: [ 0, 0, o.numGap === undefined ? 16 : o.numGap, 0 ] } ),
+		E.heading( n, { tag: 'p', typo: 'sbnum', color: o.onDark ? 'secondary' : 'sbgold', margin: [ 0, 0, o.numGap === undefined ? 16 : o.numGap, 0 ] } ),
 		E.heading( title, { tag: 'h3', typo: 'secondary', color: o.onDark ? 'sbwhite' : 'primary', margin: [ 0, 0, o.titleGap === undefined ? 10 : o.titleGap, 0 ] } ),
 		small( body, { size: o.bodySize || 0.97, lh: 1.6, color: o.onDark ? null : 'sbmuted', colorHex: o.onDark ? 'rgba(255,255,255,0.66)' : undefined } ),
 	];

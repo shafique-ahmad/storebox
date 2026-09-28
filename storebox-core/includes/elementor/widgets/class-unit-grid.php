@@ -535,7 +535,9 @@ class Unit_Grid extends Widget_Base {
 				'label'       => esc_html__( 'Results text', 'storebox-core' ),
 				'type'        => Controls_Manager::TEXT,
 				'label_block' => true,
+				/* translators: %s: number of units. */
 				'placeholder' => esc_html__( 'Showing %s units', 'storebox-core' ),
+				/* translators: %s: literal placeholder shown to the user, keep as is. */
 				'description' => esc_html__( '%s is replaced by the number of units.', 'storebox-core' ),
 				'condition'   => array( 'filters' => 'yes' ),
 			)

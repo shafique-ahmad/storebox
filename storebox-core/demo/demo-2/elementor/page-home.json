@@ -1357,7 +1357,7 @@
 														"header_size": "p",
 														"__globals__": {
 															"typography_typography": "globals/typography?id=sbnum",
-															"title_color": "globals/colors?id=secondary"
+															"title_color": "globals/colors?id=sbgold"
 														}
 													},
 													"elements": [],
@@ -1521,7 +1521,7 @@
 														"header_size": "p",
 														"__globals__": {
 															"typography_typography": "globals/typography?id=sbnum",
-															"title_color": "globals/colors?id=secondary"
+															"title_color": "globals/colors?id=sbgold"
 														}
 													},
 													"elements": [],
@@ -1685,7 +1685,7 @@
 														"header_size": "p",
 														"__globals__": {
 															"typography_typography": "globals/typography?id=sbnum",
-															"title_color": "globals/colors?id=secondary"
+															"title_color": "globals/colors?id=sbgold"
 														}
 													},
 													"elements": [],
@@ -1849,7 +1849,7 @@
 														"header_size": "p",
 														"__globals__": {
 															"typography_typography": "globals/typography?id=sbnum",
-															"title_color": "globals/colors?id=secondary"
+															"title_color": "globals/colors?id=sbgold"
 														}
 													},
 													"elements": [],
@@ -2976,7 +2976,7 @@
 											"value": "fas fa-times",
 											"library": "fa-solid"
 										},
-										"title_html_tag": "h3",
+										"title_html_tag": "div",
 										"faq_schema": "yes",
 										"icon_align": "right",
 										"border_width": {
@@ -3147,10 +3147,9 @@
 									"settings": {
 										"title": "Ready when you are",
 										"header_size": "p",
-										"title_color": "rgba(13,29,38,0.6)",
+										"title_color": "rgba(13,29,38,0.78)",
 										"__globals__": {
-											"typography_typography": "globals/typography?id=accent",
-											"title_color": "globals/colors?id=sbmuted"
+											"typography_typography": "globals/typography?id=accent"
 										}
 									},
 									"elements": [],

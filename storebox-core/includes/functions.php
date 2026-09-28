@@ -10,9 +10,11 @@
 
 defined( 'ABSPATH' ) || exit;
 
-/* -------------------------------------------------------------------------
+/*
+ * -------------------------------------------------------------------------
  * Settings
- * ---------------------------------------------------------------------- */
+ * -------------------------------------------------------------------------
+ */
 
 /**
  * Default plugin settings. Empty strings fall back to translated defaults.
@@ -101,9 +103,11 @@ function storebox_core_style( $requested = '' ) {
 	return in_array( $default, array( 'soft', 'editorial' ), true ) ? $default : 'soft';
 }
 
-/* -------------------------------------------------------------------------
+/*
+ * -------------------------------------------------------------------------
  * Formatting
- * ---------------------------------------------------------------------- */
+ * -------------------------------------------------------------------------
+ */
 
 /**
  * Formats a number with only the decimals it needs (2 → "2", 2.5 → "2.5").
@@ -297,9 +301,11 @@ function storebox_core_lines( $value ) {
 	return array_values( array_filter( array_map( 'trim', preg_split( '/\r\n|\r|\n/', (string) $value ) ) ) );
 }
 
-/* -------------------------------------------------------------------------
+/*
+ * -------------------------------------------------------------------------
  * Data
- * ---------------------------------------------------------------------- */
+ * -------------------------------------------------------------------------
+ */
 
 /**
  * Terms of a Storebox taxonomy sorted by their "Order" field, then name.
@@ -628,6 +634,8 @@ function storebox_core_unit_bullets( $unit, $source = 'features', $limit = 3, $w
  * Queries units and returns their IDs in display order.
  *
  * @param array $args {
+ *     Query options.
+ *
  *     @type string $source    all | featured | manual | location | similar.
  *     @type int[]  $ids       Unit IDs for "manual".
  *     @type int    $location  Location ID for "location".
@@ -696,7 +704,10 @@ function storebox_core_query_units( $args = array() ) {
 			break;
 	}
 
-	foreach ( array( 'type' => 'sb_unit_type', 'size' => 'sb_unit_size' ) as $arg => $taxonomy ) {
+	foreach ( array(
+		'type' => 'sb_unit_type',
+		'size' => 'sb_unit_size',
+	) as $arg => $taxonomy ) {
 		if ( ! empty( $args[ $arg ] ) ) {
 			$query['tax_query'][] = array(
 				'taxonomy' => $taxonomy,
@@ -719,17 +730,26 @@ function storebox_core_query_units( $args = array() ) {
 	switch ( $args['orderby'] ) {
 		case 'price':
 			$query['meta_key'] = '_sb_price'; // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
-			$query['orderby']  = array( 'meta_value_num' => $order, 'title' => 'ASC' );
+			$query['orderby']  = array(
+				'meta_value_num' => $order,
+				'title'          => 'ASC',
+			);
 			break;
 		case 'menu_order':
-			$query['orderby'] = array( 'menu_order' => $order, 'title' => 'ASC' );
+			$query['orderby'] = array(
+				'menu_order' => $order,
+				'title'      => 'ASC',
+			);
 			break;
 		case 'title':
 			$query['orderby'] = array( 'title' => $order );
 			break;
 		default:
 			$query['meta_key'] = '_sb_area'; // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
-			$query['orderby']  = array( 'meta_value_num' => $order, 'title' => 'ASC' );
+			$query['orderby']  = array(
+				'meta_value_num' => $order,
+				'title'          => 'ASC',
+			);
 	}
 
 	if ( 'manual' === $args['source'] ) {
@@ -754,9 +774,11 @@ function storebox_core_query_units( $args = array() ) {
 	return $count ? array_slice( $ids, 0, $count ) : $ids;
 }
 
-/* -------------------------------------------------------------------------
+/*
+ * -------------------------------------------------------------------------
  * Components
- * ---------------------------------------------------------------------- */
+ * -------------------------------------------------------------------------
+ */
 
 /**
  * Returns the HTML of a component (see templates/ for the markup).
@@ -788,9 +810,11 @@ function storebox_core_enqueue_components( $names ) {
 	\Storebox_Core\Components::enqueue( (array) $names );
 }
 
-/* -------------------------------------------------------------------------
+/*
+ * -------------------------------------------------------------------------
  * Size tools
- * ---------------------------------------------------------------------- */
+ * -------------------------------------------------------------------------
+ */
 
 /**
  * Default size list for the calculator, chooser and size guide.
@@ -801,12 +825,54 @@ function storebox_core_default_sizes() {
 	return apply_filters(
 		'storebox_core/default_sizes',
 		array(
-			array( 'm2' => 2, 'dims' => '1.4 × 1.4 m', 'fits' => __( 'A wardrobe and a bike', 'storebox-core' ), 'ref' => __( 'a large wardrobe', 'storebox-core' ), 'practice' => __( 'Seasonal boxes, a bike, suitcases', 'storebox-core' ), 'price' => 35 ),
-			array( 'm2' => 5, 'dims' => '2.0 × 2.5 m', 'fits' => __( 'A one-bedroom flat', 'storebox-core' ), 'ref' => __( 'a one-bedroom flat', 'storebox-core' ), 'practice' => __( 'Double bed, sofa, table and chairs, ~20 boxes', 'storebox-core' ), 'price' => 59 ),
-			array( 'm2' => 10, 'dims' => '2.5 × 4.0 m', 'fits' => __( 'A two-bedroom home', 'storebox-core' ), 'ref' => __( 'a single garage', 'storebox-core' ), 'practice' => __( 'Two bedrooms including white goods', 'storebox-core' ), 'price' => 89 ),
-			array( 'm2' => 15, 'dims' => '3.0 × 5.0 m', 'fits' => __( 'A three-bedroom home', 'storebox-core' ), 'ref' => __( 'a three-bedroom home', 'storebox-core' ), 'practice' => __( 'Three bedrooms, garden furniture', 'storebox-core' ), 'price' => 119 ),
-			array( 'm2' => 20, 'dims' => '4.0 × 5.0 m', 'fits' => __( 'A four-bedroom house', 'storebox-core' ), 'ref' => __( 'a four-bedroom home', 'storebox-core' ), 'practice' => __( 'Four bedrooms, or a car and some boxes', 'storebox-core' ), 'price' => 149 ),
-			array( 'm2' => 30, 'dims' => '5.0 × 6.0 m', 'fits' => __( 'A small business stockroom', 'storebox-core' ), 'ref' => __( 'a small business stockroom', 'storebox-core' ), 'practice' => __( 'Racked stock, pallets, an office clear-out', 'storebox-core' ), 'price' => 209 ),
+			array(
+				'm2'       => 2,
+				'dims'     => '1.4 × 1.4 m',
+				'fits'     => __( 'A wardrobe and a bike', 'storebox-core' ),
+				'ref'      => __( 'a large wardrobe', 'storebox-core' ),
+				'practice' => __( 'Seasonal boxes, a bike, suitcases', 'storebox-core' ),
+				'price'    => 35,
+			),
+			array(
+				'm2'       => 5,
+				'dims'     => '2.0 × 2.5 m',
+				'fits'     => __( 'A one-bedroom flat', 'storebox-core' ),
+				'ref'      => __( 'a one-bedroom flat', 'storebox-core' ),
+				'practice' => __( 'Double bed, sofa, table and chairs, ~20 boxes', 'storebox-core' ),
+				'price'    => 59,
+			),
+			array(
+				'm2'       => 10,
+				'dims'     => '2.5 × 4.0 m',
+				'fits'     => __( 'A two-bedroom home', 'storebox-core' ),
+				'ref'      => __( 'a single garage', 'storebox-core' ),
+				'practice' => __( 'Two bedrooms including white goods', 'storebox-core' ),
+				'price'    => 89,
+			),
+			array(
+				'm2'       => 15,
+				'dims'     => '3.0 × 5.0 m',
+				'fits'     => __( 'A three-bedroom home', 'storebox-core' ),
+				'ref'      => __( 'a three-bedroom home', 'storebox-core' ),
+				'practice' => __( 'Three bedrooms, garden furniture', 'storebox-core' ),
+				'price'    => 119,
+			),
+			array(
+				'm2'       => 20,
+				'dims'     => '4.0 × 5.0 m',
+				'fits'     => __( 'A four-bedroom house', 'storebox-core' ),
+				'ref'      => __( 'a four-bedroom home', 'storebox-core' ),
+				'practice' => __( 'Four bedrooms, or a car and some boxes', 'storebox-core' ),
+				'price'    => 149,
+			),
+			array(
+				'm2'       => 30,
+				'dims'     => '5.0 × 6.0 m',
+				'fits'     => __( 'A small business stockroom', 'storebox-core' ),
+				'ref'      => __( 'a small business stockroom', 'storebox-core' ),
+				'practice' => __( 'Racked stock, pallets, an office clear-out', 'storebox-core' ),
+				'price'    => 209,
+			),
 		)
 	);
 }
@@ -820,20 +886,62 @@ function storebox_core_default_calculator_items() {
 	return apply_filters(
 		'storebox_core/default_calculator_items',
 		array(
-			array( 'name' => __( 'Boxes (medium)', 'storebox-core' ), 'volume' => 0.10 ),
-			array( 'name' => __( 'Single bed', 'storebox-core' ), 'volume' => 1.00 ),
-			array( 'name' => __( 'Double bed', 'storebox-core' ), 'volume' => 1.80 ),
-			array( 'name' => __( 'Sofa, 2-seat', 'storebox-core' ), 'volume' => 1.50 ),
-			array( 'name' => __( 'Sofa, 3-seat', 'storebox-core' ), 'volume' => 2.20 ),
-			array( 'name' => __( 'Armchair', 'storebox-core' ), 'volume' => 0.80 ),
-			array( 'name' => __( 'Wardrobe', 'storebox-core' ), 'volume' => 1.50 ),
-			array( 'name' => __( 'Dining table', 'storebox-core' ), 'volume' => 1.20 ),
-			array( 'name' => __( 'Desk', 'storebox-core' ), 'volume' => 0.80 ),
-			array( 'name' => __( 'Bookshelf', 'storebox-core' ), 'volume' => 0.70 ),
-			array( 'name' => __( 'Fridge / freezer', 'storebox-core' ), 'volume' => 0.80 ),
-			array( 'name' => __( 'Washing machine', 'storebox-core' ), 'volume' => 0.45 ),
-			array( 'name' => __( 'Bicycle', 'storebox-core' ), 'volume' => 0.60 ),
-			array( 'name' => __( 'TV', 'storebox-core' ), 'volume' => 0.20 ),
+			array(
+				'name'   => __( 'Boxes (medium)', 'storebox-core' ),
+				'volume' => 0.10,
+			),
+			array(
+				'name'   => __( 'Single bed', 'storebox-core' ),
+				'volume' => 1.00,
+			),
+			array(
+				'name'   => __( 'Double bed', 'storebox-core' ),
+				'volume' => 1.80,
+			),
+			array(
+				'name'   => __( 'Sofa, 2-seat', 'storebox-core' ),
+				'volume' => 1.50,
+			),
+			array(
+				'name'   => __( 'Sofa, 3-seat', 'storebox-core' ),
+				'volume' => 2.20,
+			),
+			array(
+				'name'   => __( 'Armchair', 'storebox-core' ),
+				'volume' => 0.80,
+			),
+			array(
+				'name'   => __( 'Wardrobe', 'storebox-core' ),
+				'volume' => 1.50,
+			),
+			array(
+				'name'   => __( 'Dining table', 'storebox-core' ),
+				'volume' => 1.20,
+			),
+			array(
+				'name'   => __( 'Desk', 'storebox-core' ),
+				'volume' => 0.80,
+			),
+			array(
+				'name'   => __( 'Bookshelf', 'storebox-core' ),
+				'volume' => 0.70,
+			),
+			array(
+				'name'   => __( 'Fridge / freezer', 'storebox-core' ),
+				'volume' => 0.80,
+			),
+			array(
+				'name'   => __( 'Washing machine', 'storebox-core' ),
+				'volume' => 0.45,
+			),
+			array(
+				'name'   => __( 'Bicycle', 'storebox-core' ),
+				'volume' => 0.60,
+			),
+			array(
+				'name'   => __( 'TV', 'storebox-core' ),
+				'volume' => 0.20,
+			),
 		)
 	);
 }
@@ -853,8 +961,7 @@ function storebox_core_price_for_area( $m2 ) {
 			array(
 				'post_type'      => 'sb_unit',
 				'post_status'    => 'publish',
-				'posts_per_page' => 200,
-				'fields'         => 'ids',
+				'posts_per_page' => 200, // phpcs:ignore WordPress.WP.PostsPerPage.posts_per_page_posts_per_page -- IDs only, for the price range; capped.
 				'no_found_rows'  => true,
 			)
 		);
@@ -917,9 +1024,11 @@ function storebox_core_normalize_sizes( $sizes, $sync_prices = true ) {
 	return $out;
 }
 
-/* -------------------------------------------------------------------------
+/*
+ * -------------------------------------------------------------------------
  * Posts
- * ---------------------------------------------------------------------- */
+ * -------------------------------------------------------------------------
+ */
 
 /**
  * Estimated reading time in minutes ("_storebox_read_time" overrides it).

@@ -171,7 +171,10 @@ function storebox_save_page_settings( $post_id ) {
 		delete_post_meta( $post_id, '_storebox_hide_hero' );
 	}
 
-	foreach ( array( 'storebox_hero_title' => '_storebox_hero_title', 'storebox_hero_intro' => '_storebox_hero_intro' ) as $field => $meta_key ) {
+	foreach ( array(
+		'storebox_hero_title' => '_storebox_hero_title',
+		'storebox_hero_intro' => '_storebox_hero_intro',
+	) as $field => $meta_key ) {
 		$value = isset( $_POST[ $field ] ) ? sanitize_textarea_field( wp_unslash( $_POST[ $field ] ) ) : '';
 		if ( '' === $value ) {
 			delete_post_meta( $post_id, $meta_key );

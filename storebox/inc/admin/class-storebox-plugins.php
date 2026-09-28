@@ -31,7 +31,7 @@ class Storebox_Plugins {
 	/**
 	 * Plugins Storebox works with.
 	 *
-	 * source: "repo" (WordPress.org), "bundled" (zip inside the theme) or
+	 * Source: "repo" (WordPress.org), "bundled" (zip inside the theme) or
 	 * "external" (premium, link only).
 	 *
 	 * @return array<string, array>

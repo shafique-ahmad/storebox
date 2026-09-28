@@ -285,6 +285,7 @@
 					"settings": {
 						"design": "",
 						"skin": "card",
+						"heading_tag": "h2",
 						"columns": "3",
 						"columns_tablet": "2",
 						"columns_mobile": "1",

@@ -15,8 +15,11 @@ const palette = {
 	heading: '#16303F',
 	dark: '#0D1D26',
 	muted: '#5F6E77',
-	success: '#1A7F53',
+	success: '#187A4F',
 	warning: '#AD601E',
+	// The yellow darkened until small text passes WCAG AA on white (5.5:1)
+	// and on the surface colours (4.8:1).
+	gold: '#866405',
 	white: '#FFFFFF',
 };
 
@@ -196,6 +199,7 @@ function kit( d ) {
 			{ _id: 'sbmuted', title: 'Muted text', color: c.muted },
 			{ _id: 'sbsuccess', title: 'Success', color: c.success },
 			{ _id: 'sbwarning', title: 'Warning', color: c.warning },
+			{ _id: 'sbgold', title: 'Gold (small text on light)', color: c.gold },
 			{ _id: 'sbwhite', title: 'White', color: c.white },
 		],
 		system_typography: [

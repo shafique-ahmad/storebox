@@ -131,9 +131,12 @@ body.sb-preset-editorial {
 	transform: scale(1.05);
 }
 
+/* Post titles are h2 in lists and h3 under a section heading; same look. */
 .sb-post__title {
 	margin-bottom: 8px;
 	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: -.02em;
 	line-height: 1.3;
 	transition: color .2s;
 }
@@ -238,6 +241,9 @@ body.sb-preset-editorial {
 .sb-prow__title {
 	margin: 8px 0;
 	font-size: 1.28rem;
+	font-weight: 700;
+	letter-spacing: -.02em;
+	line-height: 1.25;
 	transition: color .2s;
 }
 

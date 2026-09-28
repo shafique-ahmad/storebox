@@ -48,7 +48,12 @@ $attributes = array(
 	'data-avail' => $unit['available'],
 );
 ?>
-<article<?php foreach ( $attributes as $name => $value ) { printf( ' %s="%s"', esc_attr( $name ), esc_attr( $value ) ); } ?><?php echo ! empty( $args['hidden'] ) ? ' hidden' : ''; ?>>
+<article
+<?php
+foreach ( $attributes as $name => $value ) {
+	printf( ' %s="%s"', esc_attr( $name ), esc_attr( $value ) ); }
+?>
+<?php echo ! empty( $args['hidden'] ) ? ' hidden' : ''; ?>>
 	<?php if ( $args['show_image'] ) : ?>
 		<a class="sb-unit-card__img" href="<?php echo esc_url( $unit['url'] ); ?>" tabindex="-1" aria-hidden="true">
 			<?php

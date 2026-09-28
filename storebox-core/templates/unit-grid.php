@@ -61,7 +61,15 @@ $current = array(
 );
 // phpcs:enable
 if ( ! $show_filters || ! isset( $sort_options[ $current['sort'] ] ) ) {
-	$current = array_merge( $current, array( 'size' => '', 'location' => '', 'type' => '', 'available' => false ) );
+	$current         = array_merge(
+		$current,
+		array(
+			'size'      => '',
+			'location'  => '',
+			'type'      => '',
+			'available' => false,
+		)
+	);
 	$current['sort'] = 'area-asc';
 }
 
@@ -171,7 +179,10 @@ if ( ! empty( $args['filters_overlap'] ) && $show_filters ) {
 					array(
 						'post_type'      => 'sb_location',
 						'posts_per_page' => 50,
-						'orderby'        => array( 'menu_order' => 'ASC', 'title' => 'ASC' ),
+						'orderby'        => array(
+							'menu_order' => 'ASC',
+							'title'      => 'ASC',
+						),
 						'no_found_rows'  => true,
 					)
 				);

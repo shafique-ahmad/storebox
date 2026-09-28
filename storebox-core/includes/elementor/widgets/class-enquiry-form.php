@@ -149,6 +149,17 @@ class Enquiry_Form extends Widget_Base {
 		);
 
 		$this->add_control(
+			'title_tag',
+			array(
+				'label'     => esc_html__( 'Title HTML tag', 'storebox-core' ),
+				'type'      => Controls_Manager::SELECT,
+				'default'   => 'h3',
+				'options'   => static::tag_options( array( 'h2', 'h3', 'h4', 'p' ) ),
+				'condition' => array( 'show_title' => 'yes' ),
+			)
+		);
+
+		$this->add_control(
 			'show_intro',
 			array(
 				'label'   => esc_html__( 'Intro', 'storebox-core' ),
@@ -340,6 +351,7 @@ class Enquiry_Form extends Widget_Base {
 				'location'      => ! empty( $s['location'] ) ? absint( $s['location'] ) : 0,
 				'form_id'       => isset( $s['form_id'] ) ? $s['form_id'] : '',
 				'title'         => $this->on( $s, 'show_title' ) ? $this->text_or_default( $s, 'title' ) : '',
+				'title_tag'     => isset( $s['title_tag'] ) ? $s['title_tag'] : 'h3',
 				'intro'         => $this->on( $s, 'show_intro' ) ? $this->text_or_default( $s, 'intro' ) : '',
 				'button_text'   => $this->text_or_default( $s, 'button_text' ),
 				'success_text'  => $this->text_or_default( $s, 'success_text' ),

@@ -217,6 +217,13 @@ a.e-con {
 	position: relative;
 }
 
+/* Elementor caps widgets at their container, above a widget's own custom
+   max-width (hence the doubled classes). */
+.e-con.e-con > .e-con-inner > .elementor-widget,
+.elementor.elementor .e-con > .elementor-widget {
+	max-width: 100%;
+}
+
 .e-con > .e-con-inner > .elementor-widget > .elementor-widget-container,
 .e-con > .elementor-widget > .elementor-widget-container {
 	height: 100%;

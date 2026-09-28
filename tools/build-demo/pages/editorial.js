@@ -40,7 +40,7 @@ module.exports = ( D, B ) => {
 		E.section( { pad: [ D.secHome, D.secHome ], gutter: D.gutter, bg: { global: 'secondary' } }, [
 			E.row( { gap: 60, gapTablet: 44, align: 'center' }, [
 				E.col( { w: 55 }, [
-					C.eyebrow( D, o.eyebrow || 'Ready when you are', { colorHex: 'rgba(13,29,38,0.6)', color: null } ),
+					C.eyebrow( D, o.eyebrow || 'Ready when you are', { colorHex: 'rgba(13,29,38,0.78)', color: null } ),
 					E.heading( o.title || 'Reserve a unit in under two minutes.', { typo: 'sbh2', color: 'primary', margin: [ 16, 0, 0, 0 ], width: 600 } ),
 					E.text( o.lede || 'No deposit, nothing to sign today, and we hold it free for seven days while you sort the van.', { colorHex: 'rgba(13,29,38,0.74)', margin: [ 18, 0, 0, 0 ], width: 480, extra: { typography_typography: 'custom', typography_font_size: E.rem( 1.06 ) } } ),
 					E.row( { gap: 13, stack: 'mobile', extra: { margin: E.dims( 32, 0, 0, 0 ), flex_align_items_mobile: 'flex-start' } }, [
@@ -73,8 +73,8 @@ module.exports = ( D, B ) => {
 				E.row( { gap: 24, rowGap: 8, align: 'baseline', stack: 'mobile', extra: { padding: E.dims( o.pad || 30, 0, o.pad || 30, 0 ) } }, [
 					E.col( { extra: { width: E.px( o.numWidth || 70 ), width_tablet: E.px( o.numWidth || 70 ), width_mobile: E.pct( 100 ), _flex_size: 'none' } }, [
 						o.year
-							? E.heading( item[ 0 ], { tag: 'p', color: 'secondary', extra: { typography_typography: 'custom', typography_font_size: E.rem( 1.4 ), typography_font_weight: '900', typography_letter_spacing: E.em( -0.03 ) } } )
-							: E.heading( item[ 0 ], { tag: 'p', typo: 'sbnum', color: 'secondary' } ),
+							? E.heading( item[ 0 ], { tag: 'p', color: o.onDark ? 'secondary' : 'sbgold', extra: { typography_typography: 'custom', typography_font_size: E.rem( 1.4 ), typography_font_weight: '900', typography_letter_spacing: E.em( -0.03 ) } } )
+							: E.heading( item[ 0 ], { tag: 'p', typo: 'sbnum', color: o.onDark ? 'secondary' : 'sbgold' } ),
 					] ),
 					E.col( { extra: { width: E.pct( 38 ), width_mobile: E.pct( 100 ) } }, [ E.heading( item[ 1 ], { tag: 'h3', typo: 'secondary', color: o.onDark ? 'sbwhite' : 'primary' } ) ] ),
 					E.col( { extra: { width: E.pct( 52 ), width_mobile: E.pct( 100 ) } }, [ C.small( item[ 2 ], { size: 0.96, lh: 1.6, color: o.onDark ? null : 'sbmuted', colorHex: o.onDark ? 'rgba(255,255,255,0.64)' : undefined } ) ] ),
@@ -226,7 +226,7 @@ module.exports = ( D, B ) => {
 						[ '04', 'Park at the door', 'Drive-up bays at all three facilities, with free trolleys and a covered loading area so you are never carrying boxes across an open yard in the rain.' ],
 					].map( ( item ) =>
 						E.row( { gap: 20, stack: false, extra: { padding: E.dims( 32, 0, 32, 0 ) } }, [
-							E.col( { extra: { width: E.px( 58 ), width_tablet: E.px( 58 ), width_mobile: E.px( 44 ), _flex_size: 'none', padding: E.dims( 4, 0, 0, 0 ) } }, [ E.heading( item[ 0 ], { tag: 'p', typo: 'sbnum', color: 'secondary' } ) ] ),
+							E.col( { extra: { width: E.px( 58 ), width_tablet: E.px( 58 ), width_mobile: E.px( 44 ), _flex_size: 'none', padding: E.dims( 4, 0, 0, 0 ) } }, [ E.heading( item[ 0 ], { tag: 'p', typo: 'sbnum', color: 'sbgold' } ) ] ),
 							E.col( { extra: { width: E.pct( 100 ) } }, [
 								E.heading( item[ 1 ], { tag: 'h3', typo: 'secondary', color: 'primary' } ),
 								C.small( item[ 2 ], { size: 0.96, lh: 1.6, margin: [ 9, 0, 0, 0 ] } ),
@@ -357,7 +357,7 @@ module.exports = ( D, B ) => {
 			E.section( { pad: [ 56, D.sec ], gutter: D.gutter }, [
 				E.widget( 'storebox-location-map', { design: '', source: 'all', ratio: '16 / 7' } ),
 				E.spacer( 56 ),
-				E.widget( 'storebox-location-grid', { design: '', skin: 'row', address: 'full', tag_limit: 1 } ),
+				E.widget( 'storebox-location-grid', { design: '', skin: 'row', heading_tag: 'h2', address: 'full', tag_limit: 1 } ),
 			] ),
 			E.section( { pad: [ 64, 64 ], gutter: D.gutter, bg: { global: 'sbsurface' } }, [
 				E.row( { gap: 70, gapTablet: 32, align: 'center' }, [
@@ -458,7 +458,7 @@ module.exports = ( D, B ) => {
 							] )
 						)
 					),
-					E.col( { w: 50 }, [ E.widget( 'storebox-enquiry-form', { design: '', type: 'contact', form_id: 'contact', card: 'yes', label_location: 'Location', note: 'We only use your details to answer this message.' } ) ] ),
+					E.col( { w: 50 }, [ E.widget( 'storebox-enquiry-form', { design: '', type: 'contact', form_id: 'contact', card: 'yes', title_tag: 'h2', label_location: 'Location', note: 'We only use your details to answer this message.' } ) ] ),
 				] ),
 			] ),
 			S.faq( { pad: D.sec, extra: true } ),

@@ -126,7 +126,7 @@ class Privacy {
 	 * @param int    $page  Page (erasure always restarts at 1 as posts are deleted).
 	 * @return array
 	 */
-	public static function erase( $email, $page = 1 ) {
+	public static function erase( $email, $page = 1 ) { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed -- Signature of the personal data eraser API.
 		$ids     = self::find( $email, 1 );
 		$removed = 0;
 

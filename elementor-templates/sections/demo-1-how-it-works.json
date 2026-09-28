@@ -248,7 +248,7 @@
 										},
 										"__globals__": {
 											"typography_typography": "globals/typography?id=sbnum",
-											"title_color": "globals/colors?id=secondary"
+											"title_color": "globals/colors?id=sbgold"
 										}
 									},
 									"elements": [],
@@ -371,7 +371,7 @@
 										},
 										"__globals__": {
 											"typography_typography": "globals/typography?id=sbnum",
-											"title_color": "globals/colors?id=secondary"
+											"title_color": "globals/colors?id=sbgold"
 										}
 									},
 									"elements": [],
@@ -494,7 +494,7 @@
 										},
 										"__globals__": {
 											"typography_typography": "globals/typography?id=sbnum",
-											"title_color": "globals/colors?id=secondary"
+											"title_color": "globals/colors?id=sbgold"
 										}
 									},
 									"elements": [],

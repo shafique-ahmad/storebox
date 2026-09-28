@@ -75,7 +75,18 @@ if ( ! $main_alt && $title ) {
 						echo esc_html( sprintf( __( 'Show photo %1$d of %2$d', 'storebox-core' ), $index + 1, $total ) );
 						?>
 					</span>
-					<?php echo wp_get_attachment_image( $id, 'storebox-thumb', false, array( 'alt' => '', 'loading' => 'lazy', 'sizes' => '180px' ) ); ?>
+					<?php
+					echo wp_get_attachment_image(
+						$id,
+						'storebox-thumb',
+						false,
+						array(
+							'alt'     => '',
+							'loading' => 'lazy',
+							'sizes'   => '180px',
+						)
+					);
+					?>
 				</button>
 			<?php endforeach; ?>
 		</div>

@@ -61,8 +61,8 @@ if ( 'current' === $args['source'] && $wp_query instanceof WP_Query ) {
 
 	// Related posts: top up with the latest posts when the category is small.
 	if ( 'related' === $args['source'] && $query->post_count < $count ) {
-		$exclude = array_merge( array( get_the_ID() ), wp_list_pluck( $query->posts, 'ID' ) );
-		$extra   = get_posts(
+		$exclude           = array_merge( array( get_the_ID() ), wp_list_pluck( $query->posts, 'ID' ) );
+		$extra             = get_posts(
 			array(
 				'post_type'           => 'post',
 				'posts_per_page'      => $count - $query->post_count,
@@ -137,7 +137,7 @@ $excerpt = static function ( $args ) {
 	?>
 
 	<?php
-	$index    = 0;
+	$index     = 0;
 	$list_open = false;
 
 	if ( 'grid' === $layout ) {
@@ -154,7 +154,17 @@ $excerpt = static function ( $args ) {
 			<article <?php post_class( 'sb-post' . ( $is_feature ? ' sb-post--feature' : '' ) . ( $has_image ? '' : ' sb-post--no-image' ) ); ?>>
 				<a class="sb-post__link" href="<?php the_permalink(); ?>">
 					<?php if ( $has_image ) : ?>
-						<div class="sb-post__img"><?php the_post_thumbnail( $is_feature ? 'storebox-wide' : 'storebox-card', array( 'alt' => '', 'sizes' => $is_feature ? '(max-width: 1000px) 100vw, 700px' : '(max-width: 680px) 100vw, (max-width: 1000px) 50vw, 400px' ) ); ?></div>
+						<div class="sb-post__img">
+						<?php
+						the_post_thumbnail(
+							$is_feature ? 'storebox-wide' : 'storebox-card',
+							array(
+								'alt'   => '',
+								'sizes' => $is_feature ? '(max-width: 1000px) 100vw, 700px' : '(max-width: 680px) 100vw, (max-width: 1000px) 50vw, 400px',
+							)
+						);
+						?>
+													</div>
 					<?php endif; ?>
 					<div class="sb-post__body">
 						<?php $meta_line( $args ); ?>
@@ -171,7 +181,17 @@ $excerpt = static function ( $args ) {
 			?>
 			<article <?php post_class( 'sb-lead' ); ?>>
 				<?php if ( $has_image ) : ?>
-					<a class="sb-lead__img" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php the_post_thumbnail( 'storebox-wide', array( 'alt' => '', 'sizes' => '(max-width: 1080px) 100vw, 680px' ) ); ?></a>
+					<a class="sb-lead__img" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true">
+					<?php
+					the_post_thumbnail(
+						'storebox-wide',
+						array(
+							'alt'   => '',
+							'sizes' => '(max-width: 1080px) 100vw, 680px',
+						)
+					);
+					?>
+					</a>
 				<?php endif; ?>
 				<div class="sb-lead__body">
 					<?php $meta_line( $args ); ?>
@@ -201,7 +221,17 @@ $excerpt = static function ( $args ) {
 						<?php endif; ?>
 					</div>
 					<?php if ( $has_image ) : ?>
-						<div class="sb-prow__img"><?php the_post_thumbnail( 'storebox-thumb', array( 'alt' => '', 'sizes' => '(max-width: 680px) 100vw, 200px' ) ); ?></div>
+						<div class="sb-prow__img">
+						<?php
+						the_post_thumbnail(
+							'storebox-thumb',
+							array(
+								'alt'   => '',
+								'sizes' => '(max-width: 680px) 100vw, 200px',
+							)
+						);
+						?>
+						</div>
 					<?php endif; ?>
 				</a>
 			</article>

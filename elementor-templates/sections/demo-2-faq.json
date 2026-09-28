@@ -269,7 +269,7 @@
 											"value": "fas fa-times",
 											"library": "fa-solid"
 										},
-										"title_html_tag": "h3",
+										"title_html_tag": "div",
 										"faq_schema": "yes",
 										"icon_align": "right",
 										"border_width": {

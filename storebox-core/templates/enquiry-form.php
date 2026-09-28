@@ -68,14 +68,14 @@ $show_location = 'auto' === $args['show_location'] ? 'contact' === $type : (bool
 $labels = wp_parse_args(
 	(array) $args['labels'],
 	array(
-		'name'        => __( 'Name', 'storebox-core' ),
-		'email'       => __( 'Email', 'storebox-core' ),
-		'phone'       => __( 'Phone', 'storebox-core' ),
-		'date'        => __( 'Move-in date', 'storebox-core' ),
-		'location'    => __( 'Preferred location', 'storebox-core' ),
-		'any'         => __( 'No preference', 'storebox-core' ),
-		'message'     => 'contact' === $type ? __( 'Message', 'storebox-core' ) : __( 'Anything else?', 'storebox-core' ),
-		'honeypot'    => __( 'Leave this field empty', 'storebox-core' ),
+		'name'     => __( 'Name', 'storebox-core' ),
+		'email'    => __( 'Email', 'storebox-core' ),
+		'phone'    => __( 'Phone', 'storebox-core' ),
+		'date'     => __( 'Move-in date', 'storebox-core' ),
+		'location' => __( 'Preferred location', 'storebox-core' ),
+		'any'      => __( 'No preference', 'storebox-core' ),
+		'message'  => 'contact' === $type ? __( 'Message', 'storebox-core' ) : __( 'Anything else?', 'storebox-core' ),
+		'honeypot' => __( 'Leave this field empty', 'storebox-core' ),
 	)
 );
 
@@ -94,7 +94,10 @@ if ( $show_location ) {
 		array(
 			'post_type'      => 'sb_location',
 			'posts_per_page' => 50,
-			'orderby'        => array( 'menu_order' => 'ASC', 'title' => 'ASC' ),
+			'orderby'        => array(
+				'menu_order' => 'ASC',
+				'title'      => 'ASC',
+			),
 			'no_found_rows'  => true,
 		)
 	);
@@ -111,7 +114,8 @@ if ( $sent ) {
 <div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>" id="<?php echo esc_attr( $form_id ); ?>">
 	<form class="sb-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" data-sb-component="enquiry">
 		<?php if ( $title ) : ?>
-			<h3 class="sb-form__title"><?php echo esc_html( $title ); ?></h3>
+			<?php $title_tag = in_array( $args['title_tag'], array( 'h2', 'h3', 'h4', 'p' ), true ) ? $args['title_tag'] : 'h3'; ?>
+			<<?php echo esc_attr( $title_tag ); ?> class="sb-form__title"><?php echo esc_html( $title ); ?></<?php echo esc_attr( $title_tag ); ?>>
 		<?php endif; ?>
 		<?php if ( $intro ) : ?>
 			<p class="sb-form__intro"><?php echo esc_html( $intro ); ?></p>

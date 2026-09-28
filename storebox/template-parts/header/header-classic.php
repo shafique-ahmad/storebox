@@ -18,7 +18,7 @@ $storebox_cta_url  = storebox_get_mod( 'header_cta_url' );
 $storebox_show_topbar = storebox_get_mod( 'topbar_enable' ) && ( $storebox_item_1 || $storebox_item_2 || $storebox_email || $storebox_phone );
 ?>
 <?php if ( $storebox_show_topbar ) : ?>
-	<div class="sb-topbar">
+	<div class="sb-topbar" role="region" aria-label="<?php esc_attr_e( 'Opening hours and contact', 'storebox' ); ?>">
 		<div class="sb-wrap sb-topbar__row">
 			<div class="sb-topbar__group">
 				<?php if ( $storebox_item_1 ) : ?>

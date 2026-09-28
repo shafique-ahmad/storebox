@@ -460,7 +460,8 @@ function accordion( items, o = {} ) {
 				tabs: items.map( ( item ) => ( { _id: id(), tab_title: item[ 0 ], tab_content: '<p>' + item[ 1 ] + '</p>' } ) ),
 				selected_icon: { value: o.icon || 'fas fa-chevron-down', library: 'fa-solid' },
 				selected_active_icon: { value: o.activeIcon || 'fas fa-chevron-up', library: 'fa-solid' },
-				title_html_tag: 'h3',
+				// Elementor gives the title role="button", which a heading tag may not carry.
+				title_html_tag: 'div',
 				faq_schema: 'yes',
 				icon_align: 'right',
 				border_width: px( 0 ),

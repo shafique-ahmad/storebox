@@ -20,17 +20,17 @@
 	font-size: 12px; font-weight: 800; letter-spacing: .1em; color: #2c5871;
 }
 .sb-admin__steps li.is-current { border-color: #16303f; box-shadow: 0 10px 30px rgba(13, 29, 38, .08); }
-.sb-admin__steps li.is-done::before { content: "\2713  " counter(sb-step, decimal-leading-zero); color: #1a7f53; }
+.sb-admin__steps li.is-done::before { content: "\2713  " counter(sb-step, decimal-leading-zero); color: #187a4f; }
 .sb-admin__steps h2 { margin: 0 0 6px; font-size: 16px; }
 .sb-admin__steps p { margin: 0 0 10px; color: #50575e; }
 .sb-admin__links a { margin-right: 14px; }
 .sb-admin__section-title { font-size: 18px; margin: 8px 0 12px; }
 .sb-admin__plugins td { vertical-align: middle; }
 .sb-admin__plugins .description { margin: 4px 0 0; }
-.sb-admin__status--active { color: #1a7f53; font-weight: 600; }
+.sb-admin__status--active { color: #187a4f; font-weight: 600; }
 .sb-admin__status--update { color: #ad601e; font-weight: 600; }
 .sb-admin__action { text-align: right; white-space: nowrap; }
-.sb-admin__action .dashicons { color: #1a7f53; font-size: 22px; width: 22px; height: 22px; }
+.sb-admin__action .dashicons { color: #187a4f; font-size: 22px; width: 22px; height: 22px; }
 .sb-admin__error { color: #b32d2e; white-space: normal; text-align: left; margin: 8px 0 0; }
 .sb-admin__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
 .sb-admin__card { padding: 20px 22px; border-radius: 12px; background: #eef1f2; }

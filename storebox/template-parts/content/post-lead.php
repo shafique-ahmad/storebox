@@ -10,7 +10,15 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class( 'sb-lead sb-rv' ); ?>>
 	<?php if ( has_post_thumbnail() ) : ?>
 		<a class="sb-lead__img" href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true">
-			<?php the_post_thumbnail( 'storebox-wide', array( 'alt' => '', 'sizes' => '(max-width: 1080px) 100vw, 680px' ) ); ?>
+			<?php
+			the_post_thumbnail(
+				'storebox-wide',
+				array(
+					'alt'   => '',
+					'sizes' => '(max-width: 1080px) 100vw, 680px',
+				)
+			);
+			?>
 		</a>
 	<?php endif; ?>
 	<div class="sb-lead__body">

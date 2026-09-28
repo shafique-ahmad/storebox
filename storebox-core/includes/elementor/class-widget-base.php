@@ -186,9 +186,11 @@ abstract class Widget_Base extends \Elementor\Widget_Base {
 		return __( 'Nothing to show yet — add content under Storebox in the dashboard, or check this widget’s settings.', 'storebox-core' );
 	}
 
-	/* ---------------------------------------------------------------------
+	/*
+	 * ---------------------------------------------------------------------
 	 * Option lists
-	 * ------------------------------------------------------------------ */
+	 * ---------------------------------------------------------------------
+	 */
 
 	/**
 	 * Published posts of a type, for select controls (built in the admin only).
@@ -206,7 +208,7 @@ abstract class Widget_Base extends \Elementor\Widget_Base {
 			array(
 				'post_type'              => $post_type,
 				'post_status'            => 'publish',
-				'posts_per_page'         => 200,
+				'posts_per_page'         => 200, // phpcs:ignore WordPress.WP.PostsPerPage.posts_per_page_posts_per_page -- Editor option list, capped.
 				'orderby'                => array(
 					'menu_order' => 'ASC',
 					'title'      => 'ASC',
@@ -277,9 +279,11 @@ abstract class Widget_Base extends \Elementor\Widget_Base {
 		return array_combine( $tags, array_map( 'strtoupper', $tags ) );
 	}
 
-	/* ---------------------------------------------------------------------
+	/*
+	 * ---------------------------------------------------------------------
 	 * Shared controls
-	 * ------------------------------------------------------------------ */
+	 * ---------------------------------------------------------------------
+	 */
 
 	/**
 	 * "Design" select: follow the theme, or force the soft or editorial look.
@@ -552,10 +556,10 @@ abstract class Widget_Base extends \Elementor\Widget_Base {
 	 *
 	 * @param string $id       Control ID.
 	 * @param string $selector Grid selector (relative to {{WRAPPER}}).
-	 * @param int    $default  Desktop default.
+	 * @param int    $initial  Desktop default.
 	 * @param int    $max      Largest column count.
 	 */
-	protected function add_columns_control( $id, $selector, $default = 3, $max = 4 ) {
+	protected function add_columns_control( $id, $selector, $initial = 3, $max = 4 ) {
 		$options = array();
 		for ( $i = 1; $i <= $max; $i++ ) {
 			$options[ (string) $i ] = (string) $i;
@@ -566,8 +570,8 @@ abstract class Widget_Base extends \Elementor\Widget_Base {
 			array(
 				'label'          => esc_html__( 'Columns', 'storebox-core' ),
 				'type'           => Controls_Manager::SELECT,
-				'default'        => (string) $default,
-				'tablet_default' => (string) min( 2, $default ),
+				'default'        => (string) $initial,
+				'tablet_default' => (string) min( 2, $initial ),
 				'mobile_default' => '1',
 				'options'        => $options,
 				'selectors'      => array(

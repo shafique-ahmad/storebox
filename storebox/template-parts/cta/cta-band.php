@@ -15,7 +15,18 @@ $storebox_btn2 = storebox_button( storebox_get_mod( 'cta_btn2_text' ), storebox_
 ?>
 <section class="sb-cta<?php echo $storebox_soft ? ' sb-cta--soft' : ' sb-cta--editorial'; ?>" aria-labelledby="sb-cta-title">
 	<?php if ( $storebox_soft && $storebox_image ) : ?>
-		<?php echo wp_get_attachment_image( $storebox_image, 'storebox-hero', false, array( 'class' => 'sb-cta__bg', 'alt' => '', 'sizes' => '100vw' ) ); ?>
+		<?php
+		echo wp_get_attachment_image(
+			$storebox_image,
+			'storebox-hero',
+			false,
+			array(
+				'class' => 'sb-cta__bg',
+				'alt'   => '',
+				'sizes' => '100vw',
+			)
+		);
+		?>
 	<?php endif; ?>
 	<div class="sb-wrap sb-cta__in">
 		<div class="sb-cta__text sb-rv">
@@ -34,7 +45,17 @@ $storebox_btn2 = storebox_button( storebox_get_mod( 'cta_btn2_text' ), storebox_
 		</div>
 		<?php if ( ! $storebox_soft && $storebox_image ) : ?>
 			<div class="sb-cta__img sb-rv">
-				<?php echo wp_get_attachment_image( $storebox_image, 'storebox-card', false, array( 'alt' => '', 'sizes' => '(max-width: 1080px) 100vw, 560px' ) ); ?>
+				<?php
+				echo wp_get_attachment_image(
+					$storebox_image,
+					'storebox-card',
+					false,
+					array(
+						'alt'   => '',
+						'sizes' => '(max-width: 1080px) 100vw, 560px',
+					)
+				);
+				?>
 			</div>
 		<?php endif; ?>
 	</div>

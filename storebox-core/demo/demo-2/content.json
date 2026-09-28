@@ -1110,12 +1110,17 @@
 			{
 				"_id": "sbsuccess",
 				"title": "Success",
-				"color": "#1A7F53"
+				"color": "#187A4F"
 			},
 			{
 				"_id": "sbwarning",
 				"title": "Warning",
 				"color": "#AD601E"
+			},
+			{
+				"_id": "sbgold",
+				"title": "Gold (small text on light)",
+				"color": "#866405"
 			},
 			{
 				"_id": "sbwhite",

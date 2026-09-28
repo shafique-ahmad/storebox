@@ -148,7 +148,7 @@ function storebox_preset_colors( $preset = '' ) {
 		'border'     => '#DFE4E6',
 		'dark'       => '#0D1D26',
 		'muted'      => '#5F6E77',
-		'success'    => '#1A7F53',
+		'success'    => '#187A4F',
 		'warning'    => '#AD601E',
 	);
 

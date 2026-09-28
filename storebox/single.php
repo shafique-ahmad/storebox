@@ -114,7 +114,7 @@ if ( ! storebox_do_elementor_location( 'single' ) ) :
 							<?php
 							foreach ( $storebox_related as $post ) : // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited -- Restored by wp_reset_postdata().
 								setup_postdata( $post );
-								get_template_part( 'template-parts/content/' . ( $storebox_soft ? 'post-card' : 'post-row' ) );
+								get_template_part( 'template-parts/content/' . ( $storebox_soft ? 'post-card' : 'post-row' ), null, array( 'heading' => 'h3' ) );
 							endforeach;
 							wp_reset_postdata();
 							?>

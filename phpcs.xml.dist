@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<ruleset name="Storebox">
+	<description>Coding standards for the Storebox theme and the Storebox Core plugin.</description>
+
+	<file>./storebox</file>
+	<file>./storebox-core</file>
+
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*.min.js</exclude-pattern>
+	<exclude-pattern>*/assets/*</exclude-pattern>
+
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+
+	<config name="minimum_wp_version" value="6.3"/>
+	<config name="testVersion" value="7.4-"/>
+
+	<rule ref="WordPress">
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+	</rule>
+
+	<!-- Template hierarchy names for the sb_unit and sb_location post types. -->
+	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
+		<exclude-pattern>storebox/single-sb_*.php</exclude-pattern>
+	</rule>
+
+	<!-- Plugin component templates are included inside Components::render(),
+	     so their variables are local to that method, not globals. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound">
+		<exclude-pattern>storebox-core/templates/*</exclude-pattern>
+	</rule>
+	<rule ref="WordPress.WP.GlobalVariablesOverride.Prohibited">
+		<exclude-pattern>storebox-core/templates/*</exclude-pattern>
+	</rule>
+	<rule ref="PHPCompatibilityWP"/>
+
+	<!-- Hook names are namespaced with a slash, as Elementor's are: storebox_core/unit_status. -->
+	<rule ref="WordPress.NamingConventions.ValidHookName">
+		<properties>
+			<property name="additionalWordDelimiters" value="/"/>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="storebox"/>
+				<element value="storebox-core"/>
+				<element value="storebox-child"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="storebox"/>
+				<element value="Storebox_Core"/>
+				<element value="Storebox_Preview"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>

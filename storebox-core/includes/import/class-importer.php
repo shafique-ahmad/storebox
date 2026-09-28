@@ -80,9 +80,11 @@ class Importer {
 		'menus'  => array(),
 	);
 
-	/* ---------------------------------------------------------------------
+	/*
+	 * ---------------------------------------------------------------------
 	 * Demo packages
-	 * ------------------------------------------------------------------ */
+	 * ---------------------------------------------------------------------
+	 */
 
 	/**
 	 * Directory holding the demo packages.
@@ -154,7 +156,7 @@ class Importer {
 				continue;
 			}
 
-			$demos[ $slug ] = wp_parse_args(
+			$demos[ $slug ]         = wp_parse_args(
 				$manifest,
 				array(
 					'name'        => $slug,
@@ -222,9 +224,11 @@ class Importer {
 		return self::$data[ $slug ];
 	}
 
-	/* ---------------------------------------------------------------------
+	/*
+	 * ---------------------------------------------------------------------
 	 * Environment
-	 * ------------------------------------------------------------------ */
+	 * ---------------------------------------------------------------------
+	 */
 
 	/**
 	 * Whether Elementor is loaded.
@@ -275,9 +279,11 @@ class Importer {
 		return ! empty( $found ) || null !== self::imported();
 	}
 
-	/* ---------------------------------------------------------------------
+	/*
+	 * ---------------------------------------------------------------------
 	 * Plan and state
-	 * ------------------------------------------------------------------ */
+	 * ---------------------------------------------------------------------
+	 */
 
 	/**
 	 * Normalizes import options.
@@ -478,9 +484,11 @@ class Importer {
 		}
 	}
 
-	/* ---------------------------------------------------------------------
+	/*
+	 * ---------------------------------------------------------------------
 	 * Running an import
-	 * ------------------------------------------------------------------ */
+	 * ---------------------------------------------------------------------
+	 */
 
 	/**
 	 * Runs one request's worth of a step.
@@ -778,8 +786,8 @@ class Importer {
 					$existing = term_exists( $args['slug'], $taxonomy );
 					if ( $existing ) {
 						// A term the site already had: use it, but never delete it later.
-						$term_id                        = (int) $existing['term_id'];
-						$reused[ $taxonomy ][ $key ]    = $term_id;
+						$term_id                     = (int) $existing['term_id'];
+						$reused[ $taxonomy ][ $key ] = $term_id;
 					} else {
 						$inserted = wp_insert_term( $term['name'], $taxonomy, $args );
 						if ( is_wp_error( $inserted ) ) {
@@ -1056,25 +1064,25 @@ class Importer {
 	 *
 	 * @param int   $menu_id Menu ID.
 	 * @param array $items   Items: { title, post | url, children }.
-	 * @param int   $parent  Parent menu item ID.
+	 * @param int   $parent_id Parent menu item ID.
 	 */
-	private static function add_menu_items( $menu_id, $items, $parent ) {
+	private static function add_menu_items( $menu_id, $items, $parent_id ) {
 		$position = 0;
 
 		foreach ( $items as $item ) {
 			$args = array(
 				'menu-item-title'     => isset( $item['title'] ) ? (string) $item['title'] : '',
 				'menu-item-status'    => 'publish',
-				'menu-item-parent-id' => $parent,
+				'menu-item-parent-id' => $parent_id,
 				'menu-item-position'  => ++$position,
 				'menu-item-classes'   => isset( $item['classes'] ) ? sanitize_text_field( $item['classes'] ) : '',
 			);
 
 			if ( ! empty( $item['post'] ) && ! empty( self::$map['posts'][ $item['post'] ] ) ) {
-				$object_id                    = self::$map['posts'][ $item['post'] ];
-				$args['menu-item-type']       = 'post_type';
-				$args['menu-item-object']     = get_post_type( $object_id );
-				$args['menu-item-object-id']  = $object_id;
+				$object_id                   = self::$map['posts'][ $item['post'] ];
+				$args['menu-item-type']      = 'post_type';
+				$args['menu-item-object']    = get_post_type( $object_id );
+				$args['menu-item-object-id'] = $object_id;
 			} else {
 				$args['menu-item-type'] = 'custom';
 				$args['menu-item-url']  = isset( $item['url'] ) ? esc_url_raw( self::resolve( $item['url'] ) ) : '#';
@@ -1431,9 +1439,11 @@ class Importer {
 		}
 	}
 
-	/* ---------------------------------------------------------------------
+	/*
+	 * ---------------------------------------------------------------------
 	 * Placeholders
-	 * ------------------------------------------------------------------ */
+	 * ---------------------------------------------------------------------
+	 */
 
 	/**
 	 * Resolves placeholders in a value, recursively.
@@ -1464,9 +1474,9 @@ class Importer {
 
 		return preg_replace_callback(
 			'/\{\{([a-z_]+)(?::([^{}]*))?\}\}/',
-			static function ( $match ) {
-				$resolved = self::token( $match[1], isset( $match[2] ) ? $match[2] : '' );
-				return null === $resolved ? $match[0] : (string) $resolved;
+			static function ( $matches ) {
+				$resolved = self::token( $matches[1], isset( $matches[2] ) ? $matches[2] : '' );
+				return null === $resolved ? $matches[0] : (string) $resolved;
 			},
 			$value
 		);
@@ -1528,9 +1538,11 @@ class Importer {
 		return null;
 	}
 
-	/* ---------------------------------------------------------------------
+	/*
+	 * ---------------------------------------------------------------------
 	 * Removal
-	 * ------------------------------------------------------------------ */
+	 * ---------------------------------------------------------------------
+	 */
 
 	/**
 	 * Deletes one batch of imported content.

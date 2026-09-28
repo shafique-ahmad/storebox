@@ -34,7 +34,19 @@ $storebox_note        = storebox_get_mod( 'footer_note' );
 				<span><?php echo esc_html( $storebox_copyright ); ?></span>
 			<?php endif; ?>
 			<?php if ( $storebox_note ) : ?>
-				<span><?php echo wp_kses( $storebox_note, array( 'a' => array( 'href' => true ), 'strong' => array(), 'em' => array(), 'br' => array() ) ); ?></span>
+				<span>
+				<?php
+				echo wp_kses(
+					$storebox_note,
+					array(
+						'a'      => array( 'href' => true ),
+						'strong' => array(),
+						'em'     => array(),
+						'br'     => array(),
+					)
+				);
+				?>
+						</span>
 			<?php endif; ?>
 		</div>
 	</div>

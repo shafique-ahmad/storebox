@@ -83,10 +83,10 @@ class Storebox_Admin {
 	 * Renders the page.
 	 */
 	public static function render_page() {
-		$theme       = wp_get_theme( get_template() );
-		$plugins     = Storebox_Plugins::get_plugins();
-		$ready       = Storebox_Plugins::required_ready();
-		$import_url  = self::demo_import_url();
+		$theme      = wp_get_theme( get_template() );
+		$plugins    = Storebox_Plugins::get_plugins();
+		$ready      = Storebox_Plugins::required_ready();
+		$import_url = self::demo_import_url();
 		?>
 		<div class="wrap sb-admin">
 			<div class="sb-admin__hero">

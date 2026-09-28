@@ -176,6 +176,8 @@ if ( ! function_exists( 'storebox_breadcrumbs' ) ) {
  * Prints the page header (hero) used by theme templates.
  *
  * @param array $args {
+ *     Page header options.
+ *
  *     @type string $eyebrow  Small label above the title.
  *     @type string $title    Title (plain text or limited HTML).
  *     @type string $lede     Intro text.
@@ -367,9 +369,9 @@ function storebox_get_related_posts( $post_id = 0, $count = 3 ) {
 /**
  * Prints social profile links from the Customizer.
  *
- * @param string $class Extra wrapper class.
+ * @param string $extra_class Extra wrapper class.
  */
-function storebox_social_links( $class = '' ) {
+function storebox_social_links( $extra_class = '' ) {
 	$networks = array(
 		'facebook'  => __( 'Facebook', 'storebox' ),
 		'instagram' => __( 'Instagram', 'storebox' ),
@@ -392,7 +394,7 @@ function storebox_social_links( $class = '' ) {
 	}
 
 	if ( $links ) {
-		echo '<div class="sb-social ' . esc_attr( $class ) . '">' . $links . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Built from escaped parts.
+		echo '<div class="sb-social ' . esc_attr( $extra_class ) . '">' . $links . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Built from escaped parts.
 	}
 }
 

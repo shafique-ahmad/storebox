@@ -1050,7 +1050,7 @@
 										},
 										"__globals__": {
 											"typography_typography": "globals/typography?id=sbnum",
-											"title_color": "globals/colors?id=secondary"
+											"title_color": "globals/colors?id=sbgold"
 										}
 									},
 									"elements": [],
@@ -1173,7 +1173,7 @@
 										},
 										"__globals__": {
 											"typography_typography": "globals/typography?id=sbnum",
-											"title_color": "globals/colors?id=secondary"
+											"title_color": "globals/colors?id=sbgold"
 										}
 									},
 									"elements": [],
@@ -1296,7 +1296,7 @@
 										},
 										"__globals__": {
 											"typography_typography": "globals/typography?id=sbnum",
-											"title_color": "globals/colors?id=secondary"
+											"title_color": "globals/colors?id=sbgold"
 										}
 									},
 									"elements": [],
@@ -4437,7 +4437,7 @@
 							"value": "fas fa-chevron-up",
 							"library": "fa-solid"
 						},
-						"title_html_tag": "h3",
+						"title_html_tag": "div",
 						"faq_schema": "yes",
 						"icon_align": "right",
 						"border_width": {

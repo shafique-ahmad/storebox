@@ -214,7 +214,9 @@ class Size_Calculator extends Widget_Base {
 				'label'       => esc_html__( 'Fill text', 'storebox-core' ),
 				'type'        => Controls_Manager::TEXT,
 				'label_block' => true,
+				/* translators: %d: how full the unit would be, in percent. */
 				'default'     => esc_html__( 'About %d%% full, leaving room to walk in and reach the back.', 'storebox-core' ),
+				/* translators: %d and %%: literal placeholders shown to the user, keep as is. */
 				'description' => esc_html__( '%d is the percentage; write %% for a percent sign.', 'storebox-core' ),
 			)
 		);

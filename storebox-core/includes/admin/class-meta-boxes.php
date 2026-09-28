@@ -102,19 +102,82 @@ class Meta_Boxes {
 			<h3 class="sb-admin-box__title"><?php esc_html_e( 'Size', 'storebox-core' ); ?></h3>
 			<div class="sb-admin-grid">
 				<?php
-				self::field( array( 'key' => '_sb_area', 'label' => __( 'Floor area', 'storebox-core' ), 'type' => 'number', 'step' => '0.1', 'suffix' => 'm²', 'value' => $get( '_sb_area' ), 'required' => true ) );
-				self::field( array( 'key' => '_sb_width', 'label' => __( 'Width', 'storebox-core' ), 'type' => 'number', 'step' => '0.1', 'suffix' => 'm', 'value' => $get( '_sb_width' ) ) );
-				self::field( array( 'key' => '_sb_depth', 'label' => __( 'Depth', 'storebox-core' ), 'type' => 'number', 'step' => '0.1', 'suffix' => 'm', 'value' => $get( '_sb_depth' ) ) );
-				self::field( array( 'key' => '_sb_ceiling', 'label' => __( 'Ceiling height', 'storebox-core' ), 'type' => 'number', 'step' => '0.1', 'suffix' => 'm', 'value' => $get( '_sb_ceiling' ) ) );
-				self::field( array( 'key' => '_sb_floor', 'label' => __( 'Floor', 'storebox-core' ), 'value' => $get( '_sb_floor' ), 'placeholder' => __( 'Ground floor', 'storebox-core' ) ) );
+				self::field(
+					array(
+						'key'      => '_sb_area',
+						'label'    => __( 'Floor area', 'storebox-core' ),
+						'type'     => 'number',
+						'step'     => '0.1',
+						'suffix'   => 'm²',
+						'value'    => $get( '_sb_area' ),
+						'required' => true,
+					)
+				);
+				self::field(
+					array(
+						'key'    => '_sb_width',
+						'label'  => __( 'Width', 'storebox-core' ),
+						'type'   => 'number',
+						'step'   => '0.1',
+						'suffix' => 'm',
+						'value'  => $get( '_sb_width' ),
+					)
+				);
+				self::field(
+					array(
+						'key'    => '_sb_depth',
+						'label'  => __( 'Depth', 'storebox-core' ),
+						'type'   => 'number',
+						'step'   => '0.1',
+						'suffix' => 'm',
+						'value'  => $get( '_sb_depth' ),
+					)
+				);
+				self::field(
+					array(
+						'key'    => '_sb_ceiling',
+						'label'  => __( 'Ceiling height', 'storebox-core' ),
+						'type'   => 'number',
+						'step'   => '0.1',
+						'suffix' => 'm',
+						'value'  => $get( '_sb_ceiling' ),
+					)
+				);
+				self::field(
+					array(
+						'key'         => '_sb_floor',
+						'label'       => __( 'Floor', 'storebox-core' ),
+						'value'       => $get( '_sb_floor' ),
+						'placeholder' => __( 'Ground floor', 'storebox-core' ),
+					)
+				);
 				?>
 			</div>
 
 			<h3 class="sb-admin-box__title"><?php esc_html_e( 'Price and availability', 'storebox-core' ); ?></h3>
 			<div class="sb-admin-grid">
 				<?php
-				self::field( array( 'key' => '_sb_price', 'label' => __( 'Price per month', 'storebox-core' ), 'type' => 'number', 'step' => '0.01', 'suffix' => $currency, 'value' => $get( '_sb_price' ), 'required' => true ) );
-				self::field( array( 'key' => '_sb_available', 'label' => __( 'Units free now', 'storebox-core' ), 'type' => 'number', 'step' => '1', 'value' => $get( '_sb_available' ), 'description' => __( '0 shows "Fully booked" and switches the button to the waitlist.', 'storebox-core' ) ) );
+				self::field(
+					array(
+						'key'      => '_sb_price',
+						'label'    => __( 'Price per month', 'storebox-core' ),
+						'type'     => 'number',
+						'step'     => '0.01',
+						'suffix'   => $currency,
+						'value'    => $get( '_sb_price' ),
+						'required' => true,
+					)
+				);
+				self::field(
+					array(
+						'key'         => '_sb_available',
+						'label'       => __( 'Units free now', 'storebox-core' ),
+						'type'        => 'number',
+						'step'        => '1',
+						'value'       => $get( '_sb_available' ),
+						'description' => __( '0 shows "Fully booked" and switches the button to the waitlist.', 'storebox-core' ),
+					)
+				);
 				?>
 				<div class="sb-admin-field">
 					<label for="storebox-sb_location"><?php esc_html_e( 'Location', 'storebox-core' ); ?></label>
@@ -145,8 +208,23 @@ class Meta_Boxes {
 			<h3 class="sb-admin-box__title"><?php esc_html_e( 'Description', 'storebox-core' ); ?></h3>
 			<div class="sb-admin-grid sb-admin-grid--2">
 				<?php
-				self::field( array( 'key' => '_sb_fits', 'label' => __( 'Typically fits', 'storebox-core' ), 'value' => $get( '_sb_fits' ), 'placeholder' => __( 'A one-bedroom flat', 'storebox-core' ) ) );
-				self::field( array( 'key' => '_sb_highlights', 'label' => __( 'Card highlights (optional)', 'storebox-core' ), 'type' => 'textarea', 'value' => $get( '_sb_highlights' ), 'description' => __( 'One per line. Unit cards can show these instead of the features.', 'storebox-core' ) ) );
+				self::field(
+					array(
+						'key'         => '_sb_fits',
+						'label'       => __( 'Typically fits', 'storebox-core' ),
+						'value'       => $get( '_sb_fits' ),
+						'placeholder' => __( 'A one-bedroom flat', 'storebox-core' ),
+					)
+				);
+				self::field(
+					array(
+						'key'         => '_sb_highlights',
+						'label'       => __( 'Card highlights (optional)', 'storebox-core' ),
+						'type'        => 'textarea',
+						'value'       => $get( '_sb_highlights' ),
+						'description' => __( 'One per line. Unit cards can show these instead of the features.', 'storebox-core' ),
+					)
+				);
 				?>
 			</div>
 			<p class="description"><?php esc_html_e( 'Unit type, size group and features are set in the boxes on the right. The editor above holds the "What fits" text shown on the unit page; the excerpt is a one-line summary for cards.', 'storebox-core' ); ?></p>
@@ -174,27 +252,99 @@ class Meta_Boxes {
 			<h3 class="sb-admin-box__title"><?php esc_html_e( 'Address', 'storebox-core' ); ?></h3>
 			<div class="sb-admin-grid">
 				<?php
-				self::field( array( 'key' => '_sb_area_name', 'label' => __( 'Short label', 'storebox-core' ), 'value' => $get( '_sb_area_name' ), 'placeholder' => __( 'Noord', 'storebox-core' ), 'description' => __( 'Shown above the name, e.g. the district.', 'storebox-core' ) ) );
-				self::field( array( 'key' => '_sb_street', 'label' => __( 'Street and number', 'storebox-core' ), 'value' => $get( '_sb_street' ) ) );
-				self::field( array( 'key' => '_sb_postcode', 'label' => __( 'Postcode', 'storebox-core' ), 'value' => $get( '_sb_postcode' ) ) );
-				self::field( array( 'key' => '_sb_city', 'label' => __( 'City', 'storebox-core' ), 'value' => $get( '_sb_city' ) ) );
+				self::field(
+					array(
+						'key'         => '_sb_area_name',
+						'label'       => __( 'Short label', 'storebox-core' ),
+						'value'       => $get( '_sb_area_name' ),
+						'placeholder' => __( 'Noord', 'storebox-core' ),
+						'description' => __( 'Shown above the name, e.g. the district.', 'storebox-core' ),
+					)
+				);
+				self::field(
+					array(
+						'key'   => '_sb_street',
+						'label' => __( 'Street and number', 'storebox-core' ),
+						'value' => $get( '_sb_street' ),
+					)
+				);
+				self::field(
+					array(
+						'key'   => '_sb_postcode',
+						'label' => __( 'Postcode', 'storebox-core' ),
+						'value' => $get( '_sb_postcode' ),
+					)
+				);
+				self::field(
+					array(
+						'key'   => '_sb_city',
+						'label' => __( 'City', 'storebox-core' ),
+						'value' => $get( '_sb_city' ),
+					)
+				);
 				?>
 			</div>
 
 			<h3 class="sb-admin-box__title"><?php esc_html_e( 'Contact, access and capacity', 'storebox-core' ); ?></h3>
 			<div class="sb-admin-grid">
 				<?php
-				self::field( array( 'key' => '_sb_phone', 'label' => __( 'Phone', 'storebox-core' ), 'type' => 'tel', 'value' => $get( '_sb_phone' ) ) );
-				self::field( array( 'key' => '_sb_email', 'label' => __( 'Email for enquiries', 'storebox-core' ), 'type' => 'email', 'value' => $get( '_sb_email' ), 'description' => __( 'Requests about this location go here.', 'storebox-core' ) ) );
-				self::field( array( 'key' => '_sb_access', 'label' => __( 'Access hours', 'storebox-core' ), 'value' => $get( '_sb_access' ), 'placeholder' => '24/7' ) );
-				self::field( array( 'key' => '_sb_units_total', 'label' => __( 'Units in total', 'storebox-core' ), 'type' => 'number', 'step' => '1', 'value' => $get( '_sb_units_total' ) ) );
-				self::field( array( 'key' => '_sb_units_free', 'label' => __( 'Units free now', 'storebox-core' ), 'type' => 'number', 'step' => '1', 'value' => $get( '_sb_units_free' ) ) );
+				self::field(
+					array(
+						'key'   => '_sb_phone',
+						'label' => __( 'Phone', 'storebox-core' ),
+						'type'  => 'tel',
+						'value' => $get( '_sb_phone' ),
+					)
+				);
+				self::field(
+					array(
+						'key'         => '_sb_email',
+						'label'       => __( 'Email for enquiries', 'storebox-core' ),
+						'type'        => 'email',
+						'value'       => $get( '_sb_email' ),
+						'description' => __( 'Requests about this location go here.', 'storebox-core' ),
+					)
+				);
+				self::field(
+					array(
+						'key'         => '_sb_access',
+						'label'       => __( 'Access hours', 'storebox-core' ),
+						'value'       => $get( '_sb_access' ),
+						'placeholder' => '24/7',
+					)
+				);
+				self::field(
+					array(
+						'key'   => '_sb_units_total',
+						'label' => __( 'Units in total', 'storebox-core' ),
+						'type'  => 'number',
+						'step'  => '1',
+						'value' => $get( '_sb_units_total' ),
+					)
+				);
+				self::field(
+					array(
+						'key'   => '_sb_units_free',
+						'label' => __( 'Units free now', 'storebox-core' ),
+						'type'  => 'number',
+						'step'  => '1',
+						'value' => $get( '_sb_units_free' ),
+					)
+				);
 				?>
 			</div>
 
 			<div class="sb-admin-grid sb-admin-grid--2">
 				<?php
-				self::field( array( 'key' => '_sb_tags', 'label' => __( 'Facility tags', 'storebox-core' ), 'type' => 'textarea', 'value' => $get( '_sb_tags' ), 'description' => __( 'One per line, e.g. "Climate controlled". Shown as tags on cards and the location page.', 'storebox-core' ) ) );
+				self::field(
+					array(
+						'key'         => '_sb_tags',
+						'label'       => __( 'Facility tags', 'storebox-core' ),
+						'type'        => 'textarea',
+						'value'       => $get( '_sb_tags' ),
+						'description' => __( 'One per line, e.g. "Climate controlled". Shown as tags on cards and the location page.', 'storebox-core' ),
+					)
+				);
 				?>
 				<div class="sb-admin-field">
 					<span class="sb-admin-field__label"><?php esc_html_e( 'Office hours', 'storebox-core' ); ?></span>
@@ -212,8 +362,22 @@ class Meta_Boxes {
 			<h3 class="sb-admin-box__title"><?php esc_html_e( 'Map position', 'storebox-core' ); ?></h3>
 			<div class="sb-admin-grid">
 				<?php
-				self::field( array( 'key' => '_sb_lat', 'label' => __( 'Latitude', 'storebox-core' ), 'value' => $get( '_sb_lat' ), 'placeholder' => '52.3915' ) );
-				self::field( array( 'key' => '_sb_lng', 'label' => __( 'Longitude', 'storebox-core' ), 'value' => $get( '_sb_lng' ), 'placeholder' => '4.8935' ) );
+				self::field(
+					array(
+						'key'         => '_sb_lat',
+						'label'       => __( 'Latitude', 'storebox-core' ),
+						'value'       => $get( '_sb_lat' ),
+						'placeholder' => '52.3915',
+					)
+				);
+				self::field(
+					array(
+						'key'         => '_sb_lng',
+						'label'       => __( 'Longitude', 'storebox-core' ),
+						'value'       => $get( '_sb_lng' ),
+						'placeholder' => '4.8935',
+					)
+				);
 				?>
 				<div class="sb-admin-field">
 					<span class="sb-admin-field__label">&nbsp;</span>

@@ -400,7 +400,7 @@ module.exports = ( D, B ) => {
 			S.pageHero( { image: 'drive-up-units', crumb: 'Locations', eyebrow: 'Locations', title: 'Three facilities, one price list.', lede: 'Two in Amsterdam, one in Haarlem. Same prices, same security, same contract at all three.' } ),
 			E.section( { pad: [ 72, 0 ] }, [ E.widget( 'storebox-location-map', { design: '', source: 'all', ratio: '16 / 7' } ) ] ),
 			E.section( { pad: [ 56, D.sec ] }, [
-				E.widget( 'storebox-location-grid', { design: '', skin: 'card', columns: '3', columns_tablet: '2', columns_mobile: '1', show_excerpt: 'yes', show_meta: 'yes', address: 'full' } ),
+				E.widget( 'storebox-location-grid', { design: '', skin: 'card', heading_tag: 'h2', columns: '3', columns_tablet: '2', columns_mobile: '1', show_excerpt: 'yes', show_meta: 'yes', address: 'full' } ),
 			] ),
 			E.section( { pad: [ 64, 64 ], bg: { global: 'sbsurface' } }, [
 				E.row( { gap: 64, gapTablet: 32, align: 'center' }, [
@@ -543,7 +543,7 @@ module.exports = ( D, B ) => {
 								way( 'fas fa-map-marker-alt', 'Visit', 'Three facilities', 'Walk-round any time during office hours', url.locations ),
 							] ),
 						] ),
-						E.col( { w: 58 }, [ E.widget( 'storebox-enquiry-form', { design: '', type: 'contact', form_id: 'contact', card: 'yes', note: 'We only use your details to answer this message.' } ) ] ),
+						E.col( { w: 58 }, [ E.widget( 'storebox-enquiry-form', { design: '', type: 'contact', form_id: 'contact', card: 'yes', title_tag: 'h2', note: 'We only use your details to answer this message.' } ) ] ),
 					] ),
 				] ),
 				S.faq( { bg: { global: 'sbsurface' }, extra: true } ),
