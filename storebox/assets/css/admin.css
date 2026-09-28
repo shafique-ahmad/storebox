@@ -1,0 +1,41 @@
+/* Storebox setup screen (Appearance → Storebox). */
+.sb-admin { max-width: 1100px; }
+.sb-admin__hero {
+	margin: 20px 0 28px; padding: 32px 36px; border-radius: 14px;
+	background: #16303f; color: #fff;
+	background-image: linear-gradient(100deg, #0d1d26 0%, #16303f 60%, #2c5871 100%);
+}
+.sb-admin__hero h1 { color: #fff; font-size: 28px; font-weight: 800; letter-spacing: -.02em; margin: 0 0 8px; padding: 0; }
+.sb-admin__hero p { font-size: 15px; color: rgba(255, 255, 255, .8); margin: 0; }
+.sb-admin__version {
+	display: inline-block; vertical-align: middle; margin-left: 8px; padding: 3px 10px; border-radius: 99px;
+	background: #f2b705; color: #0d1d26; font-size: 12px; font-weight: 700; letter-spacing: 0;
+}
+.sb-admin__steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0 0 32px; padding: 0; list-style: none; counter-reset: sb-step; }
+.sb-admin__steps li {
+	position: relative; margin: 0; padding: 22px 22px 18px; border: 1px solid #dfe4e6; border-radius: 12px; background: #fff; counter-increment: sb-step;
+}
+.sb-admin__steps li::before {
+	content: counter(sb-step, decimal-leading-zero); display: block; margin-bottom: 10px;
+	font-size: 12px; font-weight: 800; letter-spacing: .1em; color: #2c5871;
+}
+.sb-admin__steps li.is-current { border-color: #16303f; box-shadow: 0 10px 30px rgba(13, 29, 38, .08); }
+.sb-admin__steps li.is-done::before { content: "\2713  " counter(sb-step, decimal-leading-zero); color: #1a7f53; }
+.sb-admin__steps h2 { margin: 0 0 6px; font-size: 16px; }
+.sb-admin__steps p { margin: 0 0 10px; color: #50575e; }
+.sb-admin__links a { margin-right: 14px; }
+.sb-admin__section-title { font-size: 18px; margin: 8px 0 12px; }
+.sb-admin__plugins td { vertical-align: middle; }
+.sb-admin__plugins .description { margin: 4px 0 0; }
+.sb-admin__status--active { color: #1a7f53; font-weight: 600; }
+.sb-admin__status--update { color: #ad601e; font-weight: 600; }
+.sb-admin__action { text-align: right; white-space: nowrap; }
+.sb-admin__action .dashicons { color: #1a7f53; font-size: 22px; width: 22px; height: 22px; }
+.sb-admin__error { color: #b32d2e; white-space: normal; text-align: left; margin: 8px 0 0; }
+.sb-admin__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
+.sb-admin__card { padding: 20px 22px; border-radius: 12px; background: #eef1f2; }
+.sb-admin__card h2 { margin: 0 0 6px; font-size: 15px; }
+.sb-admin__card p { margin: 0; color: #3c434a; }
+@media (max-width: 960px) {
+	.sb-admin__steps, .sb-admin__cards { grid-template-columns: 1fr; }
+}

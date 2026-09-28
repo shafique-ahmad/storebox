@@ -1,0 +1,83 @@
+/*
+ * Storebox — block editor styles, so posts look close to the front end while
+ * writing. Colour tokens are injected by storebox_block_editor_tokens().
+ */
+.editor-styles-wrapper {
+	--sb-primary: var(--sb-base-primary, #16303f);
+	--sb-secondary: var(--sb-base-secondary, #f2b705);
+	--sb-accent: var(--sb-base-accent, #2c5871);
+	--sb-text: var(--sb-base-text, #1b2429);
+	--sb-surface: var(--sb-base-surface, #eef1f2);
+	--sb-border: var(--sb-base-border, #dfe4e6);
+	--sb-muted: var(--sb-base-muted, #5f6e77);
+	font-family: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	font-size: 1.08rem;
+	line-height: 1.72;
+	color: #3a4a53;
+}
+
+.editor-styles-wrapper .wp-block {
+	max-width: 740px;
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"] {
+	max-width: 1100px;
+}
+
+.editor-styles-wrapper .wp-block[data-align="full"] {
+	max-width: none;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper .editor-post-title__input {
+	font-family: "Archivo", system-ui, sans-serif;
+	font-weight: 800;
+	letter-spacing: -.03em;
+	line-height: 1.1;
+	color: var(--sb-primary);
+}
+
+.editor-styles-wrapper .editor-post-title__input {
+	font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.editor-styles-wrapper h2 {
+	font-size: 1.6rem;
+}
+
+.editor-styles-wrapper h3 {
+	font-size: 1.15rem;
+	font-weight: 700;
+}
+
+.editor-styles-wrapper a {
+	color: var(--sb-primary);
+	text-decoration-color: var(--sb-secondary);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+}
+
+.editor-styles-wrapper blockquote,
+.editor-styles-wrapper .wp-block-quote {
+	padding: 6px 0 6px 26px;
+	border-left: 3px solid var(--sb-secondary);
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: -.02em;
+	line-height: 1.4;
+	color: var(--sb-primary);
+}
+
+.editor-styles-wrapper .is-style-sb-callout {
+	padding: 24px 26px;
+	border-radius: 22px;
+	background: var(--sb-surface);
+}
+
+.editor-styles-wrapper mark {
+	background: linear-gradient(transparent 62%, var(--sb-secondary) 62%);
+	color: inherit;
+}

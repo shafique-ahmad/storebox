@@ -1,0 +1,21 @@
+/*
+Theme Name: Storebox
+Theme URI: https://themeforest.net/
+Author: Storebox
+Description: Storebox is a self storage and business storage theme built for Elementor and Elementor Pro. It ships two complete demos — Self Storage and Business Storage — with unit listings and filters, a size calculator, a to-scale size chooser, location pages with a live map, reservation requests and a blog. Every page is an editable Elementor Flexbox Container layout; Elementor Pro users also get Theme Builder headers, footers, singles and archives. Units, locations, custom widgets and the one-click demo importer are provided by the bundled Storebox Core plugin.
+Version: 1.0.0
+Requires at least: 6.3
+Tested up to: 6.6
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: storebox
+Domain Path: /languages
+Tags: blog, one-column, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks
+
+Storebox WordPress Theme, (C) 2026 Storebox.
+Storebox is distributed under the terms of the GNU GPL v2 or later.
+
+The theme's styles live in assets/css/. This file only carries the theme
+header so WordPress can identify the theme; it is intentionally not enqueued.
+*/
