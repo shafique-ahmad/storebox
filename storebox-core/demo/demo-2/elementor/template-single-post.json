@@ -517,6 +517,13 @@
 											"left": "0",
 											"isLinked": false
 										},
+										"_element_width": "initial",
+										"_element_custom_width": {
+											"unit": "px",
+											"size": 646,
+											"sizes": []
+										},
+										"_element_width_mobile": "inherit",
 										"__globals__": {
 											"typography_typography": "globals/typography?id=sbh2",
 											"title_color": "globals/colors?id=primary"

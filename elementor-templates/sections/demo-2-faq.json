@@ -302,15 +302,7 @@
 											"title_typography_typography": "globals/typography?id=sbfaq",
 											"content_color": "globals/colors?id=sbmuted",
 											"content_typography_typography": "globals/typography?id=text"
-										},
-										"_element_width": "initial",
-										"_element_custom_width": {
-											"unit": "px",
-											"size": 760,
-											"sizes": []
-										},
-										"_element_width_mobile": "inherit",
-										"_element_width_tablet": "inherit"
+										}
 									},
 									"elements": [],
 									"isInner": false

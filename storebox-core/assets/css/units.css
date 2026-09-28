@@ -17,6 +17,7 @@
 }
 
 .sb-unit-card {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	min-width: 0;
@@ -312,6 +313,7 @@
 }
 
 .sb-rail {
+	position: relative; /* Keeps absolutely positioned card parts inside the scroller. */
 	display: flex;
 	gap: 22px;
 	padding: 6px 0 26px;

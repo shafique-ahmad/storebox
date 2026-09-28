@@ -92,18 +92,18 @@ module.exports = ( D, B ) => {
 					E.text( o.lede, { typo: 'sblede', colorHex: 'rgba(255,255,255,0.66)', width: 520 } ),
 					E.widget( 'storebox-size-chooser', { design: '', selected: 3, button_text: o.button, button_url: { url: url.units, is_external: '', nofollow: '' }, _margin: E.dims( 30, 0, 0, 0 ) } ),
 				] ),
-				E.col( { w: 50 }, [ E.img( o.image, { alt: o.alt, height: [ 640, 520, 320 ], radius: D.radius } ) ] ),
+				E.col( { w: 50 }, [ E.img( o.image, { alt: o.alt, height: [ 720, 520, 320 ], radius: D.radius } ) ] ),
 			] ),
 		] );
 
 	/* ---------------------------------------------------------------- home */
 
 	S.hero = () => {
-		const fact = ( value, label ) =>
-			E.col( { extra: { _flex_size: 'none' } }, [
-				E.heading( value, { tag: 'p', typo: 'sbnumber', color: 'primary' } ),
-				C.small( label, { size: 0.84, margin: [ 5, 0, 0, 0 ] } ),
-			] );
+		// One Counter widget per fact, so each takes its content width in the row.
+		const fact = ( value, label ) => {
+			const prefix = value.startsWith( '€' ) ? '€' : '';
+			return E.counter( prefix ? value.slice( 1 ) : value, label, { prefix, classes: 'sb-e-counter-tight' } );
+		};
 		return E.container(
 			{
 				content_width: 'full',
@@ -151,7 +151,7 @@ module.exports = ( D, B ) => {
 						extra: {
 							min_height: E.px( 560 ),
 							min_height_tablet: E.px( 420 ),
-							min_height_mobile: E.px( 320 ),
+							min_height_mobile: E.px( 410 ),
 							flex_justify_content: 'flex-end',
 							padding: E.dims( 0, 0, 56, 0 ),
 							padding_tablet: E.dims( 0 ),
@@ -383,7 +383,7 @@ module.exports = ( D, B ) => {
 		content: () => [
 			S.pageHero( { crumb: 'About', eyebrow: 'About', title: 'We started StoreBox because we needed a unit ourselves.', lede: 'In 2014 the options were a damp garage or a warehouse with a four-page contract. So we built the thing we wanted to rent.', image: 'moving-boxes-room' } ),
 			E.section( { pad: [ D.sec, D.sec ], gutter: D.gutter }, [
-				E.heading( 'It should be as easy to rent a storage unit as it is to book a hotel room — <mark>no deposit, no minimum term</mark>, and a price you can see before you call.', { tag: 'p', typo: 'sbquote', color: 'primary', classes: 'sb-e-highlight', width: 900, extra: { typography_typography: 'custom', typography_font_size: E.custom( 'clamp(1.7rem, 3.2vw, 2.6rem)' ), typography_font_weight: '800', typography_line_height: E.em( 1.22 ), typography_letter_spacing: E.em( -0.035 ), __globals__: { title_color: E.color( 'primary' ) } } } ),
+				E.heading( 'It should be as easy to rent a storage unit as it is to book a hotel room — <mark>no deposit, no minimum term</mark>, and a price you can see before you call.', { tag: 'p', typo: 'sbquote', color: 'primary', classes: 'sb-e-highlight', width: 728, extra: { typography_typography: 'custom', typography_font_size: E.custom( 'clamp(1.7rem, 3.2vw, 2.6rem)' ), typography_font_weight: '800', typography_line_height: E.em( 1.22 ), typography_letter_spacing: E.em( -0.035 ), __globals__: { title_color: E.color( 'primary' ) } } } ),
 				E.row( { gap: 70, gapTablet: 24, align: 'flex-start', extra: { margin: E.dims( 60, 0, 0, 0 ) } }, [
 					E.col( { w: 50 }, [ E.text( '<p>Our founders were between flats with a houseful of furniture and nowhere to put it. The places they found wanted a deposit, a twelve-month contract and a viewing appointment three days away.</p><p>So in 2014 we opened our first facility in Amsterdam Noord with one rule, the one above. Twelve years and three facilities later, it has not changed.</p>', { typo: 'text', color: 'text', classes: 'sb-e-prose' } ) ] ),
 					E.col( { w: 50 }, [ E.text( '<p>We have grown entirely by word of mouth, which is why we still answer the phone ourselves and why the person who picks up can usually tell you which units are free before you finish asking.</p><p><a class="sb-link" href="' + url.locations + '">Visit a facility</a> — walk-rounds are welcome during office hours, no appointment needed.</p>', { typo: 'text', color: 'text', classes: 'sb-e-prose' } ) ] ),
@@ -458,7 +458,7 @@ module.exports = ( D, B ) => {
 							] )
 						)
 					),
-					E.col( { w: 50 }, [ E.widget( 'storebox-enquiry-form', { design: '', type: 'contact', form_id: 'contact', card: 'yes', label_location: 'Location' } ) ] ),
+					E.col( { w: 50 }, [ E.widget( 'storebox-enquiry-form', { design: '', type: 'contact', form_id: 'contact', card: 'yes', label_location: 'Location', note: 'We only use your details to answer this message.' } ) ] ),
 				] ),
 			] ),
 			S.faq( { pad: D.sec, extra: true } ),

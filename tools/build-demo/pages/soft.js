@@ -125,7 +125,7 @@ module.exports = ( D, B ) => {
 			},
 			[
 				C.eyebrow( D, 'Amsterdam &amp; Haarlem', { onDark: true } ),
-				E.heading( 'Space for the things you\'re <em>not</em> ready to part with.', { tag: 'h1', typo: 'sbh1', color: 'sbwhite', classes: 'sb-e-accent sb-e-balance', margin: [ 20, 0, 0, 0 ], width: 685 } ),
+				E.heading( 'Space for the things you\'re <em>not</em> ready to part with.', { tag: 'h1', typo: 'sbh1', color: 'sbwhite', classes: 'sb-e-accent sb-e-balance', margin: [ 20, 0, 0, 0 ], width: 685, extra: { _element_width_tablet: 'initial', _element_custom_width_tablet: E.px( 410 ) } } ),
 				E.text( 'Clean, dry, monitored units from 2 to 30 m². Month to month, your own key, and no deposit to get started.', { typo: 'sbledel', colorHex: 'rgba(255,255,255,0.8)', margin: [ 26, 0, 0, 0 ], width: 620 } ),
 				E.row( { gap: 14, stack: 'mobile', extra: { margin: E.dims( 38, 0, 0, 0 ), flex_align_items_mobile: 'flex-start' } }, [
 					E.button( 'Find my size', '#calc', B.yellow, { icon: 'fas fa-arrow-right' } ),
@@ -195,14 +195,15 @@ module.exports = ( D, B ) => {
 	S.how = () =>
 		E.section( { pad: [ 78, D.secHome ], id: 'how' }, [
 			C.head( D, { eyebrow: 'How it works', title: 'Moved in by this afternoon.', lede: 'No viewings, no paperwork, no waiting on a callback. Three steps and the unit is yours.' } ),
+			// Two steps per row on tablets, as in the design.
 			E.row(
-				{ gap: 26 },
+				{ gap: 26, stack: 'mobile', extra: { flex_wrap_tablet: 'wrap' } },
 				[
 					[ '01', 'Work out your size', 'Tell the calculator what you\'re storing. It gives you a size and a price in about thirty seconds — no phone call needed.' ],
 					[ '02', 'Reserve it online', 'Pick your facility and move-in date. We hold the unit for seven days, free, while you sort the van.' ],
 					[ '03', 'Collect your PIN', 'Sign at reception or on your phone, fit your own padlock, and you\'re in. Trolleys and the loading bay are free.' ],
 				].map( ( step ) =>
-					E.col( { w: 33.33, pad: [ 30, 0, 0, 0 ], extra: { border_border: 'solid', border_width: E.dims( 2, 0, 0, 0 ), __globals__: { border_color: E.color( 'sbborder' ) } } }, C.numbered( D, step[ 0 ], step[ 1 ], step[ 2 ] ) )
+					E.col( { w: 33.33, pad: [ 30, 0, 0, 0 ], extra: { width_tablet: E.pct( 48 ), border_border: 'solid', border_width: E.dims( 2, 0, 0, 0 ), __globals__: { border_color: E.color( 'sbborder' ) } } }, C.numbered( D, step[ 0 ], step[ 1 ], step[ 2 ] ) )
 				)
 			),
 		] );
@@ -542,7 +543,7 @@ module.exports = ( D, B ) => {
 								way( 'fas fa-map-marker-alt', 'Visit', 'Three facilities', 'Walk-round any time during office hours', url.locations ),
 							] ),
 						] ),
-						E.col( { w: 58 }, [ E.widget( 'storebox-enquiry-form', { design: '', type: 'contact', form_id: 'contact', card: 'yes' } ) ] ),
+						E.col( { w: 58 }, [ E.widget( 'storebox-enquiry-form', { design: '', type: 'contact', form_id: 'contact', card: 'yes', note: 'We only use your details to answer this message.' } ) ] ),
 					] ),
 				] ),
 				S.faq( { bg: { global: 'sbsurface' }, extra: true } ),

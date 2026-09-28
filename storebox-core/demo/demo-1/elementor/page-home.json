@@ -119,6 +119,12 @@
 							"sizes": []
 						},
 						"_element_width_mobile": "inherit",
+						"_element_width_tablet": "initial",
+						"_element_custom_width_tablet": {
+							"unit": "px",
+							"size": 410,
+							"sizes": []
+						},
 						"__globals__": {
 							"typography_typography": "globals/typography?id=sbh1",
 							"title_color": "globals/colors?id=sbwhite"
@@ -973,8 +979,8 @@
 						"flex_align_items": "stretch",
 						"flex_justify_content": "flex-start",
 						"flex_wrap": "nowrap",
-						"flex_direction_tablet": "column",
-						"flex_direction_mobile": "column"
+						"flex_direction_mobile": "column",
+						"flex_wrap_tablet": "wrap"
 					},
 					"elements": [
 						{
@@ -1005,7 +1011,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 100,
+									"size": 48,
 									"sizes": []
 								},
 								"width_mobile": {
@@ -1128,7 +1134,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 100,
+									"size": 48,
 									"sizes": []
 								},
 								"width_mobile": {
@@ -1251,7 +1257,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 100,
+									"size": 48,
 									"sizes": []
 								},
 								"width_mobile": {
@@ -2344,8 +2350,19 @@
 															"sizes": []
 														},
 														"__globals__": {
-															"typography_typography": "globals/typography?id=secondary",
 															"title_color": "globals/colors?id=sbwhite"
+														},
+														"typography_font_family": "Archivo",
+														"typography_font_weight": "700",
+														"typography_line_height": {
+															"unit": "em",
+															"size": 1.25,
+															"sizes": []
+														},
+														"typography_letter_spacing": {
+															"unit": "em",
+															"size": -0.02,
+															"sizes": []
 														}
 													},
 													"elements": [],
@@ -2653,8 +2670,19 @@
 																			"sizes": []
 																		},
 																		"__globals__": {
-																			"typography_typography": "globals/typography?id=secondary",
 																			"title_color": "globals/colors?id=primary"
+																		},
+																		"typography_font_family": "Archivo",
+																		"typography_font_weight": "700",
+																		"typography_line_height": {
+																			"unit": "em",
+																			"size": 1.25,
+																			"sizes": []
+																		},
+																		"typography_letter_spacing": {
+																			"unit": "em",
+																			"size": -0.02,
+																			"sizes": []
 																		}
 																	},
 																	"elements": [],
@@ -2856,8 +2884,19 @@
 																			"sizes": []
 																		},
 																		"__globals__": {
-																			"typography_typography": "globals/typography?id=secondary",
 																			"title_color": "globals/colors?id=primary"
+																		},
+																		"typography_font_family": "Archivo",
+																		"typography_font_weight": "700",
+																		"typography_line_height": {
+																			"unit": "em",
+																			"size": 1.25,
+																			"sizes": []
+																		},
+																		"typography_letter_spacing": {
+																			"unit": "em",
+																			"size": -0.02,
+																			"sizes": []
 																		}
 																	},
 																	"elements": [],
@@ -3031,8 +3070,19 @@
 																			"sizes": []
 																		},
 																		"__globals__": {
-																			"typography_typography": "globals/typography?id=secondary",
 																			"title_color": "globals/colors?id=primary"
+																		},
+																		"typography_font_family": "Archivo",
+																		"typography_font_weight": "700",
+																		"typography_line_height": {
+																			"unit": "em",
+																			"size": 1.25,
+																			"sizes": []
+																		},
+																		"typography_letter_spacing": {
+																			"unit": "em",
+																			"size": -0.02,
+																			"sizes": []
 																		}
 																	},
 																	"elements": [],
@@ -3313,8 +3363,19 @@
 															"sizes": []
 														},
 														"__globals__": {
-															"typography_typography": "globals/typography?id=secondary",
 															"title_color": "globals/colors?id=primary"
+														},
+														"typography_font_family": "Archivo",
+														"typography_font_weight": "700",
+														"typography_line_height": {
+															"unit": "em",
+															"size": 1.25,
+															"sizes": []
+														},
+														"typography_letter_spacing": {
+															"unit": "em",
+															"size": -0.02,
+															"sizes": []
 														}
 													},
 													"elements": [],
@@ -3488,8 +3549,19 @@
 															"sizes": []
 														},
 														"__globals__": {
-															"typography_typography": "globals/typography?id=secondary",
 															"title_color": "globals/colors?id=primary"
+														},
+														"typography_font_family": "Archivo",
+														"typography_font_weight": "700",
+														"typography_line_height": {
+															"unit": "em",
+															"size": 1.25,
+															"sizes": []
+														},
+														"typography_letter_spacing": {
+															"unit": "em",
+															"size": -0.02,
+															"sizes": []
 														}
 													},
 													"elements": [],

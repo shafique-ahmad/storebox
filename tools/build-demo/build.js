@@ -129,6 +129,44 @@ function standalone( value, parentKey = '' ) {
 		.replace( /\{\{[a-z_]+:[^}]*\}\}/g, '' );
 }
 
+/**
+ * A widget cannot use a global typography and override one of its values:
+ * Elementor applies the global to every value. Where a layout asks for both
+ * (a global font with a custom size), the global's values are copied into
+ * the widget and the custom ones kept.
+ */
+function unlinkTypography( elements, kitSettings ) {
+	const globals = {};
+	[].concat( kitSettings.system_typography, kitSettings.custom_typography ).forEach( ( t ) => {
+		globals[ t._id ] = t;
+	} );
+	const walk = ( list ) =>
+		list.forEach( ( el ) => {
+			const s = el.settings || {};
+			Object.keys( s ).forEach( ( key ) => {
+				const m = key.match( /^(.*)_typography$/ );
+				const ref = m && s.__globals__ && s.__globals__[ key ];
+				if ( ! ref || 'custom' !== s[ key ] ) {
+					return;
+				}
+				const entry = globals[ ref.split( 'id=' )[ 1 ] ] || {};
+				Object.keys( entry ).forEach( ( field ) => {
+					const local = field.replace( /^typography_/, m[ 1 ] + '_' );
+					if ( field.startsWith( 'typography_' ) && 'typography_typography' !== field && undefined === s[ local ] ) {
+						s[ local ] = entry[ field ];
+					}
+				} );
+				delete s.__globals__[ key ];
+				if ( ! Object.keys( s.__globals__ ).length ) {
+					delete s.__globals__;
+				}
+			} );
+			walk( el.elements || [] );
+		} );
+	walk( elements );
+	return elements;
+}
+
 function clean( dir ) {
 	if ( fs.existsSync( dir ) ) {
 		fs.rmSync( dir, { recursive: true, force: true } );
@@ -147,13 +185,14 @@ DEMOS.forEach( ( demo ) => {
 	const { pages, sections } = demo.builder( D, B );
 	const base = path.join( DEMO_DIR, demo.slug );
 	const built = { pages: {}, templates: [] };
+	const kitSettings = kit( D );
 
 	clean( path.join( base, 'elementor' ) );
 
 	// Pages.
 	Object.entries( pages ).forEach( ( [ key, page ] ) => {
 		E.begin( demo.slug + ':page:' + key );
-		const elements = E.finalize( page.content() );
+		const elements = unlinkTypography( E.finalize( page.content() ), kitSettings );
 		const doc = exportDoc( page.title, 'page', elements, page.settings );
 		const file = 'elementor/page-' + key + '.json';
 		write( path.join( base, file ), doc );
@@ -166,14 +205,14 @@ DEMOS.forEach( ( demo ) => {
 	const sectionList = themeBuilder.sectionsFor( demo, sections );
 	sectionList.forEach( ( s ) => {
 		E.begin( demo.slug + ':section:' + s.key );
-		const elements = E.finalize( [ s.build() ] );
+		const elements = unlinkTypography( E.finalize( [ s.build() ] ), kitSettings );
 		write( path.join( EXPORT_DIR, 'sections', demo.slug + '-' + s.key + '.json' ), standalone( exportDoc( 'Storebox ' + demo.name + ' — ' + s.title, 'section', elements ) ) );
 	} );
 
 	// Theme Builder templates (Elementor Pro).
 	themeBuilder.templatesFor( demo, D, B, sections ).forEach( ( t ) => {
 		E.begin( demo.slug + ':template:' + t.key );
-		const elements = E.finalize( t.content() );
+		const elements = unlinkTypography( E.finalize( t.content() ), kitSettings );
 		const doc = exportDoc( t.title, t.type, elements, t.settings || {} );
 		const file = 'elementor/template-' + t.key + '.json';
 		write( path.join( base, file ), doc );
@@ -182,7 +221,6 @@ DEMOS.forEach( ( demo ) => {
 	} );
 
 	// Content, kit and manifest.
-	const kitSettings = kit( D );
 	write( path.join( base, 'content.json' ), content.build( src, demo, built, kitSettings ) );
 	write( path.join( base, 'demo.json' ), {
 		slug: demo.slug,

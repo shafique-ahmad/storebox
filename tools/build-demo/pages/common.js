@@ -118,7 +118,7 @@ function headSplit( D, o, buttonWidget ) {
 			// Full width by default, shrinking to leave room for the button.
 			E.col( { extra: { width: E.pct( 100 ) } }, [
 				eyebrow( D, o.eyebrow, { onDark: o.onDark } ),
-				E.heading( o.title, { tag: 'h2', typo: 'sbh2', color: o.onDark ? 'sbwhite' : 'primary', margin: [ soft ? 18 : 16, 0, 0, 0 ] } ),
+				E.heading( o.title, { tag: 'h2', typo: 'sbh2', color: o.onDark ? 'sbwhite' : 'primary', margin: [ soft ? 18 : 16, 0, 0, 0 ], width: soft ? undefined : ( o.onDark ? 544 : 646 ) } ),
 			] ),
 			Object.assign( buttonWidget, { settings: Object.assign( { _flex_size: 'none' }, buttonWidget.settings ) } ),
 		]
@@ -187,7 +187,8 @@ function faq( D, items ) {
 		titlePad: soft ? 26 : 24,
 		contentPad: soft ? 26 : 24,
 		classes: 'sb-e-faq--open-first' + ( soft ? '' : ' sb-e-faq--ruled' ),
-		extra: { _element_width: 'initial', _element_custom_width: E.px( soft ? 860 : 760 ), _element_width_mobile: 'inherit', _element_width_tablet: 'inherit' },
+		// Self Storage: 860px list in a full-width section; Business: fills its column.
+		extra: soft ? { _element_width: 'initial', _element_custom_width: E.px( 860 ), _element_width_mobile: 'inherit', _element_width_tablet: 'inherit' } : {},
 	} );
 }
 

@@ -177,8 +177,8 @@
 						"flex_align_items": "stretch",
 						"flex_justify_content": "flex-start",
 						"flex_wrap": "nowrap",
-						"flex_direction_tablet": "column",
-						"flex_direction_mobile": "column"
+						"flex_direction_mobile": "column",
+						"flex_wrap_tablet": "wrap"
 					},
 					"elements": [
 						{
@@ -209,7 +209,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 100,
+									"size": 48,
 									"sizes": []
 								},
 								"width_mobile": {
@@ -332,7 +332,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 100,
+									"size": 48,
 									"sizes": []
 								},
 								"width_mobile": {
@@ -455,7 +455,7 @@
 								},
 								"width_tablet": {
 									"unit": "%",
-									"size": 100,
+									"size": 48,
 									"sizes": []
 								},
 								"width_mobile": {

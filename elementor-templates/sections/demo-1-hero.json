@@ -119,6 +119,12 @@
 							"sizes": []
 						},
 						"_element_width_mobile": "inherit",
+						"_element_width_tablet": "initial",
+						"_element_custom_width_tablet": {
+							"unit": "px",
+							"size": 410,
+							"sizes": []
+						},
 						"__globals__": {
 							"typography_typography": "globals/typography?id=sbh1",
 							"title_color": "globals/colors?id=sbwhite"

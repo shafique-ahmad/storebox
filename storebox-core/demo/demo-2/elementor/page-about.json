@@ -381,7 +381,7 @@
 						"_element_width": "initial",
 						"_element_custom_width": {
 							"unit": "px",
-							"size": 900,
+							"size": 728,
 							"sizes": []
 						},
 						"_element_width_mobile": "inherit",
@@ -403,9 +403,9 @@
 							"sizes": []
 						},
 						"__globals__": {
-							"typography_typography": "globals/typography?id=sbquote",
 							"title_color": "globals/colors?id=primary"
-						}
+						},
+						"typography_font_family": "Archivo"
 					},
 					"elements": [],
 					"isInner": false
@@ -2839,8 +2839,19 @@
 													"sizes": []
 												},
 												"__globals__": {
-													"typography_typography": "globals/typography?id=secondary",
 													"title_color": "globals/colors?id=primary"
+												},
+												"typography_font_family": "Archivo",
+												"typography_font_weight": "700",
+												"typography_line_height": {
+													"unit": "em",
+													"size": 1.28,
+													"sizes": []
+												},
+												"typography_letter_spacing": {
+													"unit": "em",
+													"size": -0.02,
+													"sizes": []
 												}
 											},
 											"elements": [],
@@ -3087,8 +3098,19 @@
 													"sizes": []
 												},
 												"__globals__": {
-													"typography_typography": "globals/typography?id=secondary",
 													"title_color": "globals/colors?id=primary"
+												},
+												"typography_font_family": "Archivo",
+												"typography_font_weight": "700",
+												"typography_line_height": {
+													"unit": "em",
+													"size": 1.28,
+													"sizes": []
+												},
+												"typography_letter_spacing": {
+													"unit": "em",
+													"size": -0.02,
+													"sizes": []
 												}
 											},
 											"elements": [],
@@ -3335,8 +3357,19 @@
 													"sizes": []
 												},
 												"__globals__": {
-													"typography_typography": "globals/typography?id=secondary",
 													"title_color": "globals/colors?id=primary"
+												},
+												"typography_font_family": "Archivo",
+												"typography_font_weight": "700",
+												"typography_line_height": {
+													"unit": "em",
+													"size": 1.28,
+													"sizes": []
+												},
+												"typography_letter_spacing": {
+													"unit": "em",
+													"size": -0.02,
+													"sizes": []
 												}
 											},
 											"elements": [],
@@ -3583,8 +3616,19 @@
 													"sizes": []
 												},
 												"__globals__": {
-													"typography_typography": "globals/typography?id=secondary",
 													"title_color": "globals/colors?id=primary"
+												},
+												"typography_font_family": "Archivo",
+												"typography_font_weight": "700",
+												"typography_line_height": {
+													"unit": "em",
+													"size": 1.28,
+													"sizes": []
+												},
+												"typography_letter_spacing": {
+													"unit": "em",
+													"size": -0.02,
+													"sizes": []
 												}
 											},
 											"elements": [],

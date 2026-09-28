@@ -1512,6 +1512,10 @@ body .elementor-form .elementor-button {
 	text-align: left;
 }
 
+.elementor-widget-counter.sb-e-counter-tight .elementor-counter-title {
+	margin-top: 5px;
+}
+
 /* sb-e-crumbs (Text): breadcrumb trail. Add sb-e-crumbs--on-dark on dark heroes. */
 .sb-e-crumbs a {
 	color: inherit;

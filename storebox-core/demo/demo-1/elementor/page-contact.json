@@ -486,8 +486,19 @@
 																	"sizes": []
 																},
 																"__globals__": {
-																	"typography_typography": "globals/typography?id=secondary",
 																	"title_color": "globals/colors?id=primary"
+																},
+																"typography_font_family": "Archivo",
+																"typography_font_weight": "700",
+																"typography_line_height": {
+																	"unit": "em",
+																	"size": 1.25,
+																	"sizes": []
+																},
+																"typography_letter_spacing": {
+																	"unit": "em",
+																	"size": -0.02,
+																	"sizes": []
 																}
 															},
 															"elements": [],
@@ -651,8 +662,19 @@
 																	"sizes": []
 																},
 																"__globals__": {
-																	"typography_typography": "globals/typography?id=secondary",
 																	"title_color": "globals/colors?id=primary"
+																},
+																"typography_font_family": "Archivo",
+																"typography_font_weight": "700",
+																"typography_line_height": {
+																	"unit": "em",
+																	"size": 1.25,
+																	"sizes": []
+																},
+																"typography_letter_spacing": {
+																	"unit": "em",
+																	"size": -0.02,
+																	"sizes": []
 																}
 															},
 															"elements": [],
@@ -810,8 +832,19 @@
 																	"sizes": []
 																},
 																"__globals__": {
-																	"typography_typography": "globals/typography?id=secondary",
 																	"title_color": "globals/colors?id=primary"
+																},
+																"typography_font_family": "Archivo",
+																"typography_font_weight": "700",
+																"typography_line_height": {
+																	"unit": "em",
+																	"size": 1.25,
+																	"sizes": []
+																},
+																"typography_letter_spacing": {
+																	"unit": "em",
+																	"size": -0.02,
+																	"sizes": []
 																}
 															},
 															"elements": [],
@@ -975,8 +1008,19 @@
 																	"sizes": []
 																},
 																"__globals__": {
-																	"typography_typography": "globals/typography?id=secondary",
 																	"title_color": "globals/colors?id=primary"
+																},
+																"typography_font_family": "Archivo",
+																"typography_font_weight": "700",
+																"typography_line_height": {
+																	"unit": "em",
+																	"size": 1.25,
+																	"sizes": []
+																},
+																"typography_letter_spacing": {
+																	"unit": "em",
+																	"size": -0.02,
+																	"sizes": []
 																}
 															},
 															"elements": [],
@@ -1064,7 +1108,8 @@
 										"design": "",
 										"type": "contact",
 										"form_id": "contact",
-										"card": "yes"
+										"card": "yes",
+										"note": "We only use your details to answer this message."
 									},
 									"elements": [],
 									"isInner": false
