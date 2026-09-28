@@ -278,3 +278,16 @@ body.sb-kit .sb-c {
 		animation-duration: .01ms !important;
 	}
 }
+
+/* Elementor editor: hint shown when a widget has nothing to display. */
+.sb-e-empty {
+	padding: 22px 24px;
+	border: 1px dashed #b5bcc2;
+	border-radius: 8px;
+	background: #f6f7f7;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+	color: #50575e;
+}
